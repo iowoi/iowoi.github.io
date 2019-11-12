@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <title>聯絡簿</title>
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+        <header include-html="./header.html"></header>
+        <div class="main-wrapper">
+        <nav include-html="./navbar.html"></nav>
+        <div class="content">
+            <div class="note">
+                <i class="fas fa-bell"></i>
+                「我的位置是XXXX，位置资讯已发送给爸妈」
+            </div>
+            <div
+                id="carousel"
+                class="container carousel slide blackboard"
+                data-ride="carousel"
+            >
+                <h2 class="visible-xs">
+                    <img src="imgs/blackboard-item.svg" /> 某某补习班
+                </h2>
+                <img src="imgs/blackTitle.svg" class="titleimg hidden-xs" />
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="middle">
+                            <div class="desc">
+                                <h3>笛卡儿培训</h3>
+                                <p>
+                                    内容叙述 内容叙述 内容叙述 内容叙述 内容叙述
+                                    内容叙述 内容叙述 内容叙述 内容叙述 内容叙述
+                                    内容叙述 内容叙述 内容叙述 内容叙述 内容叙述
+                                    内容叙述
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="detailBtn"
+                            ><img src="imgs/detailBtn.svg"
+                        /></a>
+                    </div>
+                    <div class="item">
+                        <div class="middle">
+                            <div class="desc">
+                                <h3>笛卡儿培训</h3>
+                                <p>内容叙述 内容叙述 内容叙述 内容叙述</p>
+                            </div>
+                        </div>
+                        <a href="" class="detailBtn"
+                            ><img src="imgs/detailBtn.svg"
+                        /></a>
+                    </div>
+                    <div class="item">
+                        <div class="middle">
+                            <div class="desc">
+                                <h3>笛卡儿培训</h3>
+                                <p>内容叙述 内容叙述 内容叙述 内容叙述</p>
+                            </div>
+                        </div>
+                        <a href="" class="detailBtn"
+                            ><img src="imgs/detailBtn.svg"
+                        /></a>
+                    </div>
+                </div>
+                <a
+                    class="left carousel-control"
+                    href="#carousel"
+                    role="button"
+                    data-slide="prev"
+                    ><span class="middle"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="33"
+                            viewBox="0 0 13.4 33"
+                        >
+                            <path
+                                d="M13.1 28.5c-2.3-4.4-4.7-8.9-7-13.3v3c2.3-4.4 4.7-8.9 7-13.3 1.8-3.4-3.4-6.4-5.2-3 -1.3 2.5-2.6 5-4 7.5 -1 1.9-3.5 5-3.5 7.3 0 2.2 2.3 5.1 3.2 6.9 1.4 2.6 2.8 5.3 4.2 7.9C9.7 34.9 14.9 31.9 13.1 28.5"
+                                fill="#CECE5B"
+                            ></path></svg></span
+                ></a>
+                <a
+                    class="right carousel-control"
+                    href="#carousel"
+                    role="button"
+                    data-slide="next"
+                    ><span class="middle"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="33"
+                            viewBox="0 0 13.4 33"
+                        >
+                            <path
+                                d="M0.8 4.9c2.3 4.4 4.7 8.9 7 13.3v-3c-2.3 4.4-4.7 8.9-7 13.3 -1.8 3.4 3.4 6.4 5.2 3 1.3-2.5 2.6-5 4-7.5 1-1.9 3.5-5 3.5-7.3 0-2.2-2.3-5.1-3.2-6.9C8.8 7.2 7.4 4.5 6 1.9 4.2-1.5-1 1.5 0.8 4.9"
+                                fill="#CECE5B"
+                            ></path></svg></span
+                ></a>
+            </div>
+            <div class="blackBot">
+                <img src="imgs/chalk.svg" class="chalk" />
+            </div>
+            <div class="dashboardWrap">
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard1"></span
+                        ><span class="text-center">View 课程</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard2"></span
+                        ><span class="text-center">View 簽到</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard3"></span
+                        ><span class="text-center">View 请假</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard4"></span
+                        ><span class="text-center">View 家校</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard5"></span
+                        ><span class="text-center">View 课表</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard6"></span
+                        ><span class="text-center">View 缴费</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard7"></span
+                        ><span class="text-center">View 瞰板</span></a
+                    >
+                </div>
+                <div class="column col-xs-6">
+                    <a href=""
+                        ><span class="icon dashboard8"></span
+                        ><span class="text-center">View 公告</span></a
+                    >
+                </div>
+                <hr class="clear" />
+            </div>
+            <section id="course" class="section">
+                <h2 class="courseTitle labelTitle">View 课程</h2>
+                <div
+                    id="courseList"
+                    class="course-list blueBG carousel slide"
+                    data-ride="carousel"
+                >
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">迟到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">未到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">已到</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">迟到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">未到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">已到</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">迟到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">未到</div>
+                            </div>
+                            <div class="course-item clearfix">
+                                <div class="col-xs-4 course-title">
+                                    课程名称
+                                </div>
+                                <div class="col-xs-6">00:00 ~ 00:00</div>
+                                <div class="col-xs-2">已到</div>
+                            </div>
+                            <div class="col-2 book-info">
+                                <div class="tag-top">TOP 5</div>
+                                <img src="./static/example/cat-01.jpg" alt="" />
+                                <p class="title">書中有一道牆</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">220</span>元
+                                </p>
+                            </div>
+                            <div class="col-2 book-info">
+                                <div class="tag-top">TOP 6</div>
+                                <img src="./static/example/cat-01.jpg" alt="" />
+                                <p class="title">書中有一道牆</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">220</span>元
+                                </p>
+                            </div>
+                            <div class="col-2 book-info align-top d-lg-none">
+                                <div class="see-more">看更多</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#courseList"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li data-target="#courseList" data-slide-to="1"></li>
+                        <li data-target="#courseList" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </section>
+            <section id="school" class="section">
+                <h2 class="schoolTitle labelTitle">View 家校</h2>
+                <div class="school-info blueBG">
+                    <div
+                        id="schoolList"
+                        class="course-list carousel slide"
+                        data-ride="carousel"
+                    >
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="inner clearfix">
+                                    <div class="col-md-4 schoolPhoto">
+                                        <div class="schoolImg"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-justify">
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="btn btn-link t-right m-center"
+                                    ><i class="fas fa-pen"></i> 回覆</a
+                                >
+                            </div>
+                            <div class="item">
+                                <div class="inner clearfix">
+                                    <div class="col-md-4 schoolPhoto">
+                                        <div class="schoolImg"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-justify">
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="btn btn-link t-right m-center"
+                                    ><i class="fas fa-pen"></i>回覆</a
+                                >
+                            </div>
+                            <div class="item">
+                                <div class="inner clearfix">
+                                    <div class="col-md-4 schoolPhoto">
+                                        <div class="schoolImg"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-justify">
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                            内容叙述 内容叙述 内容叙述 内容叙述
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="" class="btn btn-link t-right m-center"
+                                    ><i class="fas fa-pen"></i> 回覆</a
+                                >
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li
+                                data-target="#schoolList"
+                                data-slide-to="0"
+                                class="active"
+                            ></li>
+                            <li
+                                data-target="#schoolList"
+                                data-slide-to="1"
+                            ></li>
+                            <li
+                                data-target="#schoolList"
+                                data-slide-to="2"
+                            ></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="section">
+                <h2 class="galleryTitle labelTitle">View 瞰 板</h2>
+                <div class="gallery-list blueBG">
+                    <div class="wrap">
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <div class="gallery-item col-md-3">
+                            <img
+                                src="imgs/gallery1.jpg"
+                                class="img-responsive"
+                            />
+                        </div>
+                        <hr class="clear" />
+                        <a href="" class="btn btn-link t-right m-center"
+                            ><i class="fas fa-camera"></i> 更多</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+        <footer include-html="./footer.html"></footer>
+    <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
