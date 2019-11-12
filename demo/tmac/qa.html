@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <title>Document</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper member-info">
+        <h4 class="text-gray dark-blue-bottom-border">會員獨享</h4>
+        <div class="card-yellow">Kelly 您好，您的會員身分：<b>黃金會員</b> <a>查看會員獨享</a></div>
+        <div class="dashboard">
+            <div class="left-menu d-none d-lg-block">
+                <a class="active" href="member-info.html">會員資料</a>
+                <a href="member-discount.html">會員獨享</a>
+                <a href="order-list.html">訂單查詢</a>
+                <a href="coupon.html">優惠券查詢</a>
+                <a href="bonus-points.html">紅利點數查詢</a>
+                <a href="fav-list.html">收藏清單</a>
+                <a href="message.html">我的訊息</a>
+            </div>
+            <div class="right-content">
+                <div class="row info">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="form-group">
+                            <label for="name">聯絡人</label>
+                            <input type="text" id="name" class="form-control" placeholder="姓名" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">信箱 </label>
+                            <input type="text" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="cell-phone">手機號碼</label>
+                            <div class="row">
+                                <div class="col-3 pr0">
+                                    <input type="text" id="country-code" class="form-control d-inline-block"
+                                        value="+886" />
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="cell-phone" class="form-control d-inline-block" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">市內電話 </label>
+                            <input type="text" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>生日 </label>
+                            <div class="date-select-group d-flex justify-content-between">
+                                <select class="form-control d-inline-block year">
+                                    <option value="" disabled selected>年</option>
+                                </select>
+                                <select class="form-control d-inline-block date">
+                                    <option value="" disabled selected>月</option>
+                                </select>
+                                <select class="form-control d-inline-block date">
+                                    <option value="" disabled selected>日</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group form-group">
+                            <label>地址 </label>
+                            <div class="date-select-group d-flex justify-content-between">
+                                <select class="form-control d-inline-block year">
+                                    <option value="" disabled selected>台北市</option>
+                                </select>
+                                <select class="form-control d-inline-block date">
+                                    <option value="" disabled selected>中正區</option>
+                                </select>
+                                <select class="form-control d-inline-block date">
+                                    <option value="" disabled selected>光明路</option>
+                                </select>
+                            </div>
+                            <input type="text" id="address" class="form-control address" value="219巷36弄6樓">
+                        </div>
+                        <div class="form-group">
+                            <label>性別</label>
+                            <div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio-sex" id="male" value="male"
+                                        checked="checked">
+                                    <label class="form-check-label" for="male">
+                                        男
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio-sex" id="female"
+                                        value="female">
+                                    <label class="form-check-label" for="female">
+                                        女
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>婚姻</label>
+                            <div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio-married" id="unmarried"
+                                        value="unmarried" checked="checked">
+                                    <label class="form-check-label" for="unmarried">
+                                        未婚
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio-married" id="married"
+                                        value="married">
+                                    <label class="form-check-label" for="married">
+                                        已婚
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>子女數量</label>
+                            <div class="child-count d-flex justify-content-between">
+                                <select class="form-control d-inline-block">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <span class="f24 text-gray">配送資料</span>
+                            <span class="check">
+                                <input type="checkbox" id="subscribe-member" class="form-check-input">
+                                <label class="agreement f14" for="subscribe-member">同會員資料
+                                </label>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">聯絡人</label>
+                            <input type="text" id="name" class="form-control" placeholder="姓名" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="cell-phone">手機號碼</label>
+                            <div class="row">
+                                <div class="col-3 pr0">
+                                    <input type="text" id="country-code" class="form-control d-inline-block"
+                                        value="+886" />
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="cell-phone" class="form-control d-inline-block" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">聯絡電話</label>
+                            <input type="text" id="phone" class="form-control" value="02-87971168">
+                        </div>
+                        <div class="form-group position-relative">
+                            <label>地址1 </label>
+                            <div class="address-select-group d-flex">
+                                <select class="form-control d-inline-block city">
+                                    <option value="" disabled selected>台北市</option>
+                                </select>
+                                <select class="form-control d-inline-block district">
+                                    <option value="" disabled selected>中正區</option>
+                                </select>
+                                <select class="form-control d-inline-block street">
+                                    <option value="" disabled selected>光明路</option>
+                                </select>
+                            </div>
+                            <button class="btn-delete">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <input type="text" id="address" class="form-control address" value="219巷36弄6樓">
+                        </div>
+                        <div class="form-group position-relative">
+                            <label>地址2 </label>
+                            <div class="address-select-group d-flex">
+                                <select class="form-control d-inline-block city">
+                                    <option value="" disabled selected>台北市</option>
+                                </select>
+                                <select class="form-control d-inline-block district">
+                                    <option value="" disabled selected>中正區</option>
+                                </select>
+                                <select class="form-control d-inline-block street">
+                                    <option value="" disabled selected>光明路</option>
+                                </select>
+                            </div>
+                            <button class="btn-delete">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <input type="text" id="address" class="form-control address" value="219巷36弄6樓">
+                        </div>
+                        <div>
+                            <button class="btn btn-orange">新增地址</button>
+                        </div>
+                        <div class="save">
+                            <button class="btn btn-primary w-100">儲存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer include-html="./footer.html"></footer>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
