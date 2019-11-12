@@ -1,261 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-            rel="stylesheet"
-            crossorigin="anonymous"
-        />
-        <title>联络簿</title>
-    <link href="main.css" rel="stylesheet"></head>
-
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="style/fresco.css" rel="stylesheet" />
+    <title>联络簿</title>
+<link href="main.css" rel="stylesheet"></head>
     <body>
+       
         <header include-html="./header.html"></header>
         <div class="main-wrapper">
             <nav include-html="./navbar.html"></nav>
             <div class="content">
+                <style>
+                    .reply_text {
+                        text-align: center;
+                        margin: 0.5rem;
+                        text-decoration: underline;
+                    }
+                    .reply_text a {
+                        color: #5fc3be;
+                        cursor: pointer;
+                    }
+                    .textarea {
+                        border: 1px solid;
+                        padding: 10px 8px;
+                        border-radius: 1em;
+                        background-color: #ebf2ed;
+                        width: 100%;
+                        height: 10em;
+                        font-size: 14px;
+                    }
+                    .ask_user {
+                        text-align: center;
+                        font-size: 14px;
+                        margin: 5px 0 5px 15px;
+                    }
+                    textarea {
+                        resize: none;
+                    }
+					/*Joyce Add*/
+					.owl-theme .owl-controls .owl-nav [class*=owl-] {
+						background: #728CD2;	
+					  }
+					  .owl-carousel .prev-slide:hover, .owl-carousel .next-slide:hover {background: #728CD2;}
+					  .owl-carousel .owl-video-tn {
+					  background-size: cover;
+					  padding-bottom: 56.25%; /* 16:9 */
+						padding-top: 25px;
+					}
+
+					.owl-video-frame {
+						position: relative;
+						padding-bottom: 56.25%; /* 16:9 */
+						padding-top: 25px;
+						height: 0;
+					}
+					.owl-video-frame iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					.owl-dots {
+					  text-align: center;
+					  margin-top: 20px;
+					}
+
+					.owl-dot {
+					  display: inline-block;
+					}
+
+					.owl-dot span {
+					  width: 11px;
+					  height: 11px;
+					  background-color: #ccc;
+					  border-radius: 50%;
+					  display: block;
+					  margin: 5px 3px;
+					}
+
+					.owl-dot.active span {
+					  background-color: #000;
+					}
+					video:-webkit-full-screen     { max-height: 100%; }
+					video:-moz-full-screen        { max-height: 100%; }
+					video::-webkit-media-controls-fullscreen-button { display: block; }
+					video::-moz-media-controls-fullscreen-button { display: block; }
+                </style>
+
                 <div class="btns-row">
-                    <a href="/schoolfamily.html" class="btn btn-litePurple">联 络 簿</a>
-                    <a href="/board.html" class="btn btn-litePurple">上课照片</a>
-                    <a href="" class="btn btn-litePurple">签到纪录</a>
-                    <a href="" class="btn btn-litePurple">考试纪录</a>
+                    <a href="schoolfamily.html" class="btn btn-litePurple">聯絡簿</a>
+                    <a href="board.html" class="btn btn-litePurple">上課照片</a>
+                    <a href="" class="btn btn-litePurple">簽到紀錄</a>
+                    <a href="" class="btn btn-litePurple">考試紀錄</a>
+                </div>
+                <div class="datepicker">
+                    <input class="btn-litePurple" type="date"> - 
+                    <input class="btn-litePurple" type="date">
                 </div>
                 <div class="react-tabs" data-tabs="true">
                     <div>
                         <ul class="contact-messages">
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
+                            <li id="{{$v->id}}" class="blueBG" style="position: relative;">
+                                <div class="head" style="text-align: left; padding: 0; height: unset;">
+                                    <div style="width: fit-content;">
+                                        <i class="fas fa-envelope"></i>時間
+
+                                        <div class="reply_text">
+                                            <a onclick="">回覆至哪一封訊息</a>
+                                        </div>
+                                    </div>
+                                    <a class="reply-btn btn btn-link t-right m-center reply-icon" style="width: 5em; height: 2em; font-size: 13px; padding: 3px; background-color: #CC7276; border-color: #CC7276; color: white; cursor: default; position: absolute; top: 1.5rem; right: 1rem;">未回覆</a>
                                 </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
+                                <div style="font-size: 14px; margin-top: 0.5em;">
+                                    AAA
                                 </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
+                                
+                                <div class="owl-carousel owl-theme">
+									<div class="item schoolfamily-img">
+										<a href="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg" class="fresco" data-fresco-caption="平常上課情況" data-fresco-group="album-a"><img src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg"></a>
+									</div>
+									<div class="item schoolfamily-img">
+										<a href="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg" class="fresco" data-fresco-caption="平常上課情況" data-fresco-group="album-a"><img src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg"></a>
+									</div>
+									<div class="item schoolfamily-img">
+										<a href="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg" class="fresco" data-fresco-caption="平常上課情況" data-fresco-group="album-a"><img src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg"></a>
+									</div>
+									<div class="item schoolfamily-img">
+										<a href="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg" class="fresco" data-fresco-caption="平常上課情況" data-fresco-group="album-a"><img src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/album/201900830_school_img_test.jpg"></a>
+									</div>
+								</div>
+
+                                <div class="schoolfamily-img">
+									<div class="owl-carousel owl-theme">
+										<div class="item">
+											<video controls="controls" width="100%">
+											<source src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/video/2019090217_20190830_test_video.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="item">
+											<video controls="controls" width="100%">
+											<source src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/video/2019090217_20190830_test_video.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="item">
+											<video controls="controls" width="100%">
+											<source src="https://hlmcoltd.com/fish/SBIR/test/school_bot_code/public/upload_images/video/2019090217_20190830_test_video.mp4" type="video/mp4">
+											</video>
+										</div>
+									</div>
+								</div>
+                                <hr style="border-color: black;" />
+                                <div style="text-align: right; position: relative;">
+                                    <div style="width: fit-content; display: inline-block; vertical-align: top; position: absolute; top: 0; left: 0;">
+                                        <a class="btn btn-link t-right m-center reply-icon" style="background-color: #CCA372; border-color: #CCA372; color: white; cursor: default;">回覆內容</a>
+                                        <div class="ask_user"></div>
+                                    </div>
+                                    <div style="display: inline-block; width: 65%;">
+                                        <textarea class="textarea"></textarea>
+                                    </div>
+                                    <div style="margin: 0.5em 0;">
+                                        時間 <span class="ans_time"></span>
+                                    </div>
+                                    <a class="submit btn btn-link t-right m-center reply-icon" style="background-color: #5fc3be; border-color: #5fc3be; color: white;"
+                                        onclick="">送出</a>
                                 </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
-                            </li>
-                            <li class="blueBG">
-                                <div class="head">
-                                    <i class="fas fa-envelope"></i
-                                    ><span>时间 2019.01.01 上午08:00</span
-                                    ><a
-                                        class="btn btn-link t-right m-center reply-icon"
-                                        ><i class="fas fa-pen"></i>回覆</a
-                                    >
-                                </div>
-                                <div>
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                    联络簿留言内容，联络簿留言内容，联络簿留言内容～
-                                </div>
+                                <div class="flag" style="display: none;">0</div>
                             </li>
                         </ul>
+
+                        <a class="btn btn-link t-right m-center reply-icon" style="background-color: #5fc3be; border-color: #5fc3be; color: white; margin: auto;" onclick="">返回</a>
                     </div>
                 </div>
             </div>
         </div>
         <footer include-html="./footer.html"></footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+        <script>
+		$(document).ready(function(){
+		  $('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			nav:true,
+			video:true,
+			lazyLoad:true,
+			merge:true,
+			dots:false,
+			center:true,
+
+			navText : ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:3
+				}
+			}
+		})
+		});
+		</script>
+   		<script src="js/fresco.js" type="application/javascript"></script>
     <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
