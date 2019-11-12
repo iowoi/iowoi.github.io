@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <title>維京書城</title>
+<link href="main.css" rel="stylesheet"></head>
+<!--登入/註冊 https://app.zeplin.io/project/5cd51f54df6a8967aee66f67/screen/5cf94bd6e0ee93091a1802b0 -->
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper login-register">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-4">
+                <h4>會員登入</h4>
+                <div class="form-group mt40">
+                    <label for="account">帳號</label>
+                    <input type="text" id="account" class="form-control" placeholder="請輸入E-mail/手機號碼">
+                </div>
+                <div class="form-group">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" class="form-control" placeholder="密碼">
+                    <span class="f13 text-gray ">請定期更新您的密碼，並增加密碼難度，以提高資訊使用安全！</span>
+                </div>
+                <div class="form-group">
+                    <label for="verifycode">驗證碼</label>
+                    <div>
+                        <input type="text" id="verifycode" class="form-control w-56 d-inline-block"
+                            placeholder="請輸入圖中的字">
+                        <img src="static/vcode.png" class="vcode" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="form-group row mt30">
+                    <div class="col-9">
+                        <button type="button" class="btn btn-primary w-100">登入</button>
+                    </div>
+                    <div class="col-3 align-self-center">
+                        <a href="forgot-password.html" class="forgot-password"> 忘記密碼？</a>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-6">
+                <h4>註冊</h4>
+                <a class="mt20 btn btn-primary w-50" href="register.html">第一次購物</a>
+                <h4 class="master-register">大宗訂購用戶</h4>
+                <div class="text-gray f14 hint">特色：一次購足、合理議價、專人服務</div>
+                <div class="f14 features">
+                    政府機關、學校單位、公司行號、團體等大量訂購
+                    （單品或多品項常態性購物）
+                    <br>
+                    <br>
+                    歡迎您使用維京國際大宗訂購線上報價系統
+                </div>
+                <a class="mt20 btn btn-success w-50" href="register-vendor.html">大宗用戶註冊</a>
+
+            </div>
+        </div>
+    </div>
+    <footer include-html="./footer.html"></footer>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>

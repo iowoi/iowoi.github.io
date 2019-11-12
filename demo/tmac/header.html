@@ -1,0 +1,414 @@
+<head><link href="main.css" rel="stylesheet"></head><section class="container">
+    <div class="d-none d-lg-block">
+        <div class="ad">
+            <img id="ad-image" src="static/header/ad.jpg" />
+            <img id="ad-image-open" src="static/header/ad-open.png" />
+            <button id="ad-button">
+                <span id="ad-button-text">展開看看</span>
+                <i id="ad-open-icon" class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+        <div class="nav-bar">
+            <a href="index.html" class="logo"
+                ><img src="static/header/logo.png"
+            /></a>
+            <div class="search-area">
+                <input type="text" placeholder="請輸入關鍵字" />
+                <select>
+                    <option value="全站搜尋">全站搜尋</option>
+                </select>
+                <label class="rect">
+                    <a href="search.html">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </label>
+            </div>
+            <div class="quick-link">
+                <a href="login-register.html">登入/註冊</a>
+                <a href="member.html">會員專區</a>
+                <a href="">大宗採購</a>
+                <a>收藏清單</a>
+                <a>購物車</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-lg-none mobile">
+        <section id="m-banner" class="row position-relative">
+            <button id="m-banner-close-button" class="btn-control-banner">
+                <i id="ad-open-icon" class="fas fa-times"></i>
+            </button>
+            <div class="banner">
+                <img src="static/header/ad-open.png" />
+            </div>
+        </section>
+        <div class="m-logo-block">
+            <a href="/" class="logo">
+                <img src="static/header/mobile/logo.png" />
+            </a>
+            <ul class="m-menu">
+                <li id="menu-search">
+                    <img src="static/header/mobile/search.png" />
+                </li>
+                <li>
+                    <img src="static/header/mobile/member.png" />
+                </li>
+                <li>
+                    <img src="static/header/mobile/shopping-cart.png" />
+                </li>
+                <li>
+                    <img src="static/header/mobile/menu.png" />
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar d-none">
+            <div class="search-area">
+                <input type="text" placeholder="請輸入關鍵字" />
+                <select>
+                    <option value="全站搜尋">全站搜尋</option>
+                </select>
+                <label class="rect">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+        </div>
+        <div id="sarch-overlay" class="d-none"></div>
+    </div>
+</section>
+<div class="menu-wrapper">
+    <div class="menu  d-none d-lg-block">
+        <ul class="nav container" id="menu-tab" role="tablist">
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-1-tab"
+                    data-toggle="pill"
+                    href="#menu-1"
+                    >特惠活動</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-2-tab"
+                    data-toggle="pill"
+                    href="#menu-2"
+                    >人氣精選</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-3-tab"
+                    data-toggle="pill"
+                    href="#menu-3"
+                    >幼幼專區</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-4-tab"
+                    data-toggle="pill"
+                    href="#menu-4"
+                    >中文書分類</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-5-tab"
+                    data-toggle="pill"
+                    href="#menu-5"
+                    >益智教具</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-6-tab"
+                    data-toggle="pill"
+                    href="#menu-6"
+                    >親子教養</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-7-tab"
+                    data-toggle="pill"
+                    href="#menu-7"
+                    >外文書分類</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-8-tab"
+                    data-toggle="pill"
+                    href="#menu-8"
+                    >STEAM叢書</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">部落格</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content menu-content" id="menu-tabContent">
+        <div class="tab-pane fade container" id="menu-1" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-2" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-3" role="tabpanel">
+            <div class="sub-menu">
+                <div class="title">操作書</div>
+                <div class="row">
+                    <a class="col">貼紙書</a>
+                    <a class="col">翻翻書</a>
+                    <div class="w-100"></div>
+
+                    <a class="col">玩具書</a>
+                    <a class="col">洗澡書</a>
+                    <div class="w-100"></div>
+
+                    <a class="col">立體書</a>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="title">有聲書</div>
+                <div class="row">
+                    <a class="col"> abc點讀組 </a>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="title">認知啓蒙</div>
+            </div>
+            <div class="sub-menu">
+                <div class="title">身體律動</div>
+            </div>
+        </div>
+        <div class="tab-pane fade container" id="menu-4" role="tabpanel">
+            <div class="row">
+                <div class="sub-menu">
+                    <div class="title">小手操作書</div>
+                    <div class="row">
+                        <a class="col">
+                            貼紙書
+                        </a>
+                        <a class="col">
+                            翻翻書
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            玩具書
+                        </a>
+                        <a class="col">
+                            洗澡書
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            立體書
+                        </a>
+                        <a class="col">
+                            字卡
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            拼圖書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">互動有聲書</div>
+                    <div class="row">
+                        <a class="col">
+                            abc點讀組
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            書＋CD
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            音樂書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">繪本圖畫書</div>
+                    <div class="row">
+                        <a class="col">
+                            幼兒繪本
+                        </a>
+                        <a class="col">
+                            兒童繪本
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            橋樑書
+                        </a>
+                        <a class="col">
+                            童話故事
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">小學生專館</div>
+                    <div class="row">
+                        <a class="col">
+                            啓蒙圖書
+                        </a>
+                        <a class="col">
+                            兒童文學
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            百科
+                        </a>
+                        <a class="col">
+                            歷史
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">小說讀本</a>
+                        <a class="col">動腦益智</a>
+                        <div class="w-100"></div>
+
+                        <a class="col">知識漫畫</a>
+                        <a class="col">偉人傳記</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade container" id="menu-5" role="tabpanel">
+            <div class="row">
+                <div class="sub-menu">
+                    <div class="title">0歲以上</div>
+                    <div class="row">
+                        <a class="col">
+                            布書
+                        </a>
+                        <a class="col">
+                            餐具
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            安撫系列
+                        </a>
+                        <a class="col">
+                            固齒器
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            洗澡玩具
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            椅墊
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            夜燈
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">三歲以上</div>
+                    <div class="row">
+                        <a class="col">
+                            認知布書
+                        </a>
+                        <a class="col">
+                            遊戲毯
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            感官學習
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            感官學
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            感官學習
+                        </a>
+                        <div class="w-100"></div>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">有聲互動</div>
+                    <div class="row">
+                        <a class="col">
+                            貼紙書
+                        </a>
+                        <div class="w-100"></div>
+                        <a class="col">
+                            玩具書
+                        </a>
+                        <div class="w-100"></div>
+                        <a class="col">
+                            立體書
+                        </a>
+                        <div class="w-100"></div>
+                        <a class="col">
+                            拼圖書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">木質玩具</div>
+                    <div class="row">
+                        <a class="col">
+                            木質玩具
+                        </a>
+                        <div class="w-100"></div>
+                        <a class="col">
+                            玩具書
+                        </a>
+                        <div class="w-100"></div>
+                        <a class="col">
+                            立體書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">互動有聲書</div>
+                    <div class="row">
+                        <a class="col">
+                            abc點讀組
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            書＋CD
+                        </a>
+                        <div class="w-100"></div>
+
+                        <a class="col">
+                            音樂書
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade container" id="menu-6" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-7" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-8" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-9" role="tabpanel"></div>
+    </div>
+</div>
+<script type="text/javascript" src="app.bundle.js"></script>

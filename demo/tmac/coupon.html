@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <title>Document</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper coupon">
+        <h4 class="text-gray dark-blue-bottom-border">優惠券查詢</h4>
+        <div class="card-yellow">Kelly 您好，您的會員身分：<b>黃金會員</b> <a>查看會員獨享</a></div>
+        <div class="dashboard">
+            <div class="left-menu d-none d-lg-block">
+                <a href="member-info.html">會員資料</a>
+                <a href="member-discount.html">會員獨享</a>
+                <a href="order-list.html">訂單查詢</a>
+                <a class="active" href="coupon.html">優惠券查詢</a>
+                <a href="bonus-points.html">紅利點數查詢</a>
+                <a  href="fav-list.html">收藏清單</a>
+                <a href="message.html">我的訊息</a>
+            </div>
+            <div class="right-content">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <form class="form-inline">
+                            <input type="text" class="form-control code" value="請輸入折扣碼" />
+                            <button class="btn btn-primary">查詢</button>
+                            <span class="d-flex status">
+                                <label>優惠券狀態</label>
+                                <select class="form-control form-control-select">
+                                    <option>全部</option>
+                                </select>
+                            </span>
+                        </form>
+                        <section class="coupons-section">
+                            <div class="coupons">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100">
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">50</span> </p>
+                                            <p class="text-gray"> 電子書2週年慶，滿399折50</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100">
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">500</span> </p>
+                                            <p class="text-gray"> 電子書2週年慶，滿399折50</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100">
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">100</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100">
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已使用</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已使用</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已過期</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已過期</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已過期</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupons coupons-grayed">
+                                <div class="">
+                                    <img src="static/example/wini.png" alt="" />
+                                </div>
+                                <div class="w-100 position-relative">
+                                    <span class="used">已過期</span>
+                                    <div class="w-66 content">
+                                        <div class="desc1">
+                                            <p class="money f16">$<span class="number">2000</span> </p>
+                                            <p class="text-gray"> 小熊出版社，滿500折100</p>
+                                        </div>
+                                    </div>
+                                    <div class="f14 desc2 w-100">
+                                        <p>使用期限：2017/11/30 ~ 2018/12/31</p>
+                                        <p>
+                                            使用限制：不可與活動併用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="description">
+                            <span class="title">
+                                說明事項
+                            </span>
+                            <div class="f14 detail">
+                                • 優惠券為網路會員專屬，恕無法在其他通路使用。<br><br>
+                                • 請留意：取消訂單或辦理退款，且於取消/退款時，優惠券則可以返還。（期限內可以使用/過期者就不能使用） <br><br>
+                                • 請留意抵用券所標示的到期日，逾期則自動失效。<br><br>
+                            </div>
+                        </section>
+                        <section>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-less-than"></i></a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link active" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">8</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-greater-than"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer include-html="./footer.html"></footer>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>

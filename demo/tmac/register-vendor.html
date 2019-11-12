@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <title>維京書城</title>
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+        <header include-html="./header.html"></header>
+        <div class="container main-wrapper">
+            <div class="mt20">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-left">大宗訂購用戶註冊</h4>
+                        <div class="blue-border"></div>
+                        <div class="text-gray f14 mt10">
+                            <b>特色：一次購足、合理議價、專人服務</b>
+                        </div>
+                        <ul class="text-gray f14">
+                            <li>
+                                政府機關、學校單位、公司行號、團體等大量訂購（單品或多品項常態性購物）
+                            </li>
+                            <li>
+                                優惠優惠折扣，需專員審核，免運門檻3000元，發票與商品分開寄送
+                            </li>
+                            <li>
+                                一次購足，線上商品皆可訂購，專人服務，物超所值！
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="form-group">
+                            <label for="name">統編/公司名稱</label>
+                            <input
+                                type="text"
+                                id="name"
+                                class="form-control"
+                                autofocus
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">主要聯絡人</label>
+                            <input
+                                type="text"
+                                id="contact"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                            />
+                            <div
+                                class="valid-feedback float-right text-right d-inline-block"
+                            >
+                                請填寫確保可以收到交易相關訊息的信箱地址
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">手機號碼</label>
+                            <div class="row">
+                                <div class="col-3 pr0">
+                                    <input
+                                        type="text"
+                                        class="form-control d-inline-block"
+                                        value="+886"
+                                    />
+                                </div>
+                                <div class="col-9">
+                                    <input
+                                        type="text"
+                                        class="form-control d-inline-block"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="valid">驗證碼</label>
+                            <div class="row pt6">
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        class="form-control d-inline-block"
+                                        placeholder="請輸入圖中的字"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <img src="static/vcode.png" class="vcode" alt="" srcset="">
+                                </div>
+                                <div class="col-4">
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary w-100"
+                                        data-toggle="modal"
+                                        data-target="#successModal"
+                                    >
+                                    送出審核
+                                    </button>
+                                    <!-- <button type="button" class="btn btn-secondary w-100" disabled>重新發送驗證碼(60)</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="modal fade"
+                            id="successModal"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="successModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4>成功送出！</h4>
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="modal"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                >&times;</span
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="pb20">
+                                            <p>您的申請表已經順利送出了！</p>
+                                            <p>
+                                                我們的採購專員會在一個工作日內核發您的帳號。
+                                            </p>
+                                            <p>
+                                                如您迫不及待要買書，趕快主動與我們連繫喔！
+                                            </p>
+                                            <p>
+                                                再等一下！馬上享受購書的輕鬆與便利！
+                                            </p>
+                                            <br />
+                                            <p>維京國際　大宗採購</p>
+                                            <p>購書專線：(02)8797-1168#607</p>
+                                        </div>
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary w-100"
+                                        >
+                                            確定
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer include-html="./footer.html"></footer>
+    <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
