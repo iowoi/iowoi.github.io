@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <title>維京書城</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper product-page">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">首頁</li>
+            <li class="breadcrumb-item">中文書分類</li>
+            <li class="breadcrumb-item">繪本圖畫書</li>
+            <li class="breadcrumb-item">商品介紹</li>
+
+        </ol>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="img-section">
+                    <img src="static/example/ocean.png" alt="" />
+
+                </div>
+                <div class="slider">
+                    <!-- <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" /> -->
+                </div>
+            </div>
+            <div class="col-lg-6 info">
+                <div class="info-text">
+                    <h4 class="f20">海洋大書Blue </h4>
+                    <p>作者： <span>烏瓦爾．佐梅爾</span></p>
+                    <p>原文作者： <span>Yuval Zommer</span></p>
+                    <p>繪者：<span>烏瓦爾．佐梅爾（Yuval Zommer）</span></p>
+                    <p>譯者： <span>劉維人</span></p>
+                    <p>出版社：<span>臺灣麥克</span></p>
+                    <p>出版日期：<span>2019/01/01</span></p>
+                    <p>商品編號：<span>AC08012</span></p>
+                    <p>ISBN：<span>9789862037775</span></p>
+                    <p>國際條碼：<span>1234512345123</span></p>
+                    <p>適讀年齡： <span>全齡適讀</span></p>
+                </div>
+                <div class="info-discount">
+                    <p>定價：580 元</p>
+                    <p>
+                        優惠價：79 折 368 元
+                    </p>
+                    <p>紅利可得：40 點</p>
+                </div>
+                <div>
+                    配送方式：配送到府、便利店取貨
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div>
+                    <button></button><br />
+                    <button>加入購物車</button><br />
+                    <button>直接購買</button><br />
+                </div>
+                <div>
+                    <p>
+                        參考庫存：0<br />
+                        商品無庫存，下單後約<br />
+                        10~20個工作天到貨<br />
+                    </p>
+                </div>
+                <div>
+                    分享:
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <span>優惠</span>
+                加入會員即送100點（首購可以折抵），並可享購書79折。
+            </p>
+        </div>
+        <div class="news">
+            <div id="tag-news"><span>特惠活動</span></div>
+            <ul class="news-list">
+                <li>
+                    <div class="triangle"></div>
+                    <a>2019曬書節，全系列任選3本199元</a>
+                </li>
+                <li>
+                    <div class="triangle"></div>
+                    <a>大家一起玩最開心！趣味遊戲書，任選3本享定價55折起！</a>
+                </li>
+                <li>
+                    <div class="triangle"></div>
+                    <a>奇異童話大集合，你最愛的66折起，幾米為什麼是幾米？作品幕後故事、創作方法祕笈大揭露！</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-labels-blue mt-4 theme-book-tabs tabs">
+            <ul class="nav mb-3" id="labels-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="labels-home-tab" data-toggle="pill" href="#labels-home">內容簡介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="labels-profile-tab" data-toggle="pill" href="#labels-profile">作家介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="labels-contact-tab" data-toggle="pill" href="#labels-home">推薦專區</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="labels-contact-tab" data-toggle="pill" href="#labels-home">訂購須知</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="labels-tabContent">
+                <div class="tab-pane fade active show" role="tabpanel">
+                    <div class="tab-info" id="labels-home">
+                        <div class="header">
+                            <span class="title">內容簡介</span>
+                            <span class="switch">收起 </span>
+                        </div>
+                        <div class="content">
+                            歡迎光臨奇妙的海底世界
+                            翻開這本海洋大書，神秘的大海就會在眼前展開哦！
+
+                            螃蟹為什麼橫著走？
+                            飛魚真的會飛嗎？
+                            海馬是不是一種馬？
+                            趕快翻開書本尋找答案。
+                            書中還有很多關於海洋的有趣問題等你來探索喔。
+                            讓我們跟著海洋生物在水中快樂悠游。
+                            此外，還有一條特別的魚穿梭在書頁間，等你把牠找出來！
+
+                            繼《蟲蟲大書》與《野獸大書》後，以色列作者烏瓦爾．佐梅爾全新力作！這次，場景轉變成我們既熟悉又陌生的大海，一窺海底生物不為人知的小祕密。療癒的藍色海洋中，有多少生物是你認識的呢？你知道大海到底有多深嗎？海洋生物們是如何在水中呼吸？快跟著美麗的圖畫，一起進入這片神秘海洋的世界吧！
+
+                            《海洋大書》是專為兒童設計，很適合作為海洋生物啟蒙的知識性書籍。
+                            本書收集許多類別的海洋生物知識，包括牠們如何覓食、狩獵和生存……
+                            讓我們一起翻開這本海洋大書，跟著精美的插圖和有趣的知識，徜徉在神奇的海洋世界吧！
+
+                            ◇概念與主題設計
+                            ․分門別類的介紹海中生物，從軟體動物類、魚類……到海洋哺乳類，幫助讀者不只認識單一的海洋生物，更建構全面性的概念。
+                            ․單元式的設計，一翻頁就瞬間轉換到不同生物的生活場景，滿版的畫面讓人彷彿身歷其境，文圖的搭配下，讓讀者對海洋生物有更清楚、全面的認識。
+
+                            ◇圖像與文字表現
+                            ․內容經國內外專家審定，將最正確的海洋生物知識，轉化為淺顯易懂、充滿趣味的文字。
+                            ․作者運用可愛幽默的筆觸以及美麗豐富的色彩，詳實精準的呈現海洋生物的體態和樣貌。
+                            ․每個主題都由一個問句開始，幫助讀者釐清常見的疑問或誤解，例如：「鯊魚會吃人嗎？」、「螃蟹為什麼橫著走？」、「企鵝為什麼不會凍死？」……透過平易近人的文字與問答，滿足你的好奇心，親切的認識各種海洋生物！
+
+                            ◇隨處可見的互動樂趣
+                            ․找找看……有隻沙丁魚會在書中出現十五次，把牠全都找出來吧！仔細看，有些魚類長得很像，卻不一樣喔。
+                            ․部分主題會有特別的提問，仔細觀察畫面，就能找出解答！
+
+                            ◇更多延伸知識
+                            ․中文版的《海洋大書BLUE》除原有內容，更適度增修息息相關的補充知識；並在專業用語和描述的翻譯上，透過層層審定把關，選用更精準的詞彙傳達。希望為每個中文版讀者，建立可信賴、正確、完備、易懂的基礎認知。
+                        </div>
+                    </div>
+                    <div class="tab-info" id="labels-profile">
+                        <div class="header">
+                            <span class="title">內容簡介</span>
+                            <span class="switch">收起 </span>
+                        </div>
+                        <div class="content">
+                            歡迎光臨奇妙的海底世界
+                            翻開這本海洋大書，神秘的大海就會在眼前展開哦！
+
+                            螃蟹為什麼橫著走？
+                            飛魚真的會飛嗎？
+                            海馬是不是一種馬？
+                            趕快翻開書本尋找答案。
+                            書中還有很多關於海洋的有趣問題等你來探索喔。
+                            讓我們跟著海洋生物在水中快樂悠游。
+                            此外，還有一條特別的魚穿梭在書頁間，等你把牠找出來！
+
+                            繼《蟲蟲大書》與《野獸大書》後，以色列作者烏瓦爾．佐梅爾全新力作！這次，場景轉變成我們既熟悉又陌生的大海，一窺海底生物不為人知的小祕密。療癒的藍色海洋中，有多少生物是你認識的呢？你知道大海到底有多深嗎？海洋生物們是如何在水中呼吸？快跟著美麗的圖畫，一起進入這片神秘海洋的世界吧！
+
+                            《海洋大書》是專為兒童設計，很適合作為海洋生物啟蒙的知識性書籍。
+                            本書收集許多類別的海洋生物知識，包括牠們如何覓食、狩獵和生存……
+                            讓我們一起翻開這本海洋大書，跟著精美的插圖和有趣的知識，徜徉在神奇的海洋世界吧！
+
+                            ◇概念與主題設計
+                            ․分門別類的介紹海中生物，從軟體動物類、魚類……到海洋哺乳類，幫助讀者不只認識單一的海洋生物，更建構全面性的概念。
+                            ․單元式的設計，一翻頁就瞬間轉換到不同生物的生活場景，滿版的畫面讓人彷彿身歷其境，文圖的搭配下，讓讀者對海洋生物有更清楚、全面的認識。
+
+                            ◇圖像與文字表現
+                            ․內容經國內外專家審定，將最正確的海洋生物知識，轉化為淺顯易懂、充滿趣味的文字。
+                            ․作者運用可愛幽默的筆觸以及美麗豐富的色彩，詳實精準的呈現海洋生物的體態和樣貌。
+                            ․每個主題都由一個問句開始，幫助讀者釐清常見的疑問或誤解，例如：「鯊魚會吃人嗎？」、「螃蟹為什麼橫著走？」、「企鵝為什麼不會凍死？」……透過平易近人的文字與問答，滿足你的好奇心，親切的認識各種海洋生物！
+
+                            ◇隨處可見的互動樂趣
+                            ․找找看……有隻沙丁魚會在書中出現十五次，把牠全都找出來吧！仔細看，有些魚類長得很像，卻不一樣喔。
+                            ․部分主題會有特別的提問，仔細觀察畫面，就能找出解答！
+
+                            ◇更多延伸知識
+                            ․中文版的《海洋大書BLUE》除原有內容，更適度增修息息相關的補充知識；並在專業用語和描述的翻譯上，透過層層審定把關，選用更精準的詞彙傳達。希望為每個中文版讀者，建立可信賴、正確、完備、易懂的基礎認知。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer include-html="./footer.html"></footer>
+
+    <script>
+        $('.slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: 'unslick' // destroys slick
+                }
+            ]
+        })
+    </script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
