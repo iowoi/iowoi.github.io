@@ -26,26 +26,48 @@
         </ol>
         <div class="row">
             <div class="col-lg-4">
-                <div class="img-section">
+                <!-- <div class="img-section">
                     <img src="static/example/ocean.png" alt="" />
 
+                </div> -->
+
+                <div class="img-section ">
+                    <div class="slider-for">
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                    </div>
+
                 </div>
-                <div class="slider">
-                    <!-- <img src="static/example/ocean.png" alt="" />
+               
+                <div class="slider-nav-wrapper">
+                    <div class="slider-nav">
                         <img src="static/example/ocean.png" alt="" />
                         <img src="static/example/ocean.png" alt="" />
                         <img src="static/example/ocean.png" alt="" />
-                        <img src="static/example/ocean.png" alt="" /> -->
+                        <img src="static/example/ocean.png" alt="" />
+                        <img src="static/example/ocean.png" alt="" />
+                    </div>
+                    <div class="slider-arrow slick-arrow-block">
+                        <div class="prev">
+                          <i class=" fas fa-chevron-left "></i>
+                        </div>
+                        <div class="next">
+                          <i class="next fas fa-chevron-right"></i>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="col-lg-6 info">
                 <div class="info-text">
-                    <h4 class="f20">海洋大書Blue </h4>
-                    <p>作者： <span>烏瓦爾．佐梅爾</span></p>
-                    <p>原文作者： <span>Yuval Zommer</span></p>
-                    <p>繪者：<span>烏瓦爾．佐梅爾（Yuval Zommer）</span></p>
-                    <p>譯者： <span>劉維人</span></p>
-                    <p>出版社：<span>臺灣麥克</span></p>
+                    <h4 class="f20"><b>海洋大書Blue</b> </h4>
+                    <p>作者： <u class=>烏瓦爾．佐梅爾</u></p>
+                    <p>原文作者： <u>Yuval Zommer</u></p>
+                    <p>繪者：<u>烏瓦爾．佐梅爾（Yuval Zommer）</u></p>
+                    <p>譯者： <u>劉維人</u></p>
+                    <p>出版社：<u>臺灣麥克</u></p>
                     <p>出版日期：<span>2019/01/01</span></p>
                     <p>商品編號：<span>AC08012</span></p>
                     <p>ISBN：<span>9789862037775</span></p>
@@ -53,38 +75,63 @@
                     <p>適讀年齡： <span>全齡適讀</span></p>
                 </div>
                 <div class="info-discount">
-                    <p>定價：580 元</p>
-                    <p>
-                        優惠價：79 折 368 元
-                    </p>
-                    <p>紅利可得：40 點</p>
+                    <div class="money">
+                        <b>
+                            <p class="f14">定價：<s>580 元</s></p>
+                        </b>
+                        <p>
+                            <b>
+                                <span class="blue">優惠價：</span>
+                                <span class="red">79</span>
+                                <span class="black"> 折</span>
+                                <span class="red">368</span>
+                                <span class="black">元</span></b>
+                        </p>
+                    </div>
+                    <p class="f14"><i class="fas fa-dollar-sign circle-icon"></i><b>紅利可得：<span class="red">40</span> 點
+                    </p></b>
                 </div>
-                <div>
-                    配送方式：配送到府、便利店取貨
+                <div class="f14 d-flex mt10">
+                    <div style="width: 50%">
+                        配送方式：配送到府、便利店取貨
+                    </div>
+                    <div>
+                        配送地區： 台灣本島、台灣離島
+                    </div>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div>
-                    <button></button><br />
-                    <button>加入購物車</button><br />
-                    <button>直接購買</button><br />
+                    <button class="btn btn-light-gray w-100">
+                        <i class="fas fa-heart text-red"></i>
+                    </button><br />
+                    <button class="btn btn-gray w-100"><b>缺貨中</b></button><br />
+                    <button class="btn btn-primary w-100">
+                        <i class="fas fa-shopping-cart"></i>
+                        加入購物車</button><br />
+                    <button class="btn btn-yellow w-100">
+                        <b>預購中</b></button><br />
+                    <button class="btn btn-orange w-100 f16">直接購買</button><br />
                 </div>
                 <div>
-                    <p>
-                        參考庫存：0<br />
-                        商品無庫存，下單後約<br />
-                        10~20個工作天到貨<br />
+                    <p class="f13">
+                        參考庫存：0<br /><br />
+                        貨品到貨後，盡可能快速上架<br /><br />
                     </p>
                 </div>
-                <div>
-                    分享:
+                <div class="f14 share">
+                    <span>分享：</span>
+                    <img src="static/fb1.png" />
+                    <img src="static/line1.png" />
+
                 </div>
             </div>
         </div>
-        <div>
+        <div class="bonus">
             <p>
-                <span>優惠</span>
-                加入會員即送100點（首購可以折抵），並可享購書79折。
+                <span class="red f13">
+                    優惠</span>
+                <b><span class="f14">加入會員即送100點（首購可以折抵），並可享購書79折。</span></b>
             </p>
         </div>
         <div class="news">
@@ -105,102 +152,238 @@
             </ul>
         </div>
         <div class="tab-labels-blue mt-4 theme-book-tabs tabs">
-            <ul class="nav mb-3" id="labels-tab" role="tablist">
+            <ul class="nav mb-3" id="labels-tab">
                 <li class="nav-item">
-                    <a class="nav-link active" id="labels-home-tab" data-toggle="pill" href="#labels-home">內容簡介</a>
+                    <a class="nav-link active" id="labels-home-tab" href="#panel1">內容簡介</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-profile-tab" data-toggle="pill" href="#labels-profile">作家介紹</a>
+                    <a class="nav-link" id="labels-profile-tab" href="#panel2">作家介紹</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-contact-tab" data-toggle="pill" href="#labels-home">推薦專區</a>
+                    <a class="nav-link" id="labels-contact-tab" href="#panel3">推薦專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-contact-tab" data-toggle="pill" href="#labels-home">訂購須知</a>
+                    <a class="nav-link" id="labels-contact-tab" href="#panel4">訂購須知</a>
                 </li>
             </ul>
             <div class="tab-content" id="labels-tabContent">
                 <div class="tab-pane fade active show" role="tabpanel">
-                    <div class="tab-info" id="labels-home">
+                    <div class="tab-info" id="panel1">
                         <div class="header">
-                            <span class="title">內容簡介</span>
-                            <span class="switch">收起 </span>
+                            <b>
+                                <span class="title">內容簡介</span>
+                                <span class="switch" data="1">收起 <span id="s1">▲</span></span>
+                            </b>
                         </div>
-                        <div class="content">
-                            歡迎光臨奇妙的海底世界
-                            翻開這本海洋大書，神秘的大海就會在眼前展開哦！
+                        <div class="content" id="c1">
+                            歡迎光臨奇妙的海底世界<br />
+                            翻開這本海洋大書，神秘的大海就會在眼前展開哦！<br /><br />
 
-                            螃蟹為什麼橫著走？
-                            飛魚真的會飛嗎？
-                            海馬是不是一種馬？
-                            趕快翻開書本尋找答案。
-                            書中還有很多關於海洋的有趣問題等你來探索喔。
-                            讓我們跟著海洋生物在水中快樂悠游。
-                            此外，還有一條特別的魚穿梭在書頁間，等你把牠找出來！
+                            螃蟹為什麼橫著走？<br />
+                            飛魚真的會飛嗎？<br />
+                            海馬是不是一種馬？<br />
+                            趕快翻開書本尋找答案。<br />
+                            書中還有很多關於海洋的有趣問題等你來探索喔。<br />
+                            讓我們跟著海洋生物在水中快樂悠游。<br />
+                            此外，還有一條特別的魚穿梭在書頁間，等你把牠找出來！<br /><br />
 
-                            繼《蟲蟲大書》與《野獸大書》後，以色列作者烏瓦爾．佐梅爾全新力作！這次，場景轉變成我們既熟悉又陌生的大海，一窺海底生物不為人知的小祕密。療癒的藍色海洋中，有多少生物是你認識的呢？你知道大海到底有多深嗎？海洋生物們是如何在水中呼吸？快跟著美麗的圖畫，一起進入這片神秘海洋的世界吧！
+                            繼《蟲蟲大書》與《野獸大書》後，以色列作者烏瓦爾．佐梅爾全新力作！這次，場景轉變成我們既熟悉又陌生的大海，一窺海底生物不為人知的小祕密。療癒的藍色海洋中，有多少生物是你認識的呢？你知道大海到底有多深嗎？海洋生物們是如何在水中呼吸？快跟著美麗的圖畫，一起進入這片神秘海洋的世界吧！<br /><br />
 
-                            《海洋大書》是專為兒童設計，很適合作為海洋生物啟蒙的知識性書籍。
-                            本書收集許多類別的海洋生物知識，包括牠們如何覓食、狩獵和生存……
-                            讓我們一起翻開這本海洋大書，跟著精美的插圖和有趣的知識，徜徉在神奇的海洋世界吧！
+                            《海洋大書》是專為兒童設計，很適合作為海洋生物啟蒙的知識性書籍。<br />
+                            本書收集許多類別的海洋生物知識，包括牠們如何覓食、狩獵和生存……<br />
+                            讓我們一起翻開這本海洋大書，跟著精美的插圖和有趣的知識，徜徉在神奇的海洋世界吧！<br /><br />
 
-                            ◇概念與主題設計
-                            ․分門別類的介紹海中生物，從軟體動物類、魚類……到海洋哺乳類，幫助讀者不只認識單一的海洋生物，更建構全面性的概念。
-                            ․單元式的設計，一翻頁就瞬間轉換到不同生物的生活場景，滿版的畫面讓人彷彿身歷其境，文圖的搭配下，讓讀者對海洋生物有更清楚、全面的認識。
+                            ◇概念與主題設計<br /><br />
+                            ․分門別類的介紹海中生物，從軟體動物類、魚類……到海洋哺乳類，幫助讀者不只認識單一的海洋生物，更建構全面性的概念。<br />
+                            ․單元式的設計，一翻頁就瞬間轉換到不同生物的生活場景，滿版的畫面讓人彷彿身歷其境，文圖的搭配下，讓讀者對海洋生物有更清楚、全面的認識。<br /><br />
 
-                            ◇圖像與文字表現
-                            ․內容經國內外專家審定，將最正確的海洋生物知識，轉化為淺顯易懂、充滿趣味的文字。
-                            ․作者運用可愛幽默的筆觸以及美麗豐富的色彩，詳實精準的呈現海洋生物的體態和樣貌。
-                            ․每個主題都由一個問句開始，幫助讀者釐清常見的疑問或誤解，例如：「鯊魚會吃人嗎？」、「螃蟹為什麼橫著走？」、「企鵝為什麼不會凍死？」……透過平易近人的文字與問答，滿足你的好奇心，親切的認識各種海洋生物！
+                            ◇圖像與文字表現<br /><br />
+                            ․內容經國內外專家審定，將最正確的海洋生物知識，轉化為淺顯易懂、充滿趣味的文字。<br />
+                            ․作者運用可愛幽默的筆觸以及美麗豐富的色彩，詳實精準的呈現海洋生物的體態和樣貌。<br />
+                            ․每個主題都由一個問句開始，幫助讀者釐清常見的疑問或誤解，例如：「鯊魚會吃人嗎？」、「螃蟹為什麼橫著走？」、「企鵝為什麼不會凍死？」……透過平易近人的文字與問答，滿足你的好奇心，親切的認識各種海洋生物！<br /><br />
 
-                            ◇隨處可見的互動樂趣
-                            ․找找看……有隻沙丁魚會在書中出現十五次，把牠全都找出來吧！仔細看，有些魚類長得很像，卻不一樣喔。
-                            ․部分主題會有特別的提問，仔細觀察畫面，就能找出解答！
+                            ◇隨處可見的互動樂趣<br />
+                            ․找找看……有隻沙丁魚會在書中出現十五次，把牠全都找出來吧！仔細看，有些魚類長得很像，卻不一樣喔。<br />
+                            ․部分主題會有特別的提問，仔細觀察畫面，就能找出解答！<br /><br />
 
-                            ◇更多延伸知識
-                            ․中文版的《海洋大書BLUE》除原有內容，更適度增修息息相關的補充知識；並在專業用語和描述的翻譯上，透過層層審定把關，選用更精準的詞彙傳達。希望為每個中文版讀者，建立可信賴、正確、完備、易懂的基礎認知。
+                            ◇更多延伸知識<br />
+                            ․中文版的《海洋大書BLUE》除原有內容，更適度增修息息相關的補充知識；並在專業用語和描述的翻譯上，透過層層審定把關，選用更精準的詞彙傳達。希望為每個中文版讀者，建立可信賴、正確、完備、易懂的基礎認知。<br />
                         </div>
                     </div>
-                    <div class="tab-info" id="labels-profile">
+                    <div class="tab-info" id="panel2">
                         <div class="header">
-                            <span class="title">內容簡介</span>
-                            <span class="switch">收起 </span>
+                            <b>
+                                <span class="title">作家介紹</span>
+                                <span class="switch"  data="2">收起 <span id="s2">▲</span></span>
+                            </b>
                         </div>
-                        <div class="content">
-                            歡迎光臨奇妙的海底世界
-                            翻開這本海洋大書，神秘的大海就會在眼前展開哦！
+                        <div class="content" id="c2">
+                            <b>作者簡介：</b><br /><br />
 
-                            螃蟹為什麼橫著走？
-                            飛魚真的會飛嗎？
-                            海馬是不是一種馬？
-                            趕快翻開書本尋找答案。
-                            書中還有很多關於海洋的有趣問題等你來探索喔。
-                            讓我們跟著海洋生物在水中快樂悠游。
-                            此外，還有一條特別的魚穿梭在書頁間，等你把牠找出來！
+                            作者／烏瓦爾．佐梅爾（Yuval Zommer）<br /><br />
 
-                            繼《蟲蟲大書》與《野獸大書》後，以色列作者烏瓦爾．佐梅爾全新力作！這次，場景轉變成我們既熟悉又陌生的大海，一窺海底生物不為人知的小祕密。療癒的藍色海洋中，有多少生物是你認識的呢？你知道大海到底有多深嗎？海洋生物們是如何在水中呼吸？快跟著美麗的圖畫，一起進入這片神秘海洋的世界吧！
+                            畢業於倫敦皇家藝術學院，曾於英國許多間頂尖的廣告公司擔任創意總監。受到一次動物園之旅的啟發，烏瓦爾創作出《蟲蟲大書BUGS》這本精采的作品，同時這也是他的第一本童書創作，並被譯為17種語言在世界各國出版。其他作品還有《野獸大書BEASTS》。目前烏瓦爾居住於英國倫敦，並繼續從事童書的創作工作。<br /><br />
 
-                            《海洋大書》是專為兒童設計，很適合作為海洋生物啟蒙的知識性書籍。
-                            本書收集許多類別的海洋生物知識，包括牠們如何覓食、狩獵和生存……
-                            讓我們一起翻開這本海洋大書，跟著精美的插圖和有趣的知識，徜徉在神奇的海洋世界吧！
+                            審定者／曾文宣<br /><br />
 
-                            ◇概念與主題設計
-                            ․分門別類的介紹海中生物，從軟體動物類、魚類……到海洋哺乳類，幫助讀者不只認識單一的海洋生物，更建構全面性的概念。
-                            ․單元式的設計，一翻頁就瞬間轉換到不同生物的生活場景，滿版的畫面讓人彷彿身歷其境，文圖的搭配下，讓讀者對海洋生物有更清楚、全面的認識。
+                            畢業於台灣師範大學生態演化研究所，最喜歡的動物是鱷魚，碩士期間從事爬蟲類視覺的相關研究。目前是名自然老師，曾現身各學校和社團等擔任講師，寒暑假則會出沒在各大博物館，帶孩子學霸王龍狂吼。幕後，喜愛在臉書上撰寫動物行為、生態演化的科普文章，文章亦刊登於泛科學、國語日報和國家地理雜誌中文版等。<br /><br />
 
-                            ◇圖像與文字表現
-                            ․內容經國內外專家審定，將最正確的海洋生物知識，轉化為淺顯易懂、充滿趣味的文字。
-                            ․作者運用可愛幽默的筆觸以及美麗豐富的色彩，詳實精準的呈現海洋生物的體態和樣貌。
-                            ․每個主題都由一個問句開始，幫助讀者釐清常見的疑問或誤解，例如：「鯊魚會吃人嗎？」、「螃蟹為什麼橫著走？」、「企鵝為什麼不會凍死？」……透過平易近人的文字與問答，滿足你的好奇心，親切的認識各種海洋生物！
+                            希望能夠將更多有趣、勁爆的知識往下傳遞，培養孩子對大自然的尊重與關懷，讓人們得以再次回歸山林、擁抱海洋、永續生息。<br /><br />
 
-                            ◇隨處可見的互動樂趣
-                            ․找找看……有隻沙丁魚會在書中出現十五次，把牠全都找出來吧！仔細看，有些魚類長得很像，卻不一樣喔。
-                            ․部分主題會有特別的提問，仔細觀察畫面，就能找出解答！
+                            <b>譯者簡介：</b><br /><br />
 
-                            ◇更多延伸知識
-                            ․中文版的《海洋大書BLUE》除原有內容，更適度增修息息相關的補充知識；並在專業用語和描述的翻譯上，透過層層審定把關，選用更精準的詞彙傳達。希望為每個中文版讀者，建立可信賴、正確、完備、易懂的基礎認知。
+                            劉維人<br /><br />
+
+                            台師大生物系，東華創作與英語文學研究所畢業。現為自由譯者。<br /><br />
+
+                            譯有《蟲蟲大書BUGS》、《野獸大書BEASTS》、《Look
+                            inside：萬能的電腦》等繪本，以及《超級英雄是這樣鍊成的》等書籍。喜歡水，喜歡海的味道，喜歡動物自在游動的感覺。<br /><br />
+
                         </div>
                     </div>
+                    <div class="tab-info" id="panel3">
+                        <div class="header">
+                            <b>
+                                <span class="title">推薦專區</span>
+                                <span class="switch"  data="3">收起 <span id="s3">▲</span></span>
+                            </b>
+                        </div>
+                        <div class="content" id="c3">
+                            <b>陪著孩子一同翻開書、閱入大海，享受沁涼湛藍的懷抱</b><br /><br />
+
+                            文／曾文宣<br /><br />
+
+                            小的時候，我們這一輩的孩子總是會聽到長輩們叨念著「吃米不知米價」這樣困窘的情況。都市版圖的擴張、農村人口的大量外移，這些大環境的變遷總是悄悄地呼嘯而過，大自然總是離我們好遠、好遠。是阿，就連我們都不清楚了，更何況是孩子呢？<br /><br />
+
+                            餐桌上的鰻魚罐頭、油煎地香脆的虱目魚肚、還有甘甜的炙燒秋刀魚，究竟是怎麼來的？「明明𩵚魠魚這麼大一隻，為什麼每次端上桌的只有那一塊紡錘型的魚肉，而且只有中間有骨頭呢？」小時候的我經常這麼想。<br /><br />
+
+                            台灣四面環海，海岸地形豐富又多樣，海洋裡棲息著無數繁盛的生命，各位認識有多少呢？如果我們沒有辦法帶著孩子往海面下潛水尋寶、沒有辦法跟著漁船乘風破浪、也很少到漁港漁市親眼觀察打撈上岸的各種漁獲，那麼這些吃下肚的鮮美海鮮，對孩子而言，終究僅僅是食物而已。<br /><br />
+
+                            眼前這本《海洋大書》或許可以改變這個觀點。這美麗迷人的藍色世界，用生動活潑的圖像妝點，用詼諧輕鬆的文字介紹，絕對能抓緊孩子的注意力、滿足孩子的好奇心。一個一個主題，從海龜到海馬、鯊魚到鯨魚、水母到磷蝦，以孩子們最關切的問句開始，點出一個個海面下的奇妙故事。像是……鯨豚的呼吸孔其實不會噴出水？飛魚可以在空中滯留45秒？海馬寶寶都是由爸爸生產的？什麼？！章魚的八隻腳上都有腦，而且牠們還有三顆心臟？<br /><br />
+
+                            這些林林總總的海洋奇緣小知識，不單單只是擴大視野、吸收知識，書中亦置入了許多生態保育上令人揪心的真相。你知道嗎？我們很有可能再過30年，海洋裡抓不到半條魚可以吃，過漁的問題刻不容緩。海洋垃圾的問題也相當棘手，海鳥、海獅、海龜、鯨豚都有科學家發現其肚子裡有著大量的塑膠垃圾。這些有辦法在海裡待上幾十年、甚至上百年的「致命陷阱」，我們難辭其咎。<br /><br />
+
+                            期許本書能在以新知衝擊腦神經之餘，也能多多少少播下保育的種籽。且讓我們攬上一點永續環境的責任，帶領著孩子一同思考和學習，讓交織整個世界的海洋繼續庇護著人們，生生不息<br /><br />
+
+                            海洋大書──您的海洋入門好書！<br /><br /><br />
+
+                            <div class="text-center">
+                                <img class="video" src="static/example/video.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-info" id="panel4">
+                        <div class="header">
+                            <b>
+                                <span class="title">訂購須知</span>
+                                <span class="switch"  data="4">收起 <span id="s4">▲</span></span>
+                            </b>
+                        </div>
+                        <div class="content" id="c4">
+                            <b>退換貨說明：</b><br /><br />
+
+                            會員均享有10天的商品猶豫期（含例假日）。若您欲辦理退換貨，請於取得該商品10日內寄回。<br /><br />
+
+                            辦理退換貨時，請保持商品全新狀態與完整包裝（商品本身、贈品、贈票、附件、內外包裝、保證書、隨貨文件等）一併寄回。若退回商品無法回復原狀者，可能影響退換貨權利之行使或須負擔部分費用。<br /><br />
+
+                            訂購本商品前請務必詳閱退換貨原則。<br /><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="products">
+            <b>
+                <p class="head">相關產品</p>
+            </b>
+            <div class="row book-list">
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <b>
+                <p class="head">近期觀看商品一覽</p>
+            </b>
+            <div class="row book-list">
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
+                </div>
+                <div class="col-lg-1-5 col-md-6 col-6 col-6 book-info">
+                    <img src="static/example/cat-01.jpg" alt="" />
+                    <p class="title">書中有一道牆</p>
+                    <p class="price">
+                        <span class="text-red">79</span>折
+                        <span class="text-red">220</span>元
+                    </p>
                 </div>
             </div>
         </div>
@@ -208,33 +391,37 @@
     <footer include-html="./footer.html"></footer>
 
     <script>
-        $('.slider').slick({
+        $(".nav-item a").click(function () {
+            $(".nav-item a").removeClass('active')
+            $(this).addClass('active')
+        })
+
+        $('.switch').click(function () {
+            var id = $(this).attr('data');
+            if ($("#c" + id).hasClass("d-none")) {
+                $("#s"+id).html('▲')
+            }else{
+                $("#s"+id).html('▼')
+            }
+            $("#c" + id).toggleClass("d-none");
+        })
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            centerMode: false,
+            focusOnSelect: true,
+            infinite: false,
             prevArrow: $('.prev'),
-            nextArrow: $('.next'),
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 4,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 300,
-                    settings: 'unslick' // destroys slick
-                }
-            ]
-        })
+            nextArrow: $('.next')
+        });
     </script>
 <script type="text/javascript" src="app.bundle.js"></script></body>
 
