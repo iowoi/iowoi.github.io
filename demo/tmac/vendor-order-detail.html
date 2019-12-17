@@ -1,251 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <title>維京書城</title>
-  <link href="main.css" rel="stylesheet"></head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <title>維京書城</title>
+<link href="main.css" rel="stylesheet"></head>
 
-  <body>
-    <header include-html="./header.html"></header>
-    <div class="container main-wrapper cart">
-      <h4 class="text-gray dark-blue-bottom-border">訂單明細</h4>
+<body>
+  <header include-html="./header.html"></header>
+  <div class="container main-wrapper cart vendor-order">
+    <h4 class="text-gray dark-green-bottom-border"><b>訂單明細</b> <button class="btn btn-green">匯出</button></h4>
 
-      <table class="table-gray mt-4">
-        <tr>
-          <th>訂單編號</th>
-          <th>訂單時間</th>
-          <th>訂單狀態</th>
-          <th>付款狀態</th>
-        </tr>
+    <table class="table-gray mt-4 font-weight-bold">
+      <tr>
+        <th>訂單編號</th>
+        <th>訂單時間</th>
+        <th>訂單狀態</th>
+        <th>付款狀態</th>
+        <th>報價狀態</th>
+        <th>報價日期</th>
+      </tr>
 
-        <tr>
-          <td>201912231021</td>
-          <td>20191223</td>
-          <td>已完成</td>
-          <td>已付款</td>
-        </tr>
-      </table>
-
-      <section>
-        <div class="card card-with-detail">
-          <div class="card-header">
-            訂購人與收件人資訊
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">訂購人</h5>
-                <table>
-                  <tr>
-                    <td>姓名</td>
-                    <td>王小花</td>
-                  </tr>
-                  <tr>
-                    <td>行動電話</td>
-                    <td>0922015333</td>
-                  </tr>
-                  <tr>
-                    <td>市內電話</td>
-                    <td>0222122212</td>
-                  </tr>
-                  <tr>
-                    <td>地址</td>
-                    <td>台北市信義區101號101樓</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">收件人</h5>
-                <table>
-                  <tr>
-                    <td>姓名</td>
-                    <td>王小花</td>
-                  </tr>
-                  <tr>
-                    <td>行動電話</td>
-                    <td>0922015333</td>
-                  </tr>
-                  <tr>
-                    <td>市內電話</td>
-                    <td>0222122212</td>
-                  </tr>
-                  <tr>
-                    <td>地址</td>
-                    <td>台北市信義區101號101樓</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <div class="card card-with-detail">
-              <div class="card-header">
-                付款方式
-              </div>
-              <div class="card-body">
-                <table>
-                  <tr>
-                    <td>付款方式</td>
-                    <td>ATM</td>
-                  </tr>
-                  <tr>
-                    <td>應付金額</td>
-                    <td>5890 元</td>
-                  </tr>
-                  <tr>
-                    <td>紅利折抵</td>
-                    <td>156 點</td>
-                  </tr>
-                  <tr>
-                    <td>發票型式</td>
-                    <td>二聯發票</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-with-detail">
-              <div class="card-header">
-                配送方式
-              </div>
-              <div class="card-body">
-                <table>
-                  <tr>
-                    <td>配送方式</td>
-                    <td>超商店到店</td>
-                  </tr>
-                  <tr>
-                    <td>取貨門市</td>
-                    <td>中正光明門市</td>
-                  </tr>
-                  <tr>
-                    <td>取貨地址</td>
-                    <td>台北市中正區光明路52巷23號1樓</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <table border="0" cellpadding="0" class="prod-detail">
-          <thead>
-            <tr>
-              <th>商品明細</th>
-              <th>優惠價</th>
-              <th>數量</th>
-              <th>小計</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="prod-info">
-                <img src="static/example/wini.png" alt="" />
-                <div class="info">
-                  經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
-                  <div><p class="additional">活動:滿三件享88折</p></div>
-                </div>
-              </td>
-              <td>183</td>
-              <td>
-                2
-              </td>
-              <td class="total">366</td>
-            </tr>
-            <tr>
-              <td class="prod-info">
-                <img src="static/example/wini.png" alt="" />
-                <div class="info">
-                  經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
-                  <div><p class="additional">活動:滿三件享88折</p></div>
-                </div>
-              </td>
-              <td>183</td>
-              <td>
-                5
-              </td>
-              <td class="total">366</td>
-            </tr>
-            <tr>
-              <td class="prod-info">
-                <img src="static/example/wini.png" alt="" />
-                <div class="info">
-                  經典小熊維尼珍藏版經典小版經典小熊維尼珍藏版
-                  <div><p class="additional">活動:滿三件享88折</p></div>
-                </div>
-              </td>
-              <td>183</td>
-              <td>
-                3
-              </td>
-              <td class="total">155</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="order-note row">
-          <div class="col-md-6">
-            <div class="ml-lg-5 mt-4">
-              備註：備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文
-              字備註文字備註文字備註文字備註文字備註文字備註文字備註文字
-            </div>
-          </div>
-          <div class="col-md-6">
-            <table>
-              <tr>
-                <td>商品總金額</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>活動：滿三件享88折</td>
-                <td>-$450</td>
-              </tr>
-              <tr>
-                <td>紅利折抵</td>
-                <td>-$150</td>
-              </tr>
-              <tr>
-                <td><a href="coupon.html" class="text-blue">查看 </a>優惠券</td>
-                <td>-$150</td>
-              </tr>
-              <tr>
-                <td>運費</td>
-                <td>$60</td>
-              </tr>
-              <tr class="text-red">
-                <td>總計金額</td>
-                <td>$2230</td>
-              </tr>
-              <tr class="text-red">
-                <td>本次消費紅利回饋</td>
-                <td>183 點</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section class="btn-row">
-        <button
-          class="btn btn-primary w-25"
-          onclick="javascript:window.location.href='order-list.html'; return false;"
-        >
-          回上頁
-        </button>
-      </section>
+      <tr>
+        <td>201912231021</td>
+        <td>20191223</td>
+        <td>已完成</td>
+        <td>已付款</td>
+        <td class="text-light-blue">已報價</td>
+        <td class="text-light-blue">2020/01/03</td>
+      </tr>
+    </table>
+    <div class="agree-section f20">
+      <span>是否同意報價並送出訂購單</span>
+      <button class="btn btn-orange">
+        確認訂單
+      </button>
+      <button class="btn btn-delete">
+        取消訂單
+      </button>
     </div>
-    <footer include-html="./footer.html"></footer>
-  <script type="text/javascript" src="app.bundle.js"></script></body>
+    <div class="tab-section">
+      <div class="active">已報價訂單</div>
+      <div>原始訂單</div>
+    </div>
+    <section>
+      <div class="card card-with-detail">
+        <div class="card-header">
+          訂購人與收件人資訊
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">訂購人</h5>
+              <table>
+                <tr>
+                  <td>公司/會員名稱</td>
+                  <td>華麟行銷股份有限公司</td>
+                </tr>
+                <tr>
+                  <td>姓名</td>
+                  <td>王小花</td>
+                </tr>
+                <tr>
+                  <td>行動電話</td>
+                  <td>0922015333</td>
+                </tr>
+                <tr>
+                  <td>市內電話</td>
+                  <td>0222122212</td>
+                </tr>
+                <tr>
+                  <td>地址</td>
+                  <td>台北市信義區101號101樓</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">收件人</h5>
+              <table>
+                <tr>
+                  <td>姓名</td>
+                  <td>王小花</td>
+                </tr>
+                <tr>
+                  <td>行動電話</td>
+                  <td>0922015333</td>
+                </tr>
+                <tr>
+                  <td>市內電話</td>
+                  <td>0222122212</td>
+                </tr>
+                <tr>
+                  <td>地址</td>
+                  <td>台北市信義區101號101樓</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card card-with-detail">
+            <div class="card-header">
+              付款方式
+            </div>
+            <div class="card-body">
+              <table>
+                <tr>
+                  <td>付款方式</td>
+                  <td>ATM</td>
+                </tr>
+                <tr>
+                  <td>應付金額</td>
+                  <td>5890 元</td>
+                </tr>
+                <tr>
+                  <td>發票型式</td>
+                  <td>三聯式發票</td>
+                </tr>
+                <tr>
+                <tr>
+                  <td>抬頭名稱</td>
+                  <td>華麟行銷股份有限公司</td>
+                </tr>
+                <tr>
+                  <td>紅利折抵</td>
+                  <td>156 點</td>
+                </tr>
+                <tr>
+                  <td>發票型式</td>
+                  <td>二聯發票</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-with-detail">
+            <div class="card-header">
+              配送方式
+            </div>
+            <div class="card-body">
+              <table>
+                <tr>
+                  <td>配送方式</td>
+                  <td>超商店到店</td>
+                </tr>
+                <tr>
+                  <td>取貨門市</td>
+                  <td>中正光明門市</td>
+                </tr>
+                <tr>
+                  <td>取貨地址</td>
+                  <td>台北市中正區光明路52巷23號1樓</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <table border="0" cellpadding="0" class="prod-detail">
+        <thead>
+          <tr>
+            <th>商品編號</th>
+            <th>商品名稱</th>
+            <th>出版社</th>
+            <th>定價</th>
+            <th>優惠價</th>
+            <th>採購價</th>
+            <th>數量</th>
+            <th>小計</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="prod-info">
+              <img src="static/example/wini.png" alt="" />
+              <div class="info">
+                A12345678
+              </div>
+            </td>
+            <td class="prod-info">
+              <div class="info">
+                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                <div>
+                  <p class="text-orange">活動:滿三件享88折</p>
+                </div>
+              </div>
+            </td>
+            <td>台灣麥克</td>
+            <td>1200</td>
+            <td>950</td>
+            <td>900</td>
+            <td>2</td>
+            <td class="total">1800</td>
+          </tr>
+          <tr>
+            <td class="prod-info">
+              <img src="static/example/wini.png" alt="" />
+              <div class="info">
+                A12345678
+              </div>
+            </td>
+            <td class="prod-info">
+              <div class="info">
+                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                <div>
+                  <p class="text-dark-blue">贈品：附贈小熊維尼娃娃一隻</p>
+                </div>
+              </div>
+            </td>
+            <td>台灣麥克</td>
+            <td>1200</td>
+            <td>950</td>
+            <td>900</td>
+            <td>2</td>
+            <td class="total">1800</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="order-note row">
+        <div class="col-md-6">
+          <div class="ml-lg-5 mt-4">
+            備註：備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文
+            字備註文字備註文字備註文字備註文字備註文字備註文字備註文字
+          </div>
+        </div>
+        <div class="col-md-6">
+          <table>
+            <tr>
+              <td>商品總金額</td>
+              <td>$1280</td>
+            </tr>
+            <!-- <tr>
+              <td>活動：滿三件享88折</td>
+              <td>-$450</td>
+            </tr>
+            <tr>
+              <td>紅利折抵</td>
+              <td>-$150</td>
+            </tr>
+            <tr>
+              <td><a href="coupon.html" class="text-blue">查看 </a>優惠券</td>
+              <td>-$150</td>
+            </tr> -->
+            <tr>
+              <td>運費</td>
+              <td>$60</td>
+            </tr>
+            <tr class="text-red f20">
+              <td>總計金額</td>
+              <td>$2230</td>
+            </tr>
+            <!-- <tr class="text-red">
+              <td>本次消費紅利回饋</td>
+              <td>183 點</td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </section>
+    <h4 class="text-gray dark-green-bottom-border"><b>注意事項</b> </h4>
+    <div class="note f14">
+      關於退貨：請於收到商品（請保持商品完整包裝）7天內，於客服信箱來信告知詳註退貨原因，會有專人為您服務。<br /><br />
+
+      商品連同發票一起寄回：【台北市內湖區瑞光路258巷50號5樓 網路大宗訂購收】。<br /><br />
+
+      若會員是大量退換貨，由於造成作業上的困擾，維京國際有權取消交易或取消其會員資格。<br /><br />
+    </div>
+    <section class="btn-row">
+      <button class="btn btn-green w-25" onclick="javascript:window.location.href='order-list.html'; return false;">
+        完成
+      </button>
+    </section>
+  </div>
+  <footer include-html="./footer.html"></footer>
+  <script>
+    $(document).ready(function () {
+      $(".tab-section div").click(function () {
+        $(".tab-section div").removeClass("active")
+        $(this).addClass("active")
+      })
+    })
+
+  </script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
 </html>
