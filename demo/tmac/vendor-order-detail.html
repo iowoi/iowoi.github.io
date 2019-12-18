@@ -2,50 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <title>維京書城</title>
 <link href="main.css" rel="stylesheet"></head>
 
 <body>
   <header include-html="./header.html"></header>
-  <div class="container main-wrapper cart vendor-order">
+  <div class="container main-wrapper cart vendor-order vendor-page">
     <h4 class="text-gray dark-green-bottom-border"><b>訂單明細</b> <button class="btn btn-green">匯出</button></h4>
 
-    <table class="table-gray mt-4 font-weight-bold">
+    <table class="table-gray mt-4 font-weight-bold responsive-table">
+      <thead>
+        <tr>
+          <th>訂單編號</th>
+          <th>訂單時間</th>
+          <th>訂單狀態</th>
+          <th>付款狀態</th>
+          <th>報價狀態</th>
+          <th>報價日期</th>
+        </tr>
+    </thead>
       <tr>
-        <th>訂單編號</th>
-        <th>訂單時間</th>
-        <th>訂單狀態</th>
-        <th>付款狀態</th>
-        <th>報價狀態</th>
-        <th>報價日期</th>
-      </tr>
-
-      <tr>
-        <td>201912231021</td>
-        <td>20191223</td>
-        <td>已完成</td>
-        <td>已付款</td>
-        <td class="text-light-blue">已報價</td>
-        <td class="text-light-blue">2020/01/03</td>
+        <td data-label="訂單編號">201912231021</td>
+        <td data-label="訂單時間">20191223</td>
+        <td data-label="訂單狀態">已完成</td>
+        <td data-label="付款狀態">已付款</td>
+        <td data-label="報價狀態" class="text-light-blue">已報價</td>
+        <td data-label="報價日期" class="text-light-blue">2020/01/03</td>
       </tr>
     </table>
-    <div class="agree-section f20">
-      <span>是否同意報價並送出訂購單</span>
-      <button class="btn btn-orange">
-        確認訂單
-      </button>
-      <button class="btn btn-delete">
-        取消訂單
-      </button>
+    <div class="agree-section row f20">
+      <div class="col-lg-6">
+        <span>是否同意報價並送出訂購單</span>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn btn-orange">
+          確認訂單
+        </button>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn btn-delete">
+          取消訂購
+        </button>
+      </div>
     </div>
     <div class="tab-section">
       <div class="active">已報價訂單</div>
@@ -187,13 +194,11 @@
         </thead>
         <tbody>
           <tr>
-            <td class="prod-info">
-              <img src="static/example/wini.png" alt="" />
-              <div class="info">
-                A12345678
-              </div>
+            <td>
+              A12345678
             </td>
             <td class="prod-info">
+              <img src="static/example/wini.png" alt="" />
               <div class="info">
                 經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
                 <div>
@@ -201,33 +206,11 @@
                 </div>
               </div>
             </td>
-            <td>台灣麥克</td>
-            <td>1200</td>
-            <td>950</td>
-            <td>900</td>
-            <td>2</td>
-            <td class="total">1800</td>
-          </tr>
-          <tr>
-            <td class="prod-info">
-              <img src="static/example/wini.png" alt="" />
-              <div class="info">
-                A12345678
-              </div>
-            </td>
-            <td class="prod-info">
-              <div class="info">
-                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
-                <div>
-                  <p class="text-dark-blue">贈品：附贈小熊維尼娃娃一隻</p>
-                </div>
-              </div>
-            </td>
-            <td>台灣麥克</td>
-            <td>1200</td>
-            <td>950</td>
-            <td>900</td>
-            <td>2</td>
+            <td class="publishing-house">台灣麥克</td>
+            <td class="pricing">1200</td>
+            <td class="special-price">950</td>
+            <td class="purchase-price">900</td>
+            <td class="count">2</td>
             <td class="total">1800</td>
           </tr>
         </tbody>
@@ -282,7 +265,8 @@
       若會員是大量退換貨，由於造成作業上的困擾，維京國際有權取消交易或取消其會員資格。<br /><br />
     </div>
     <section class="btn-row">
-      <button class="btn btn-green w-25" onclick="javascript:window.location.href='order-list.html'; return false;">
+      <button class="btn btn-green w-25" style="float:none; height:42px; margin-top: 30px"
+        onclick="javascript:window.location.href='order-list.html'; return false;">
         完成
       </button>
     </section>
