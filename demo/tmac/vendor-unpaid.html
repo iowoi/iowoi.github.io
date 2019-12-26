@@ -25,11 +25,13 @@
         歡迎您使用維京大宗訂購線上報價系統
       </p>
     </div>
-    <div class="row">
-      <div class="col-3">
-        <input className="form-control" type="text" placeholder="搜尋訂單編號、產品編號" />
+    <div class="row search-bar">
+      <div class="col-lg-3">
+        <div class="form-group mt-3">
+            <input class="form-control"  type="text" placeholder="搜尋訂單編號、產品編號"  />
+        </div>
       </div>
-      <div class="col-3">
+      <div class="col-lg-3">
         <span>日期篩選
           <select class="form-control d-lg-inline">
             <option>全部</option>
@@ -39,82 +41,28 @@
           </select>
         </span>
       </div>
-      <div class="col-6"></div>
 
-      <div class="col-3">
+      <div class="col-lg-3">
         <span>*結帳日
           <select class="form-control d-lg-inline">
             <option>請選擇</option>
 
           </select>
         </span></div>
-      <div class="col-3">
+      <div class="col-lg-3">
         <span>結帳方式
           <select class="form-control d-lg-inline">
             <option>請選擇</option>
 
           </select>
         </span></div>
-      <div class="col-6"></div>
-      <div class="col-3">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#payModal">結帳</button>
-        <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4>請確認下列訂單是否進行結帳？</h4>
-                <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="pb20">
-                  <p>
-                    1. 201812111701
-                  </p>
-                  <p>
-                    2. 201812111703
-                  </p>
-                  <p>
-                    3. 201812111715
-                  </p>
-                  <p>
-                    4. 201812111722
-                  </p><br />
-                </div>
-                <div class="text-center footer">
-                  <button type="button" class="btn btn-delete" data-dismiss="modal" id="cancel">取消</button>
-                  <button type="button" class="btn btn-primary" id="confirm-pay">
-                    確定
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+        <div class="col-lg-12 mt-3 text-right">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#payModal">結帳</button>
+       
         <button class="btn btn-primary d-none" data-toggle="modal" data-target="#successModal" id="success">success</button>
 
-        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4>結帳成功！</h4>
-                <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="pb20">
-                  <p>
-                    我們將依您所選擇的方式跟您進行請款作業
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
         <span class="desc">共顯示 942 筆訂單</span>
       </div>
     </div>
@@ -131,15 +79,12 @@
       </div>
       <div class="right-content position-relative">
         <div class="row detail">
-          <div class="col-md-12">
+          <div class="col-lg-12">
             <table>
               <thead>
                 <th class="d-none d-sm-table-cell">
                   <div class="form-check d-inline">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheckAll" />
-                    <label class="form-check-label" for="defaultCheckAll">
-                      　
-                    </label>
                   </div>
                 </th>
                 <th class="d-none d-sm-table-cell">訂單編號</th>
@@ -152,27 +97,33 @@
                     全展開 <i class="fas fa-chevron-down"></i>
                   </a>
                 </th>
-                <th class="d-sm-none ">
+                <th class="d-sm-none">
                   <a class="hide-all-detail">
                     全收起 <i class="fas fa-chevron-up"></i>
                   </a>
                 </th>
               </thead>
               <tbody>
-                <tr>
+                <tr class="d-none d-lg-table-row">
                   <td>
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label class="form-check-label" for="defaultCheck1">
-                      　
-                    </label>
                   </td>
-                  <td class="text-dark-blue no d-none d-sm-table-cell">
-                    <a href="order-detail.html">201912231021</a>
+                  <td class="text-dark-blue no">
+                    <a href="vendor-order-detail.html">201912231021</a>
                   </td>
-                  <td class="d-none d-sm-table-cell">2019/12/23</td>
-                  <td class="d-none d-sm-table-cell">3,180</td>
-                  <td class="d-none d-sm-table-cell">未付款</td>
-                  <td class="d-none d-sm-table-cell">1</td>
+                  <td>2019/12/23</td>
+                  <td>3,180</td>
+                  <td>未付款</td>
+                  <td>1</td>
+                </tr>
+                <tr class="d-table-row d-sm-none">
+                  <td class="text-left">訂單編號</td>
+                  <td class="text-dark-blue no ">
+                    <a href="vendor-order-detail.html">201912231021</a>
+                  </td>
+                  <td>
+                    <a class="toggle-more-detail"><i class="fas fa-chevron-down"></i></a>
+                  </td>
                 </tr>
                 <tr class="more-detail  d-sm-none">
                   <td colspan="4">
@@ -253,6 +204,61 @@
     </section>
   </div>
   <footer include-html="./footer.html"></footer>
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>結帳成功！</h4>
+        <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pb20">
+          <p>
+            我們將依您所選擇的方式跟您進行請款作業
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>請確認下列訂單是否進行結帳？</h4>
+        <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pb20">
+          <p>
+            1. 201812111701
+          </p>
+          <p>
+            2. 201812111703
+          </p>
+          <p>
+            3. 201812111715
+          </p>
+          <p>
+            4. 201812111722
+          </p><br />
+        </div>
+        <div class="text-center footer">
+          <button type="button" class="btn btn-gray" data-dismiss="modal" id="cancel">取消</button>
+          <button type="button" class="btn btn-primary" id="confirm-pay">
+            確定
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <script>
     $("#defaultCheckAll").click(function () {
       var val = $("#defaultCheckAll").val()
