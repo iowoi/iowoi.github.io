@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+             crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+        ></script>
+        <title>維京書城</title>
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+        <header include-html="./header.html"></header>
+        <div class="container main-wrapper home">
+            <section class="banner-box">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slider">
+                            <div>
+                                <img src="static/news/img.png" />
+                            </div>
+
+                            <div>
+                                <img src="static/news/img.png" />
+                            </div>
+                            <div>
+                                <img src="static/news/img.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none quick-links">
+                        <div class="row">
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-1.svg"
+                                    alt=""
+                                    srcset=""
+                                />促銷活動</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-2.svg"
+                                    alt=""
+                                    srcset=""
+                                />註冊好康</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-3.svg"
+                                    alt=""
+                                    srcset=""
+                                />壽星獨享</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-4.svg"
+                                    alt=""
+                                    srcset=""
+                                />熱銷精選</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-5.svg"
+                                    alt=""
+                                    srcset=""
+                                />STEAM專區</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-6.svg"
+                                    alt=""
+                                    srcset=""
+                                />粉絲專頁</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-7.svg"
+                                    alt=""
+                                    srcset=""
+                                />加入好友</a
+                            >
+                            <a class="col-3" href="#"
+                                ><img
+                                    src="static/quick-link-8.svg"
+                                    alt=""
+                                    srcset=""
+                                />防詐公告</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hot">
+                            <img src="static/news/hot/img.png" />
+                            <div id="tag-hot"><span>今日下殺 HOT!</span></div>
+                            <div class="hot-text">
+                                <span class="title">想自己讀書的納塔莉</span>
+                                <p class="price">
+                                    下殺<span class="text-red">79</span>折,
+                                    <span class="text-red">220</span>元
+                                </p>
+                                <p class="sold">
+                                    目前售出：<span class="text-red">523</span
+                                    >本
+                                </p>
+                                <button class="btn btn-block btn-h-30 btn-gray">
+                                    加入購物車
+                                </button>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div id="tag-news"><span>好康訊息 News!</span></div>
+                            <div id="news-more">更多訊息...</div>
+                            <ul class="news-list">
+                                <li>
+                                    <div class="triangle"></div>
+                                    <a
+                                        >歡慶改版，現在加入維京會員，
+                                        購物免運加購xxxxxxxxxxxxxxxxxxxx</a
+                                    >
+                                </li>
+                                <li>
+                                    <div class="triangle"></div>
+                                    <a
+                                        >玩遊戲調味生活，玩轉遊戲腦，全站玩教具85</a
+                                    >
+                                </li>
+                                <li>
+                                    <div class="triangle"></div>
+                                    <a
+                                        >小心詐騙！
+                                        若有訂單疑問，請撥客服專線詢問</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="category-book blue-border-top">
+                <div class="blue-tag-title">
+                    分類推薦
+                    <span>New</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/wini.png" alt=""></a>
+                        <p class="title">
+                            經典小熊維尼珍藏版（隨書附贈重返森林）
+                        </p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-1-5 col-md-6 book-info">
+                        <a href="product-detail.html"><img src="static/example/cat-01.jpg" alt=""></a>
+                        <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">220</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="blue-border-top popular-events">
+                <div class="blue-tag-title">
+                    熱門活動
+                    <span>Popular Events</span>
+                </div>
+                <div class="row">
+                    <div class="col-4 d-none d-lg-block">
+                        <img src="static/example/good-design.png" alt="" />
+                    </div>
+                    <div class="col-4 d-none d-lg-block">
+                        <img src="static/example/inspiration-life.png" alt="" />
+                    </div>
+                    <div class="col-4 d-none d-lg-block">
+                        <img src="static/example/work.png" alt="" />
+                    </div>
+                </div>
+                <div
+                    id="slider"
+                    class="carousel slide carousel-fade d-lg-none"
+                    data-ride="carousel"
+                >
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#slider"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="static/example/good-design.png"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="static/example/inspiration-life.png"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="static/example/work.png"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="theme-book blue-border-top">
+                <div class="blue-tag-title">
+                    主題私房菜
+                    <span>Theme</span>
+                    <a href="#">更多主題...</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 book-info center">
+                        <img src="static/example/word-atlas-of-d.png" alt="" />
+                        <p class="title">世界恐龍發現地圖</p>
+                        <p class="price">
+                            <span class="text-red">79</span>折
+                            <span class="text-red">356</span>元
+                        </p>
+                        <p class="point">
+                            紅利<span class="text-red">4</span>點
+                        </p>
+                    </div>
+                    <div class="col-lg-4 book-intro">
+                        <p class="title-text">
+                            地球原來曾是「恐龍之星」<br />
+                            人類腳下的土地可能都曾經住著恐龍？
+                        </p>
+                        <p class="content">
+                            日本知名的恐龍研究家久邦彥最新力作，結合考古學、地質學、古生物學的最新研究知識，穿越時空兩億年、環遊全球七大洲！
+                        </p>
+                        <ul class="d-none d-lg-block">
+                            <li>
+                                <span
+                                    >串連數十張精細生動、呈現最新調查考據的恐龍地圖</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >重現490種、共計1020隻恐龍在全球七大洲的生活軌跡</span
+                                >
+                            </li>
+                            <li>
+                                <span
+                                    >整合考古學、地質學、古生物學的跨領域知識與眾多探險家發現化石時的奇聞佚事</span
+                                >
+                            </li>
+                        </ul>
+                        <a class="more">
+                            more...
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-4 book-info">
+                                <img src="static/example/fn-d.png" alt="" />
+                                <p class="title">圖解百科翻翻書: 翻!...</p>
+                                <p class="price">
+                                    <span class="text-red">9</span>折
+                                    <span class="text-red">350</span>元
+                                </p>
+                                <p class="point">
+                                    紅利<span class="text-red">4</span>點
+                                </p>
+                            </div>
+                            <div class="col-4 book-info">
+                                <img src="static/example/watch-d.png" alt="" />
+                                <p class="title">偷偷看一下: 恐龍</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">280</span>元
+                                </p>
+                                <p class="point">
+                                    紅利<span class="text-red">4</span>點
+                                </p>
+                            </div>
+                            <div class="col-4 book-info">
+                                <img src="static/example/d-map.png" alt="" />
+                                <p class="title">世界恐龍地圖</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">237</span>元
+                                </p>
+                                <p class="point">
+                                    紅利<span class="text-red">4</span>點
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-labels-blue mt-4 theme-book-tabs">
+                    <ul class="nav mb-3" id="labels-tab" role="tablist">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                id="labels-home-tab"
+                                data-toggle="pill"
+                                href="#labels-home"
+                                role="tab"
+                                aria-controls="labels-home"
+                                aria-selected="true"
+                                >跳房子繪本</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="labels-profile-tab"
+                                data-toggle="pill"
+                                href="#labels-profile"
+                                role="tab"
+                                aria-controls="labels-profile"
+                                aria-selected="false"
+                                >益智教具</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="labels-contact-tab"
+                                data-toggle="pill"
+                                href="#labels-contact"
+                                role="tab"
+                                aria-controls="labels-contact"
+                                aria-selected="false"
+                                >原文童話</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="labels-tabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="labels-home"
+                            role="tabpanel"
+                        >
+                            <div class="row">
+                                <a class="btn-more d-none d-lg-block" href="#"
+                                    >查看更多…</a
+                                >
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 1</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 2</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 3</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 4</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 5</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div class="col-2 book-info">
+                                    <div class="tag-top">TOP 6</div>
+                                    <img
+                                        src="static/example/cat-01.jpg"
+                                        alt=""
+                                    />
+                                    <p class="title"><a href="product-detail.html">書中有一道牆</a></p>
+                                    <p class="price">
+                                        <span class="text-red">79</span>折
+                                        <span class="text-red">220</span>元
+                                    </p>
+                                    <p class="point">
+                                        紅利<span class="text-red">4</span>點
+                                    </p>
+                                </div>
+                                <div
+                                    class="col-2 book-info align-top d-lg-none"
+                                >
+                                    <div class="see-more">看更多</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="labels-profile"
+                            role="tabpanel"
+                        >
+                            <a class="btn-more" href="#">查看更多…</a>
+
+                            data from api 1
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="labels-contact"
+                            role="tabpanel"
+                        >
+                            <a class="btn-more" href="#">查看更多…</a>
+                            data from api 2
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event-promot">
+                <div class="d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <img src="static/example/big-banner.jpg" />
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <img src="static/example/banner-03.jpg" />
+                            </div>
+                            <div class="row">
+                                <img src="static/example/banner-04.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="event-promot-slider"
+                    class="carousel slide carousel-fade d-lg-none"
+                    data-ride="carousel"
+                >
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#slider"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="static/example/big-banner.jpg"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="static/example/banner-03.jpg"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="static/example/banner-04.jpg"
+                                class="w-100"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-writer">
+                <div class="row">
+                    <div class="col-lg-8 position-relative">
+                        <div class="blue-tag-title-s">
+                            認識作家
+                            <span>Writer</span>
+                        </div>
+                        <div class="blue-border-top d-lg-none"></div>
+                        <a class="btn-more d-lg-none">更多作家…</a>
+
+                        <div class="tab-labels-orange">
+                            <ul class="nav mb-3" id="writer-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="writer-home-tab"
+                                        data-toggle="pill"
+                                        href="#writer-home"
+                                        role="tab"
+                                        aria-controls="writer-home"
+                                        aria-selected="true"
+                                        >陳玉華</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="writer-profile-tab"
+                                        data-toggle="pill"
+                                        href="#writer-profile"
+                                        role="tab"
+                                        aria-controls="writer-profile"
+                                        aria-selected="false"
+                                        >馬修．佛賽
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="writer-contact-tab"
+                                        data-toggle="pill"
+                                        href="#writer-contact"
+                                        role="tab"
+                                        aria-controls="writer-contact"
+                                        aria-selected="false"
+                                        >雷蒙尼．史尼奇奇</a
+                                    >
+                                </li>
+                                <li
+                                    class="nav-item more-author d-none d-lg-block"
+                                >
+                                    <a class="nav-link" href="writers.html"
+                                        >更多作家…</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="writer-tabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="writer-home"
+                                    role="tabpanel"
+                                >
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex">
+                                            <div class="author">
+                                                <img
+                                                    src="static/example/writer-chen.png"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                                <p class="name">陳玉華</p>
+                                            </div>
+                                            <div class="author-intro">
+                                                出生於花蓮縣瑞穗鄉，從小在海岸山脈與中央山脈間度過童年，喜歡閱讀與寫作，淡江大學中文系畢業後，擔任童書編輯多年。取得臺東大學兒童文學研究所碩、博士學位，目前在大學兼任兒童文學相關課程。2013
+                                                年開始與畫家合作出版繪本《南科考古大發現》、《一起去看海》、《那年冬天》、《夢想中的陀螺》、《毛公...
+                                                <a class="more d-block mt-2">
+                                                    more...
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col-6 book-info">
+                                                    <img
+                                                        src="static/example/writer-book1.png"
+                                                        alt=""
+                                                    />
+                                                    <p class="title">
+                                                        <a href="product-detail.html">書中有一道牆</a>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 book-info">
+                                                    <img
+                                                        src="static/example/writer-book2.png"
+                                                        alt=""
+                                                    />
+                                                    <p class="title">
+                                                        <a href="product-detail.html">書中有一道牆</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="writer-profile"
+                                    role="tabpanel"
+                                >
+                                    data from api 1
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="writer-contact"
+                                    role="tabpanel"
+                                >
+                                    data from api 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blue-tag-title-s">
+                            好文共享
+                            <span>Share</span>
+                        </div>
+                        <div class="news-board-blue">
+                            <a class="btn-more">更多訊息...</a>
+                            <ul>
+                                <li>
+                                    <a
+                                        >我們追求的是完整，不是完美 ─
+                                        作家蘇絢慧╳張西的女子真心對談</a
+                                    >
+                                    <div class="text-gray ">
+                                        撰文 / 陳花花、Cindy lu
+                                    </div>
+                                </li>
+                                <li>
+                                    <a
+                                        >女子的質感生活筆記，活出舒適理想，只有自己知道自己是誰，別讓別人輕易左右妳</a
+                                    >
+                                    <div class="text-gray ">
+                                        撰文 / 陳花花、Cindy lu
+                                    </div>
+                                </li>
+                                <li>
+                                    <a
+                                        >【閱讀職人大賞】做自己其實並不容易
+                                        ──專訪林夕談《那麼，你自己呢？》</a
+                                    >
+                                    <div class="text-gray ">
+                                        撰文 / 陳花花、Cindy lu
+                                    </div>
+                                </li>
+                                <li>
+                                    <a
+                                        >【閱讀如同吃飯喝水一般自然而然—專訪插畫家鄧彧
+                                    </a>
+                                    <div class="text-gray ">
+                                        撰文 / 陳花花、Cindy lu
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-video blue-border-top">
+                <div class="blue-tag-title">
+                    影片
+                    <span>Video</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="static/example/video.png" />
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="title-text">
+                            《花園裡有一隻老虎？》獻給每個覺得 ｢好無聊〜｣ 的孩子
+                        </p>
+                        <p class="content">
+                            ｢好無聊、好無聊喔！｣諾拉死氣沉沉的說。 <br />
+                            她和長頸鹿傑夫都沒有事可以做！<br />
+                            於是奶奶告訴諾拉，她曾經在花園裡看過老虎<br />
+                            但是諾拉一點兒都不相信！<br />
+                            諾拉已經長大了，才不會相信奶奶這種騙小孩的遊戲呢！<br />
+                            每個人都知道，老虎是住在叢林裡的，不會住在花園！
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-6 book-info">
+                                <img
+                                    src="static/example/animal-home.png"
+                                    alt=""
+                                />
+                                <p class="title">偷偷看一下: 動物的家</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">221</span>元
+                                </p>
+                                <p class="point">
+                                    紅利<span class="text-red">4</span>點
+                                </p>
+                            </div>
+                            <div class="col-6 book-info">
+                                <img src="static/example/ocean.png" alt="" />
+                                <p class="title">大海的習題</p>
+                                <p class="price">
+                                    <span class="text-red">79</span>折
+                                    <span class="text-red">221</span>元
+                                </p>
+                                <p class="point">
+                                    紅利<span class="text-red">4</span>點
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer include-html="./footer.html"></footer>
+        <script>
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                dots: true
+            })
+        </script>
+    <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>

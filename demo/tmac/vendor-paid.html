@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+        <header include-html="./header.html"></header>
+        <div class="container main-wrapper order-list">
+            <h4 class="text-gray dark-blue-bottom-border">訂單查詢</h4>
+            <div class="card-yellow">
+                Kelly 您好，您的會員身分：<b>黃金會員</b> <a>查看會員獨享</a>
+                <br />
+                <br />
+                <p>
+                    歡迎您使用維京大宗訂購線上報價系統
+                </p>
+            </div>
+            <div class="row search-bar">
+                <div class="col-lg-6">
+                    <div class="d-lg-inline-block" style="width: 80px;">
+                        日期篩選
+                    </div>
+                    <select class="form-control d-lg-inline w-auto">
+                        <option>全部</option>
+                        <option>近三個月</option>
+                        <option>近半年</option>
+                        <option>近一年</option>
+                    </select>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <div class="d-lg-inline-block" style="width: 80px;">
+                        結帳日
+                    </div>
+
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-date"
+                            id="all"
+                            value="all"
+                            checked="checked"
+                        />
+                        <label class="form-check-label" for="all">
+                            全部
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-date"
+                            id="m10"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="m10">
+                            每月10號
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-date"
+                            id="m25"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="m25">
+                            每月25號
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="d-lg-inline-block" style="width: 80px;">
+                        結款方式
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-pay"
+                            id="all"
+                            value="all"
+                            checked="checked"
+                        />
+                        <label class="form-check-label" for="all">
+                            全部
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-pay"
+                            id="bill"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="bill">
+                            票據
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-pay"
+                            id="transfer5"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="transfer">
+                            匯款
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radio-pay"
+                            id="credit"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="credit">
+                            刷卡
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-right mt-4">
+                <span class="desc">共顯示 942 筆訂單</span>
+            </div>
+            <div class="dashboard">
+                <div class="left-menu d-none d-lg-block green-theme">
+                    <a href="vendor-member-info.html">會員資料</a>
+                    <a href="vendor-member-discount.html">會員獨享</a>
+                    <a href="vendor-order-list.html">訂單查詢</a>
+                    <a href="vendor-fav-list.html">收藏清單</a>
+                    <a href="vendor-message.html">我的訊息</a>
+                    <a href="vendor-unpaid.html">未結月度帳款查詢 </a>
+                    <a class="active" href="vendor-paid.html"
+                        >已結/已請款查詢</a
+                    >
+                </div>
+                <div class="right-content position-relative">
+                    <div class="row detail">
+                        <div class="col-lg-12">
+                            <table>
+                                <thead>
+                                    <th class="d-none d-sm-table-cell">
+                                        結款日期
+                                    </th>
+                                    <th class="d-none d-sm-table-cell">
+                                        指定結帳方式
+                                    </th>
+                                    <th class="d-none d-sm-table-cell">
+                                        結款方式
+                                    </th>
+                                    <th class="d-none d-sm-table-cell">
+                                        結款金額
+                                    </th>
+                                    <th class="d-none d-sm-table-cell">
+                                        付款狀態
+                                    </th>
+                                    <th class="d-none d-sm-table-cell">內容</th>
+                                    <th class="d-sm-none">
+                                        <a class="show-all-detail">
+                                            全展開
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                    </th>
+                                    <th class="d-sm-none ">
+                                        <a class="hide-all-detail">
+                                            全收起
+                                            <i class="fas fa-chevron-up"></i>
+                                        </a>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr class="d-none d-lg-table-row">
+                                        <td class="d-none d-sm-table-cell">
+                                            2019/12/23
+                                        </td>
+                                        <td class="d-none d-sm-table-cell">
+                                            每月10號
+                                        </td>
+                                        <td class="d-none d-sm-table-cell">
+                                            票據
+                                        </td>
+                                        <td class="d-none d-sm-table-cell">
+                                            1930
+                                        </td>
+                                        <td class="d-none d-sm-table-cell">
+                                            已付款
+                                        </td>
+                                        <td
+                                            class="text-dark-blue cs d-none d-sm-table-cell"
+                                        >
+                                            <a href="customer.html">查看</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-table-row d-sm-none">
+                                        <td class="text-left">結款日期</td>
+                                        <td class="text-dark-blue no ">
+                                            2019/12/23
+                                        </td>
+                                        <td>
+                                            <a class="toggle-more-detail"
+                                                ><i
+                                                    class="fas fa-chevron-down"
+                                                ></i
+                                            ></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="more-detail d-sm-none">
+                                        <td colspan="4">
+                                            <ul class="list">
+                                                <li>
+                                                    <div><b>訂單日期</b></div>
+                                                    <div>3,180</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>訂單金額</b></div>
+                                                    <div>3,180</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>付款狀態</b></div>
+                                                    <div>未付款</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>訂單狀態</b></div>
+                                                    <div>已成立</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>發票</b></div>
+                                                    <div>—</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>退貨</b></div>
+                                                    <div>—</div>
+                                                </li>
+                                                <li>
+                                                    <div><b>客服</b></div>
+                                                    <div>
+                                                        <a href="customer.html"
+                                                            >詢問</a
+                                                        >
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!-- item -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <span class="title">
+                    說明事項
+                    <span class="text-gray detail">
+                        複製訂單：直接複製訂購車內容，可再作修改</span
+                    >
+                </span>
+            </div>
+            <section>
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#"
+                                ><i class="fas fa-less-than"></i
+                            ></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">8</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"
+                                ><i class="fas fa-greater-than"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <footer include-html="./footer.html"></footer>
+    <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
