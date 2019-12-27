@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <title>維京書城</title>
+<link href="main.css" rel="stylesheet"></head>
+<!--一般註冊 https://app.zeplin.io/project/5cd51f54df6a8967aee66f67/screen/5cf94c6b2eb4af5c6e9ef930 -->
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper">
+        <div>
+            <h4 class="text-left text-gray dark-blue-bottom-border">註冊</h4>
+            <div class="row mt40">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" class="form-control" placeholder="姓名" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">手機號碼</label>
+                        <div class="row">
+                            <div class="col-3 pr0">
+                                <input type="text" id="country-code" class="form-control d-inline-block" value="+886" />
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="cell-phone" class="form-control d-inline-block" />
+                            </div>
+                        </div>
+                        <div class="row pt6">
+                            <div class="col-6">
+                                <input type="text" class="form-control d-inline-block" placeholder="請輸入驗證碼" />
+                            </div>
+                            <div class="col-6 pl0">
+                                <button id="btn-send-code" type="button"
+                                    class="btn btn-primary w-100 disabled">發送驗證碼至手機</button>
+                                <!-- <button type="button" class="btn btn-secondary w-100" disabled>重新發送驗證碼(60)</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼</label>
+                        <input type="password" id="password" class="form-control" placeholder="輸入6~15個英數組合字元，不含特殊符號">
+                        <i class="far fa-eye-slash input-password-icon" toggle="password"></i>
+                        <span class="f13 float-right text-gray">密碼強度：<span class="text-red">弱</span></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">確認密碼</label>
+                        <input type="password" id="passwordConfirm" class="form-control"
+                            placeholder="輸入6~15個英數組合字元，不含特殊符號">
+                        <i class="far fa-eye-slash input-password-icon" toggle="passwordConfirm"></i>
+                        <span class="f13 float-right text-red">密碼不符合</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">E-mail </label>
+                        <input type="text" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>生日 </label>
+                        <div class="date-select-group d-flex justify-content-between">
+                            <select class="form-control d-inline-block year" id="years">
+                            </select>
+                            <select class="form-control d-inline-block date" id="months">
+                            </select>
+                            <select class="form-control d-inline-block date" id="days">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-check">
+                        <div>
+                            <input type="checkbox" id="subscribe-member" class="form-check-input">
+
+                            <label class="agreement f14" for="subscribe-member">訂閱會員專函<br>
+                                <span>
+                                    每月初針對黃金、白金、鑽石會員固定發送通知當月最新會員等級、優惠等會員資訊
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="subscribe-product" class="form-check-input">
+                            <label class="agreement f14" for="subscribe-product">訂閱商品/活動訊息<br>
+                                <span>
+                                    不定期透過email通知最新商品活動及優惠資訊
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="agreement" class="form-check-input">
+                            <label class="agreement" for="agreement">我同意<a>服務條款</a>及依<a>隱私權政策</a>中所述的方式處理自己的資料。
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100 join">加入會員</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer include-html="./footer.html"></footer>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>

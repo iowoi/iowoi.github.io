@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <title>維京書城</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper cart vendor-page vendor-cart">
+        <section>
+            <h4 class="text-gray dark-green-bottom-border"><b>大宗用戶採購</b> </h4>
+
+            <div class="card-yellow">
+                <span class="title">
+                    購物注意事項
+                </span>
+                <p>
+                    歡迎您使用維京國際大宗採購提供的線上報價系統，它將會節省您的寶貴時間。<br /><br />
+
+                    1.資料檢查完畢後一經送出即可立即使用報價系統。若有您搜尋不到的物品，歡迎您留下相關資料，我們將盡力為您查詢。<br /><br />
+
+                    2. 此為單次線上報價。一經送出，即無法修改及查詢。(若需進一步資訊，歡迎於線上客服中心線上留言訊息告知)或電洽專人服務。<br /><br />
+
+                    3.. 請將您要報價的商品放入購物車。完成後，即可自動產生線上報價單。<br /><br />
+
+                    4.因大宗採購會員以長期享有全館商品優惠價再95折，因此恕不再與館內所有優惠活動（紅利點數與優惠券，加構贈品等等）合併使用。<br /><br />
+                </p>
+            </div>
+            <div class="row search-section">
+                <select class="form-control search-select">
+                    <option>搜尋所有商品</option>
+                </select>
+                <select class="form-control search-select">
+                    <option>第二層分類</option>
+                </select>
+                <input type="text" class="form-control search-input" placeholder="請輸入商品編號、商品名稱、作者..." />
+                <button class="btn btn-green">搜尋</button>
+            </div>
+            <h4 class="text-gray dark-green-bottom-border"><b>搜尋結果</b> </h4>
+
+            <table border="0" cellpadding="0" class="prod-detail">
+                <thead class="d-none">
+                    <tr>
+                        <th>商品編號</th>
+                        <th>商品明細</th>
+                        <th>出版社</th>
+                        <th>庫存</th>
+                        <th>採購價</th>
+                        <th>數量</th>
+                        <th>添加</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="">
+                            A1123567
+                        </td>
+                        <td class="prod-info">
+                            <img src="static/example/wini.png" alt="" />
+                            <div class="info">
+                                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                                <div>
+                                    <p class="additional">活動:滿三件享88折</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="publishing-house">台灣麥克</td>
+                        <td class="in-stock">10↑</td>
+                        <td class="purchase-price">183</td>
+                        <td class="counter-item">
+                            <div class="counter">
+                                <button>-</button><input type="text" value="2" /><button>
+                                    +
+                                </button>
+                            </div>
+                        </td>
+                        <td><button class="btn-keep">加入</button></td>
+                    </tr>
+                    <tr>
+                        <td class="">
+                            A1123567
+                        </td>
+                        <td class="prod-info">
+                            <img src="static/example/wini.png" alt="" />
+                            <div class="info">
+                                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                                <div>
+                                    <p class="additional">活動:滿三件享88折</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="publishing-house">台灣麥克</td>
+                        <td class="in-stock">10↑</td>
+                        <td class="purchase-price">183</td>
+                        <td class="counter-item">
+                            <div class="counter">
+                                <button>-</button><input type="text" value="2" /><button>
+                                    +
+                                </button>
+                            </div>
+                        </td>
+                        <td><button class="btn-keep">加入</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="border-bottom: 0">
+                        <td colspan="6">
+                            <span>需要代查代訂嗎？請至 <a class="text-blue" href="customer.html">客服中心</a>，我們將協助您的需求。</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-less-than"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link active" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">8</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-greater-than"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h4 class="text-gray dark-green-bottom-border"><b>訂單明細</b> </h4>
+            <table border="0" cellpadding="0" class="prod-detail">
+                <thead class="d-none">
+                    <tr>
+                        <th><button class="btn btn-secondary f14">刪除</button></th>
+                        <th>商品編號</th>
+                        <th>商品名稱</th>
+                        <th>出版社</th>
+                        <th>庫存</th>
+                        <th>定價</th>
+                        <th>優惠價</th>
+                        <th>採購價</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="delete-section">
+                            <div class="d-none d-lg-block">
+                                <input type="checkbox" id="subscribe-member" class="form-check-input">
+                                <label class="checkbox-label" for="subscribe-member">
+                                </label>
+                            </div>
+                            <div class="d-lg-none d-md-block">
+                                <button class="btn btn-secondary">刪除</button>
+                            </div>
+                        </td>
+                        <td class="">
+                            A123123
+                        </td>
+                        <td class="prod-info" style="">
+                            <div class="info">
+                                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                                經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
+                            </div>
+                        </td>
+                        <td class="publishing-house">台灣麥克</td>
+                        <td class="in-stock">10↑</td>
+                        <td class="pricing">183</td>
+                        <td class="special-price">183</td>
+                        <td class="purchase-price">183</td>
+
+                        <td class="counter-item">
+                            <div class="counter">
+                                <button>-</button><input type="text" value="2" /><button>
+                                    +
+                                </button>
+                            </div>
+                        </td>
+                        <td class="total">183</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="10" class="total  text-right">
+                            <span class="mr-3">共3項商品，數量5個</span><span class="text-red">合計<span
+                                    class="ml-3">$1280</span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10" class="refund-note">
+                            <div>
+                                備註
+                            </div>
+                            <textarea class="form-control w-100" style="height:120px"></textarea>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="buyer">
+            <h4 class="text-gray dark-green-bottom-border"><b>訂購人</b> </h4>
+            <form class="mt-3">
+                <div class="form-group row">
+                    <label class="col-lg-2 col-form-label">公司/會員名稱</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">E-mail</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" class="email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">行動電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">市內電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row address">
+                    <label class="col-lg-1 col-form-label">地址</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control cityzip" />
+                    </div>
+
+                    <div class="col-lg-auto">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>台北市</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-auto">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>中正區</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-auto">
+                        <input class="form-control address" id="inputEmail3" value="農安街144號3F" />
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="buyer">
+            <h4 class="text-gray dark-green-bottom-border">
+                收件人
+                <small>
+                    <div class="form-check d-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            與訂購人資料相同
+                        </label>
+                    </div>
+                </small>
+            </h4>
+            <form class="mt-3">
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">姓名</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">E-mail</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">行動電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">市內電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row address">
+                    <label class="col-lg-1 col-form-label">地址</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+
+                    <div class="col-lg-auto">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>台北市</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-auto">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>中正區</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-auto">
+                        <input class="form-control address" id="inputEmail3" value="農安街144號3F" />
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="paid">
+            <h4 class="text-gray green-bottom-border">選擇付款方式</h4>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid1" id="paid1" />
+                        <label class="form-check-label font-weight-bold" for="paid1">
+                            信用卡線上刷卡一次付清（支援VISA/MASTER/JCB/銀聯卡等發卡組織）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p class="font-weight-bold">
+                        信用卡分期付款 (※除不盡餘數於第一期收取)
+                    </p>
+                    <div class="mt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paid21" id="paid21" />
+                            <label class="form-check-label" for="paid21">
+                                3期 利率 0 %
+                                （富邦銀行、台新銀行、中國信託、渣打銀行、永豐銀行、日盛銀行）
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paid22" id="paid22" />
+                            <label class="form-check-label" for="paid22">
+                                6期 利率 0 % （富邦銀行、台新銀行、中國信託、日盛銀行）
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paid23" id="paid23" />
+                            <label class="form-check-label" for="paid23">
+                                12期 利率 0 %
+                                （富邦銀行、台新銀行、中國信託、渣打銀行、永豐銀行、日盛銀行、兆豐銀行）
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid3" id="paid3" />
+                        <label class="form-check-label font-weight-bold" for="paid3">
+                            郵政劃撥（請親至最近的郵局劃撥付款）
+                        </label>
+                    </div>
+                    <div class="ml-4 mt-3">
+                        劃撥帳號：15048618 <br />
+                        戶名：維京國際股份有限公司<br /><br />
+                        ※劃撥付款完成後請到客服留言告知訂單編號已匯款。
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid4" id="paid4" />
+                        <label class="form-check-label font-weight-bold" for="paid4">
+                            ATM轉帳付款（請至全國ATM自動提款機轉帳繳交本次交易金額）
+                        </label>
+                    </div>
+                    <div class="ml-4 mt-3">
+                        轉入銀行代號︰808〈玉山銀行〉<br />
+                        轉入銀行帳號︰1089-940-007877<br />
+                        戶名︰維京國際股份有限公司<br /><br />
+
+                        【使用ATM轉帳，您需自付ATM轉帳手續費】<br />
+                        ※ATM轉帳完成後請到客服留言告知訂單編號及帳號後五碼。
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid5" id="paid5" />
+                        <label class="form-check-label font-weight-bold" for="paid5">
+                            Google Pay
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid6" id="paid6" />
+                        <label class="form-check-label font-weight-bold" for="paid6">
+                            Apple Pay
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid7" id="paid7" />
+                        <label class="form-check-label font-weight-bold" for="paid7">
+                            WEBATM/虛擬帳號
+                        </label>
+                    </div>
+                    <div class="ml-4 mt-2">
+                        網路ATM轉帳服務，以及ATM虛擬帳號繳費服務。
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <!-- <h4 class="text-gray green-bottom-border">選擇優惠方式</h4>
+            <div class="row">
+                <div class="form-check col-lg-6">
+                    <input type="radio" id="discount1" />
+                    <label for="discount1">使用紅利折抵<span class="text-red">150</span>點，折扣<span
+                            class="text-red">150</span>元</label>
+                </div>
+                <div class="form-check col-lg-6 pb-3 pb-lg-0">
+                    <input type="radio" id="discount2" />
+                    <label for="discount2">
+                        使用優惠券，折扣<span class="text-red">150</span>元
+                    </label>
+                    <br />
+                    <button class="btn btn-gray mt-2">選擇</button>
+                </div>
+            </div> -->
+            <h4 class="text-gray green-bottom-border">選擇配送方式</h4>
+            <div class="row">
+                <div class="form-check col-12">
+                    <input type="radio" id="send1" />
+                    <label for="send1">配送到府（運費100元）</label>
+                </div>
+            </div>
+        </section>
+        <section class="card-yellow">
+            <b>注意事項</b>
+            <div class="content">
+                <p>配送說明</p>
+
+                <p>※滿額優惠設定 : 同一送貨地點，購物滿1000元以上免運費</p>
+
+                <p>1.配送到府</p>
+
+                <p>出貨時間為正常營業日(星期一至五，國定例假日除外)。</p>
+
+                <p>
+                    完成付款後會儘速使用_本公司配合的貨運_方式配送至指定地點，若超過七個工作天尚末收到，請與客服聯絡。
+                </p>
+
+                <p>運費：一律100元</p>
+
+                <p>2.便利店取貨</p>
+
+                <p>
+                    超商門市可指定全省便利商店取貨，目前合作超商為7-11、萊爾富、全家。
+                </p>
+
+                <p>運費：一律100元</p>
+
+                <p>3.國外地址運費需要另計，詳洽服務人員</p>
+            </div>
+        </section>
+        <section class="invoice">
+            <h4 class="text-gray green-bottom-border">選擇發票形式</h4>
+            選擇發票形式
+            <select class="form-control w-auto d-inline-block ml-4" id="invoceSeletor">
+                <option value="0">紙本發票</option>
+                <option value="1">電子發票</option>
+                <option value="2">載具</option>
+                <option value="3">捐贈發票</option>
+            </select>
+            <div class="row mt-4 invoce" data-type="1">
+                <div class="col-lg-6">
+                    <input class="form-radio-input" type="radio" />
+                    <label class="form-check-label" for="defaultCheck1">
+                        二聯式發票
+                    </label>
+                </div>
+                <div class="col-lg-6">
+                    <input class="form-radio-input" type="radio" />
+                    <label class="form-check-label" for="defaultCheck1">
+                        三聯式發票
+                    </label>
+                    <div class="form-group d-lg-flex mt-3 ">
+                        <label>抬頭</label>
+                        <div class="col-lg-auto">
+                            <input class="form-control" />
+                        </div>
+                        <div class="w-100 mt-2 d-xl-none"></div>
+                        <label>統一編號</label>
+                        <div class="col-lg-auto">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 invoce" data-type="2">
+                <div class="col-lg-6">
+                    <input class="form-radio-input" type="radio" />
+                    <label class="form-check-label" for="defaultCheck1">
+                        手機條碼載具
+                    </label>
+                    <input type="text" class="form-control" placeholder="請輸入手機條碼載具(限大寫英文數字)" />
+                </div>
+                <div class="col-lg-6">
+                    <input class="form-radio-input" type="radio" />
+                    <label class="form-check-label" for="defaultCheck1">
+                        自然人憑證載具
+                    </label>
+                    <input type="text" class="form-control" placeholder="請輸入自然人憑證載具(限英文數字)" />
+                </div>
+            </div>
+            <div class="row mt-2 invoce" data-type="3">
+                <div class="col-lg-6">
+                    <input class="form-radio-input" type="radio" />
+                    <label class="form-check-label" for="defaultCheck1">
+                        捐贈發票
+                    </label>
+                    <select class="form-control search-select d-inline w-auto">
+                        <option>捐贈單位</option>
+                    </select>
+                 </div>
+            </div>
+        </section>
+        <section class="btn-row">
+            <button class="btn btn-primary w-45">送出詢價</button>
+            </button>
+        </section>
+    </div>
+    <footer include-html="./footer.html"></footer>
+
+    <script>
+        $('.slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 300,
+                    settings: 'unslick' // destroys slick
+                }
+            ]
+        })
+    </script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
