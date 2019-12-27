@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="25" viewBox="0 0 64 25">
-    <g fill="none" fill-rule="evenodd">
-        <rect width="64" height="25" fill="#3B5998" rx="4"/>
-        <text fill="#FFF" font-family="MicrosoftJhengHeiUIBold, Microsoft JhengHei UI" font-size="14" font-weight="bold" letter-spacing="-.263">
-            <tspan x="30" y="18">分享</tspan>
-        </text>
-        <path fill="#FFF" fill-rule="nonzero" d="M21.117 5H6.883A.883.883 0 0 0 6 5.883v14.234c0 .488.395.883.883.883h7.662v-6.196H12.46V12.39h2.086v-1.783c0-2.066 1.263-3.19 3.106-3.19.884 0 1.643.064 1.864.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.541h2.39l-.31 2.42h-2.08V21h4.077a.882.882 0 0 0 .883-.883V5.883A.882.882 0 0 0 21.117 5"/>
-    </g>
-</svg>
