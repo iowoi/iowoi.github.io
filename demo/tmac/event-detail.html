@@ -54,13 +54,12 @@
         <div class="header">
           <b
             ><span
-              ><span class="text-dark-blue">滿件折扣</span>已選購<span class="text-red">0</span>件，還差
+              ><span class="text-dark-blue d-block d-md-inline">滿件折扣</span>已選購<span class="text-red">0</span>件，還差
               <span class="text-red">3</span> 件即享優惠</span
             ></b
           >
           <div class="ml-auto">
-            <button class="btn btn-pay ml-2">前往結帳</button>
-            <button class="btn btn-pay active">前往結帳</button>
+            <button class="btn btn-pay active  d-block d-md-inline" >前往結帳</button>
           </div>
         </div>
         <div class="product slider-wrap">
@@ -181,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="category-section d-flex f18">
+      <div class="category-section f18">
         <div class="active">分類</div>
         <div>分類</div>
         <div>分類</div>
@@ -387,41 +386,47 @@
     <footer include-html="./footer.html"></footer>
     <script>
       $(document).ready(function() {
+        $('#prod-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            dots: true
+                        }
+                    }, {
+                        breakpoint: 300,
+                        settings: 'unslick' // destroys slick
+                    }
+                ]
+            })
         $(".category-section div").click(function() {
           $(".category-section div").removeClass("active")
           $(this).addClass("active")
         })
       })
-      $("#prod-slider").slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        prevArrow: $(".prev"),
-        nextArrow: $(".next"),
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
-          }
-        ]
-      })
-    </script>
+    
+
+
+  </script>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
