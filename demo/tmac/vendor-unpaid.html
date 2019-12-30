@@ -1,282 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+    <title>維京書城</title>
+  <link href="main.css" rel="stylesheet"></head>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-  <title>維京書城</title>
-<link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header include-html="./header.html"></header>
+    <div class="container main-wrapper order-list">
+      <h4 class="text-gray dark-blue-bottom-border">訂單查詢</h4>
+      <div class="card-yellow">
+        Kelly 您好，您的會員身分：<b>黃金會員</b>
+        <a class="d-block d-lg-inline text-blue">查看會員獨享</a>
+        <br />
+        <br />
+        <p>
+          歡迎您使用維京大宗訂購線上報價系統
+        </p>
+      </div>
+      <div class="row search-bar">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for=""></label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="搜尋訂單編號、產品編號"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <span for="">日期篩選</span>
+            <select class="form-control d-lg-inline">
+              <option>全部</option>
+              <option>近三個月</option>
+              <option>近半年</option>
+              <option>近一年</option>
+            </select>
+          </div>
+        </div>
 
-<body>
-  <header include-html="./header.html"></header>
-  <div class="container main-wrapper order-list">
-    <h4 class="text-gray dark-blue-bottom-border">訂單查詢</h4>
-    <div class="card-yellow">Kelly 您好，您的會員身分：<b>黃金會員</b> <a class="d-block d-lg-inline text-blue">查看會員獨享</a>
-      <br />
-      <br />
-      <p>
-        歡迎您使用維京大宗訂購線上報價系統
-      </p>
-    </div>
-    <div class="row search-bar">
-      <div class="col-lg-3">
-        <div class="form-group mt-3">
-            <input class="form-control"  type="text" placeholder="搜尋訂單編號、產品編號"  />
+        <div class="col-md-3">
+          <div class="form-group">
+            <span for="">結帳日</span>
+            <select class="form-control d-lg-inline">
+              <option>請選擇</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <span for="">結帳方式</span>
+            <select class="form-control d-lg-inline">
+              <option>請選擇</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-lg-12 mt-3 text-right">
+          <button
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#payModal"
+          >
+            結帳
+          </button>
+          <button
+            class="btn btn-primary d-none"
+            data-toggle="modal"
+            data-target="#successModal"
+            id="success"
+          >
+            success
+          </button>
+          <span class="desc">共顯示 942 筆訂單</span>
         </div>
       </div>
-      <div class="col-lg-3">
-        <span>日期篩選
-          <select class="form-control d-lg-inline">
-            <option>全部</option>
-            <option>近三個月</option>
-            <option>近半年</option>
-            <option>近一年</option>
-          </select>
+
+      <div class="dashboard">
+        <div class="left-menu d-none d-lg-block green-theme">
+          <a href="vendor-member-info.html">會員資料</a>
+          <a href="vendor-member-discount.html">會員獨享</a>
+          <a href="vendor-order-list.html">訂單查詢</a>
+          <a href="vendor-fav-list.html">收藏清單</a>
+          <a href="vendor-message.html">我的訊息</a>
+          <a class="active" href="vendor-unpaid.html">未結月度帳款查詢 </a>
+          <a href="vendor-paid.html">已結/已請款查詢</a>
+        </div>
+        <div class="right-content position-relative">
+          <div class="row detail">
+            <div class="col-lg-12">
+              <table>
+                <thead>
+                  <th class="d-none d-sm-table-cell">
+                    <div class="form-check d-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheckAll"
+                      />
+                    </div>
+                  </th>
+                  <th class="d-none d-sm-table-cell">訂單編號</th>
+                  <th class="d-none d-sm-table-cell">訂單日期</th>
+                  <th class="d-none d-sm-table-cell">總金額</th>
+                  <th class="d-none d-sm-table-cell">付款狀態</th>
+                  <th class="d-none d-sm-table-cell">商品數量</th>
+                  <th class="d-sm-none">
+                    <a class="show-all-detail">
+                      全展開 <i class="fas fa-chevron-down"></i>
+                    </a>
+                  </th>
+                  <th class="d-sm-none">
+                    <a class="hide-all-detail">
+                      全收起 <i class="fas fa-chevron-up"></i>
+                    </a>
+                  </th>
+                </thead>
+                <tbody>
+                  <tr class="d-none d-sm-table-row">
+                    <td>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                    </td>
+                    <td class="text-dark-blue no">
+                      <a href="vendor-order-detail.html">201912231021</a>
+                    </td>
+                    <td>2019/12/23</td>
+                    <td>3,180</td>
+                    <td>未付款</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="d-table-row d-sm-none">
+                    <td class="text-left">訂單編號</td>
+                    <td class="text-dark-blue no ">
+                      <a href="vendor-order-detail.html">201912231021</a>
+                    </td>
+                    <td>
+                      <a class="toggle-more-detail"
+                        ><i class="fas fa-chevron-down"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr class="more-detail  d-sm-none">
+                    <td colspan="4">
+                      <ul class="list">
+                        <li>
+                          <div><b>訂單日期</b></div>
+                          <div>3,180</div>
+                        </li>
+                        <li>
+                          <div><b>訂單金額</b></div>
+                          <div>3,180</div>
+                        </li>
+                        <li>
+                          <div><b>付款狀態</b></div>
+                          <div>未付款</div>
+                        </li>
+                        <li>
+                          <div><b>訂單狀態</b></div>
+                          <div>已成立</div>
+                        </li>
+                        <li>
+                          <div><b>發票</b></div>
+                          <div>—</div>
+                        </li>
+                        <li>
+                          <div><b>退貨</b></div>
+                          <div>—</div>
+                        </li>
+                        <li>
+                          <div><b>客服</b></div>
+                          <div>
+                            <a href="customer.html">詢問</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <!-- item -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <span class="title">
+          說明事項
+          <span class="text-gray detail">
+            複製訂單：直接複製訂購車內容，可再作修改</span
+          >
         </span>
       </div>
-
-      <div class="col-lg-3">
-        <span>*結帳日
-          <select class="form-control d-lg-inline">
-            <option>請選擇</option>
-
-          </select>
-        </span></div>
-      <div class="col-lg-3">
-        <span>結帳方式
-          <select class="form-control d-lg-inline">
-            <option>請選擇</option>
-
-          </select>
-        </span></div>
-        
-        <div class="col-lg-12 mt-3 text-right">
-          <button class="btn btn-primary" data-toggle="modal" data-target="#payModal">結帳</button>
-       
-        <button class="btn btn-primary d-none" data-toggle="modal" data-target="#successModal" id="success">success</button>
-
-    
-        <span class="desc">共顯示 942 筆訂單</span>
-      </div>
+      <section>
+        <nav>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#"><i class="fas fa-less-than"></i></a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">...</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">8</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"
+                ><i class="fas fa-greater-than"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
-
-    <div class="dashboard">
-      <div class="left-menu d-none d-lg-block green-theme">
-        <a href="vendor-member-info.html">會員資料</a>
-        <a href="vendor-member-discount.html">會員獨享</a>
-        <a href="vendor-order-list.html">訂單查詢</a>
-        <a href="vendor-fav-list.html">收藏清單</a>
-        <a href="vendor-message.html">我的訊息</a>
-        <a class="active" href="vendor-unpaid.html">未結月度帳款查詢 </a>
-        <a href="vendor-paid.html">已結/已請款查詢</a>
-      </div>
-      <div class="right-content position-relative">
-        <div class="row detail">
-          <div class="col-lg-12">
-            <table>
-              <thead>
-                <th class="d-none d-sm-table-cell">
-                  <div class="form-check d-inline">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheckAll" />
-                  </div>
-                </th>
-                <th class="d-none d-sm-table-cell">訂單編號</th>
-                <th class="d-none d-sm-table-cell">訂單日期</th>
-                <th class="d-none d-sm-table-cell">總金額</th>
-                <th class="d-none d-sm-table-cell">付款狀態</th>
-                <th class="d-none d-sm-table-cell">商品數量</th>
-                <th class="d-sm-none">
-                  <a class="show-all-detail">
-                    全展開 <i class="fas fa-chevron-down"></i>
-                  </a>
-                </th>
-                <th class="d-sm-none">
-                  <a class="hide-all-detail">
-                    全收起 <i class="fas fa-chevron-up"></i>
-                  </a>
-                </th>
-              </thead>
-              <tbody>
-                <tr class="d-none d-lg-table-row">
-                  <td>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  </td>
-                  <td class="text-dark-blue no">
-                    <a href="vendor-order-detail.html">201912231021</a>
-                  </td>
-                  <td>2019/12/23</td>
-                  <td>3,180</td>
-                  <td>未付款</td>
-                  <td>1</td>
-                </tr>
-                <tr class="d-table-row d-sm-none">
-                  <td class="text-left">訂單編號</td>
-                  <td class="text-dark-blue no ">
-                    <a href="vendor-order-detail.html">201912231021</a>
-                  </td>
-                  <td>
-                    <a class="toggle-more-detail"><i class="fas fa-chevron-down"></i></a>
-                  </td>
-                </tr>
-                <tr class="more-detail  d-sm-none">
-                  <td colspan="4">
-                    <ul class="list">
-                      <li>
-                        <div><b>訂單日期</b></div>
-                        <div>3,180</div>
-                      </li>
-                      <li>
-                        <div><b>訂單金額</b></div>
-                        <div>3,180</div>
-                      </li>
-                      <li>
-                        <div><b>付款狀態</b></div>
-                        <div>未付款</div>
-                      </li>
-                      <li>
-                        <div><b>訂單狀態</b></div>
-                        <div>已成立</div>
-                      </li>
-                      <li>
-                        <div><b>發票</b></div>
-                        <div>—</div>
-                      </li>
-                      <li>
-                        <div><b>退貨</b></div>
-                        <div>—</div>
-                      </li>
-                      <li>
-                        <div><b>客服</b></div>
-                        <div>
-                          <a href="customer.html">詢問</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <!-- item -->
-              </tbody>
-            </table>
+    <footer include-html="./footer.html"></footer>
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>結帳成功！</h4>
+            <button
+              type="button"
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="pb20">
+              <p>
+                我們將依您所選擇的方式跟您進行請款作業
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="description">
-      <span class="title">
-        說明事項
-        <span class="text-gray detail">
-          複製訂單：直接複製訂購車內容，可再作修改</span>
-      </span>
-    </div>
-    <section>
-      <nav>
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#"><i class="fas fa-less-than"></i></a>
-          </li>
-          <li class="page-item">
-            <a class="page-link active" href="#">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">...</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">8</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#"><i class="fas fa-greater-than"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </div>
-  <footer include-html="./footer.html"></footer>
-  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4>結帳成功！</h4>
-        <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="pb20">
-          <p>
-            我們將依您所選擇的方式跟您進行請款作業
-          </p>
+    <div
+      class="modal fade"
+      id="payModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="payModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>請確認下列訂單是否進行結帳？</h4>
+            <button
+              type="button"
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="pb20">
+              <p>
+                1. 201812111701
+              </p>
+              <p>
+                2. 201812111703
+              </p>
+              <p>
+                3. 201812111715
+              </p>
+              <p>
+                4. 201812111722
+              </p>
+              <br />
+            </div>
+            <div class="text-center footer">
+              <button
+                type="button"
+                class="btn btn-gray"
+                data-dismiss="modal"
+                id="cancel"
+              >
+                取消
+              </button>
+              <button type="button" class="btn btn-primary" id="confirm-pay">
+                確定
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-  <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4>請確認下列訂單是否進行結帳？</h4>
-        <button type="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="pb20">
-          <p>
-            1. 201812111701
-          </p>
-          <p>
-            2. 201812111703
-          </p>
-          <p>
-            3. 201812111715
-          </p>
-          <p>
-            4. 201812111722
-          </p><br />
-        </div>
-        <div class="text-center footer">
-          <button type="button" class="btn btn-gray" data-dismiss="modal" id="cancel">取消</button>
-          <button type="button" class="btn btn-primary" id="confirm-pay">
-            確定
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <script>
-    $("#defaultCheckAll").click(function () {
-      var val = $("#defaultCheckAll").val()
-      if (val == 1) {
-        $("#defaultCheckAll").val(0)
-        $('.form-check-input').prop("checked", true)
-      }
-      else {
-        $("#defaultCheckAll").val(1)
-        $('.form-check-input').prop("checked", false)
-      }
-    })
+    <script>
+      $("#defaultCheckAll").click(function() {
+        var val = $("#defaultCheckAll").val()
+        if (val == 1) {
+          $("#defaultCheckAll").val(0)
+          $(".form-check-input").prop("checked", true)
+        } else {
+          $("#defaultCheckAll").val(1)
+          $(".form-check-input").prop("checked", false)
+        }
+      })
 
-    $("#confirm-pay").click(function () {
-      $('#success').click()
-      $('#cancel').click()      
-    })
-  </script>
-<script type="text/javascript" src="app.bundle.js"></script></body>
-
+      $("#confirm-pay").click(function() {
+        $("#success").click()
+        $("#cancel").click()
+      })
+    </script>
+  <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
