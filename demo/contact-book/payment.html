@@ -1,112 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-            rel="stylesheet"
-            crossorigin="anonymous"
-        />
-        <title>联络簿</title>
-    <link href="main.css" rel="stylesheet"></head>
 
-    <body>
-        <header include-html="./header.html"></header>
-        <div class="main-wrapper">
-            <nav include-html="./navbar.html"></nav>
-            <div class="content">
-                <div class="react-tabs" data-tabs="true">
-                    <ul class="tabList" role="tablist">
-                        <li
-                            class="tab react-tabs__tab--selected"
-                            role="tab"
-                            id="react-tabs-0"
-                            aria-selected="true"
-                            aria-disabled="false"
-                            aria-controls="react-tabs-1"
-                            tabindex="0"
-                        >
-                            缴费明细
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <title>联络簿</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header include-html="./header.html"></header>
+    <div class="main-wrapper">
+        <nav include-html="./navbar.html"></nav>
+        <div class="content">
+            <div class="react-tabs" data-tabs="true">
+                <ul class="tabList" role="tablist">
+                    <li class="tab react-tabs__tab--selected" role="tab" id="react-tabs-0" aria-selected="true"
+                        aria-disabled="false" aria-controls="react-tabs-1" tabindex="0">
+                        <a href="/payment-detail.html">缴费明细</a>
+                    </li>
+                </ul>
+                <div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="react-tabs-1"
+                    aria-labelledby="react-tabs-0">
+
+                    <div class="search-section">
+                        <div class="datepicker">
+                            <input class="btn-litePurple" type="date" /> -
+                            <input class="btn-litePurple" type="date" />
+                            <div class="selects">
+                                <select class="select-control">
+                                    <option>課程篩選</option>
+                                </select>
+                                <select class="select-control">
+                                    <option>
+                                        類別篩選
+                                    </option>
+                                </select>
+                                <select class="select-control">
+                                    <option>
+                                        付費狀態
+                                    </option>
+                                </select>
+                                <button class="btn btn-litePurple btn-query">
+                                    查詢
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="lesson-list">
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
+                        </li>
+                        <li>
+                            <span>課程名稱</span><span>說明</span><button>明細</button><button>付費</button>
                         </li>
                     </ul>
-                    <div
-                        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
-                        role="tabpanel"
-                        id="react-tabs-1"
-                        aria-labelledby="react-tabs-0"
-                    >
-                        <div class="datepicker">
-                    <input class="btn-litePurple" type="date" /> -
-                    <input class="btn-litePurple" type="date" />
-                </div>
-                        <ul class="lesson-list">
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                            <li>
-                                <span>課程名稱</span><span>說明</span
-                                ><button>明細</button><button>付費</button>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-        <footer include-html="./footer.html"></footer>
-    <script type="text/javascript" src="app.bundle.js"></script></body>
+    </div>
+    <footer include-html="./footer.html"></footer>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
 </html>
