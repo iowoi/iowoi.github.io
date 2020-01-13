@@ -1,425 +1,421 @@
 <head><link href="main.css" rel="stylesheet"></head><section class="container">
-  <div class="d-none d-lg-block">
     <div class="ad">
-      <img id="ad-image" src="static/header/ad.jpg" />
-      <img id="ad-image-open" src="static/header/ad-open.png" />
-      <button id="ad-button">
-        <span id="ad-button-text">展開看看</span>
-        <i id="ad-open-icon" class="fas fa-chevron-down"></i>
-      </button>
+        <img id="ad-image" src="static/header/ad.jpg" />
+        <img id="ad-image-open" src="static/header/ad-open.png" />
+        <button id="ad-button" class=" d-none d-lg-block ">
+            <span id="ad-button-text">展開看看</span>
+            <i id="ad-open-icon" class="fas fa-chevron-down"></i>
+        </button>
     </div>
-    <div class="nav-bar">
-      <a href="index.html" class="logo"><img src="static/header/logo.png"/></a>
-      <div class="search-area">
-        <input type="text" placeholder="請輸入關鍵字" />
-        <select>
-          <option value="全站搜尋">全站搜尋</option>
-        </select>
-        <label class="rect">
-          <a href="search.html">
-            <i class="fas fa-search"></i>
-          </a>
-        </label>
-      </div>
-      <div class="quick-link">
-        <a href="login-register.html">登入/註冊</a>
-        <a href="member.html">會員專區</a>
-        <a href="member-vendor.html">大宗採購</a>
-        <a href="fav-list.html">收藏清單</a>
-        <a href="cart.html">購物車</a>
-      </div>
+    <div class="d-none d-lg-block">
+        <div class="nav-bar">
+            <a href="index.html" class="logo"
+                ><img src="static/header/logo.png"
+            /></a>
+            <div class="search-area">
+                <input type="text" placeholder="請輸入關鍵字" />
+                <select>
+                    <option value="全站搜尋">全站搜尋</option>
+                </select>
+                <label class="rect">
+                    <a href="search.html">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </label>
+            </div>
+            <div class="quick-link">
+                <a href="login-register.html">登入/註冊</a>
+                <a href="member.html">會員專區</a>
+                <a href="member-vendor.html">大宗採購</a>
+                <a href="fav-list.html">收藏清單</a>
+                <a href="cart.html">購物車</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="d-lg-none mobile">
-    <section id="m-banner" class="row position-relative">
-      <button id="m-banner-close-button" class="btn-control-banner">
-        <i id="ad-open-icon" class="fas fa-times"></i>
-      </button>
-      <div class="banner">
-        <img src="static/header/ad-open.png" />
-      </div>
-    </section>
-    <div class="m-logo-block">
-      <a href="/" class="logo">
-        <img src="static/header/mobile/logo.png" />
-      </a>
-      <ul class="m-menu">
-        <li id="menu-search">
-          <img src="static/header/mobile/search.png" />
-        </li>
-        <li>
-          <a href="member.html">
-            <img src="static/header/mobile/member.png" />
-          </a>
-        </li>
-        <li>
-          <a href="cart.html">
-            <img src="static/header/mobile/shopping-cart.png" />
-          </a>
-        </li>
-        <li>
-          <a class="menu-btn">
-            <img src="static/header/mobile/menu.png" />
-          </a>
-        </li>
-      </ul>
+    <div class="d-lg-none mobile">
+        <!-- <section id="m-banner" class="row position-relative">
+            <button id="m-banner-close-button" class="btn-control-banner">
+                <i id="ad-open-icon" class="fas fa-times"></i>
+            </button>
+            <div class="banner">
+                <img src="static/header/ad-open.png" />
+            </div>
+        </section> -->
+        <div class="m-logo-block">
+            <a href="/" class="logo">
+                <img src="static/header/mobile/logo.png" />
+            </a>
+            <ul class="m-menu">
+                <li id="menu-search">
+                    <img src="static/header/mobile/search.png" />
+                </li>
+                <li>
+                    <a href="member.html">
+                        <img src="static/header/mobile/member.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <img src="static/header/mobile/shopping-cart.png" />
+                    </a>
+                </li>
+                <li>
+                    <img src="static/header/mobile/menu.png" />
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar d-none">
+            <div class="search-area">
+                <input type="text" placeholder="請輸入關鍵字" />
+                <select>
+                    <option value="全站搜尋">全站搜尋</option>
+                </select>
+                <label class="rect">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+        </div>
+        <div id="sarch-overlay" class="d-none"></div>
     </div>
-    <div class="nav-bar d-none">
-      <div class="search-area">
-        <input type="text" placeholder="請輸入關鍵字" />
-        <select>
-          <option value="全站搜尋">全站搜尋</option>
-        </select>
-        <label class="rect">
-          <i class="fas fa-search"></i>
-        </label>
-      </div>
-    </div>
-    <div id="sarch-overlay" class="d-none"></div>
-  </div>
 </section>
 <div class="menu-wrapper">
-  <div class="menu  d-lg-block">
-    <ul class="nav container" id="menu-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link" id="menu-1-tab" data-toggle="pill" href="#menu-1"
-          >特惠活動</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-2-tab" data-toggle="pill" href="#menu-2"
-          >人氣精選</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-3-tab" data-toggle="pill" href="#menu-3"
-          >幼幼專區</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-4-tab" data-toggle="pill" href="#menu-4"
-          >中文書分類</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-5-tab" data-toggle="pill" href="#menu-5"
-          >益智教具</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-6-tab" data-toggle="pill" href="#menu-6"
-          >親子教養</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-7-tab" data-toggle="pill" href="#menu-7"
-          >外文書分類</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="menu-8-tab" data-toggle="pill" href="#menu-8"
-          >STEAM叢書</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blogs.html">部落格</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="tab-content menu-content" id="menu-tabContent">
-    <div class="tab-pane fade container" id="menu-1" role="tabpanel"></div>
-    <div class="tab-pane fade container" id="menu-2" role="tabpanel"></div>
-    <div class="tab-pane fade container" id="menu-3" role="tabpanel">
-      <div class="row">
-        <div class="sub-menu">
-          <div class="title">操作書</div>
-          <div>
-            <a class="item">貼紙書</a>
-            <a class="item">翻翻書</a>
-
-            <a class="item">玩具書</a>
-            <a class="item">洗澡書</a>
-
-            <a class="item">立體書</a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">有聲書</div>
-          <div>
-            <a class="item"> abc點讀組 </a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">認知啓蒙</div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">身體律動</div>
-        </div>
-      </div>
+    <div class="menu  d-lg-block">
+        <ul class="nav container" id="menu-tab" role="tablist">
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-1-tab"
+                    data-toggle="pill"
+                    href="#menu-1"
+                    >特惠活動</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-2-tab"
+                    data-toggle="pill"
+                    href="#menu-2"
+                    >人氣精選</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-3-tab"
+                    data-toggle="pill"
+                    href="#menu-3"
+                    >幼幼專區</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-4-tab"
+                    data-toggle="pill"
+                    href="#menu-4"
+                    >中文書分類</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-5-tab"
+                    data-toggle="pill"
+                    href="#menu-5"
+                    >益智教具</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-6-tab"
+                    data-toggle="pill"
+                    href="#menu-6"
+                    >親子教養</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-7-tab"
+                    data-toggle="pill"
+                    href="#menu-7"
+                    >外文書分類</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="menu-8-tab"
+                    data-toggle="pill"
+                    href="#menu-8"
+                    >STEAM叢書</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">部落格</a>
+            </li>
+        </ul>
     </div>
-    <div class="tab-pane fade container" id="menu-4" role="tabpanel">
-      <div class="row">
-        <div class="sub-menu">
-          <div class="title">小手操作書</div>
-          <div>
-            <a class="item">
-              貼紙書
-            </a>
-            <a class="item">
-              翻翻書
-            </a>
 
-            <a class="item">
-              玩具書
-            </a>
-            <a class="item">
-              洗澡書
-            </a>
-
-            <a class="item">
-              立體書
-            </a>
-            <a class="item">
-              字卡
-            </a>
-
-            <a class="item">
-              拼圖書
-            </a>
-          </div>
+    <div class="tab-content menu-content" id="menu-tabContent">
+        <div class="tab-pane fade container" id="menu-1" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-2" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-3" role="tabpanel">
+            <div class="row">
+                <div class="sub-menu">
+                    <div class="title">操作書</div>
+                    <div>
+                        <a class="item">貼紙書</a>
+                        <a class="item">翻翻書</a>
+                        
+    
+                        <a class="item">玩具書</a>
+                        <a class="item">洗澡書</a>
+                        
+    
+                        <a class="item">立體書</a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">有聲書</div>
+                    <div>
+                        <a class="item"> abc點讀組 </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">認知啓蒙</div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">身體律動</div>
+                </div>
+            </div>
+           
         </div>
-        <div class="sub-menu">
-          <div class="title">互動有聲書</div>
-          <div>
-            <a class="item">
-              abc點讀組
-            </a>
+        <div class="tab-pane fade container" id="menu-4" role="tabpanel">
+            <div class="row">
+                <div class="sub-menu">
+                    <div class="title">小手操作書</div>
+                    <div>
+                        <a class="item">
+                            貼紙書
+                        </a>
+                        <a class="item">
+                            翻翻書
+                        </a>
+                        
 
-            <a class="item">
-              書＋CD
-            </a>
+                        <a class="item">
+                            玩具書
+                        </a>
+                        <a class="item">
+                            洗澡書
+                        </a>
+                        
 
-            <a class="item">
-              音樂書
-            </a>
-          </div>
+                        <a class="item">
+                            立體書
+                        </a>
+                        <a class="item">
+                            字卡
+                        </a>
+                        
+
+                        <a class="item">
+                            拼圖書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">互動有聲書</div>
+                    <div>
+                        <a class="item">
+                            abc點讀組
+                        </a>
+                        
+
+                        <a class="item">
+                            書＋CD
+                        </a>
+                        
+
+                        <a class="item">
+                            音樂書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">繪本圖畫書</div>
+                    <div>
+                        <a class="item">
+                            幼兒繪本
+                        </a>
+                        <a class="item">
+                            兒童繪本
+                        </a>
+                        
+
+                        <a class="item">
+                            橋樑書
+                        </a>
+                        <a class="item">
+                            童話故事
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">小學生專館</div>
+                    <div>
+                        <a class="item">
+                            啓蒙圖書
+                        </a>
+                        <a class="item">
+                            兒童文學
+                        </a>
+                        
+
+                        <a class="item">
+                            百科
+                        </a>
+                        <a class="item">
+                            歷史
+                        </a>
+                        
+
+                        <a class="item">小說讀本</a>
+                        <a class="item">動腦益智</a>
+                        
+
+                        <a class="item">知識漫畫</a>
+                        <a class="item">偉人傳記</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sub-menu">
-          <div class="title">繪本圖畫書</div>
-          <div>
-            <a class="item">
-              幼兒繪本
-            </a>
-            <a class="item">
-              兒童繪本
-            </a>
+        <div class="tab-pane fade container" id="menu-5" role="tabpanel">
+            <div class="row">
+                <div class="sub-menu">
+                    <div class="title">0歲以上</div>
+                    <div>
+                        <a class="item">
+                            布書
+                        </a>
+                        <a class="item">
+                            餐具
+                        </a>
+                        
 
-            <a class="item">
-              橋樑書
-            </a>
-            <a class="item">
-              童話故事
-            </a>
-          </div>
+                        <a class="item">
+                            安撫系列
+                        </a>
+                        <a class="item">
+                            固齒器
+                        </a>
+                        
+
+                        <a class="item">
+                            洗澡玩具
+                        </a>
+                        
+
+                        <a class="item">
+                            椅墊
+                        </a>
+                        
+
+                        <a class="item">
+                            夜燈
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">三歲以上</div>
+                    <div>
+                        <a class="item">
+                            認知布書
+                        </a>
+                        <a class="item">
+                            遊戲毯
+                        </a>
+                        
+
+                        <a class="item">
+                            感官學習
+                        </a>
+                        
+
+                        <a class="item">
+                            感官學
+                        </a>
+                        
+
+                        <a class="item">
+                            感官學習
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">有聲互動</div>
+                    <div>
+                        <a class="item">
+                            貼紙書
+                        </a>
+                        
+                        <a class="item">
+                            玩具書
+                        </a>
+                        
+                        <a class="item">
+                            立體書
+                        </a>
+                        
+                        <a class="item">
+                            拼圖書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">木質玩具</div>
+                    <div>
+                        <a class="item">
+                            木質玩具
+                        </a>
+                        
+                        <a class="item">
+                            玩具書
+                        </a>
+                        
+                        <a class="item">
+                            立體書
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <div class="title">互動有聲書</div>
+                    <div>
+                        <a class="item">
+                            abc點讀組
+                        </a>
+                        
+
+                        <a class="item">
+                            書＋CD
+                        </a>
+                        
+
+                        <a class="item">
+                            音樂書
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sub-menu">
-          <div class="title">小學生專館</div>
-          <div>
-            <a class="item">
-              啓蒙圖書
-            </a>
-            <a class="item">
-              兒童文學
-            </a>
-
-            <a class="item">
-              百科
-            </a>
-            <a class="item">
-              歷史
-            </a>
-
-            <a class="item">小說讀本</a>
-            <a class="item">動腦益智</a>
-
-            <a class="item">知識漫畫</a>
-            <a class="item">偉人傳記</a>
-          </div>
-        </div>
-      </div>
+        <div class="tab-pane fade container" id="menu-6" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-7" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-8" role="tabpanel"></div>
+        <div class="tab-pane fade container" id="menu-9" role="tabpanel"></div>
     </div>
-    <div class="tab-pane fade container" id="menu-5" role="tabpanel">
-      <div class="row">
-        <div class="sub-menu">
-          <div class="title">0歲以上</div>
-          <div>
-            <a class="item">
-              布書
-            </a>
-            <a class="item">
-              餐具
-            </a>
-
-            <a class="item">
-              安撫系列
-            </a>
-            <a class="item">
-              固齒器
-            </a>
-
-            <a class="item">
-              洗澡玩具
-            </a>
-
-            <a class="item">
-              椅墊
-            </a>
-
-            <a class="item">
-              夜燈
-            </a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">三歲以上</div>
-          <div>
-            <a class="item">
-              認知布書
-            </a>
-            <a class="item">
-              遊戲毯
-            </a>
-
-            <a class="item">
-              感官學習
-            </a>
-
-            <a class="item">
-              感官學
-            </a>
-
-            <a class="item">
-              感官學習
-            </a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">有聲互動</div>
-          <div>
-            <a class="item">
-              貼紙書
-            </a>
-
-            <a class="item">
-              玩具書
-            </a>
-
-            <a class="item">
-              立體書
-            </a>
-
-            <a class="item">
-              拼圖書
-            </a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">木質玩具</div>
-          <div>
-            <a class="item">
-              木質玩具
-            </a>
-
-            <a class="item">
-              玩具書
-            </a>
-
-            <a class="item">
-              立體書
-            </a>
-          </div>
-        </div>
-        <div class="sub-menu">
-          <div class="title">互動有聲書</div>
-          <div>
-            <a class="item">
-              abc點讀組
-            </a>
-
-            <a class="item">
-              書＋CD
-            </a>
-
-            <a class="item">
-              音樂書
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade container" id="menu-6" role="tabpanel"></div>
-    <div class="tab-pane fade container" id="menu-7" role="tabpanel"></div>
-    <div class="tab-pane fade container" id="menu-8" role="tabpanel"></div>
-    <div class="tab-pane fade container" id="menu-9" role="tabpanel"></div>
-  </div>
 </div>
-<nav class="main-nav">
-  <div class="text-right">
-    <i id="ad-open-icon" class="fas fa-times menu-btn"></i>
-  </div>
-  <div id="jquery-accordion-menu" class="jquery-accordion-menu blue">
-    <!-- <div class="jquery-accordion-menu-header" id="form"></div> -->
-    <ul id="demo-list">
-      <li>
-        <a href="login-register.html">登入/註冊</a>
-      </li>
-      <li><a href="fav-list.html">收藏清單</a></li>
-      <li>
-        <a href="#">購物說明</a>
-        <ul class="submenu">
-          <li><a href="href="customer.html">客服中心</a></li>
-          <li><a href="qa-bonus-point.html">問題Q&A </a></li>
-          <li><a href="#">關於退換貨 </a></li>
-          <li><a href="shopping-guide.html">加入會員說明</a></li>
-          <li><a href="delivery.html">運費說明</a></li>
-          <!-- <li>
-            <a href="#">Design </a>
-            <ul class="submenu">
-              <li><a href="#">Graphics </a></li>
-              <li><a href="#">Vectors </a></li>
-              <li><a href="#">Photoshop </a></li>
-              <li><a href="#">Fonts </a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
-      <li>
-        <a href="#">關於我們</a>
-        <ul class="submenu">
-          <li><a href="aboutus.html">關於集團</a></li>
-          <li><a href="traffic-info.html">交通資訊 </a></li>
-          <li><a href="hunter.html">人才招募 </a></li>
-          <li><a href="cross-industry.html">異業合作</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">付款方式</a>
-        <ul class="submenu">
-          <li><a href="payment.html">ATM轉帳</a></li>
-          <li><a href="payment.html">線上刷卡 </a></li>
-          <li><a href="payment.html">第三方支付 </a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">配送方式</a>
-        <ul class="submenu">
-          <li><a href="delivery.html">配送到府</a></li>
-          <li><a href="delivery.html">便利商店取貨 </a></li>
-          <li><a href="delivery.html">國際運費 </a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
 <script type="text/javascript" src="app.bundle.js"></script>
