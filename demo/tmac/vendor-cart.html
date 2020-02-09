@@ -316,6 +316,7 @@
                         <input class="form-control address" id="inputEmail3" value="農安街144號3F" />
                     </div>
                 </div>
+                國外地址運費需要另計，詳洽服務人員
             </form>
         </section>
         <section class="paid">
@@ -481,65 +482,68 @@
         </section>
         <section class="invoice">
             <h4 class="text-gray green-bottom-border">選擇發票形式</h4>
-            選擇發票形式
-            <select class="form-control w-auto d-inline-block ml-4" id="invoceSeletor">
-                <option value="0">紙本發票</option>
-                <option value="1">電子發票</option>
-                <option value="2">載具</option>
-                <option value="3">捐贈發票</option>
-            </select>
-            <div class="row mt-4 invoce" data-type="1">
-                <div class="col-lg-6">
-                    <input class="form-radio-input" type="radio" />
-                    <label class="form-check-label" for="defaultCheck1">
-                        二聯式發票
-                    </label>
-                </div>
-                <div class="col-lg-6">
-                    <input class="form-radio-input" type="radio" />
-                    <label class="form-check-label" for="defaultCheck1">
-                        三聯式發票
-                    </label>
-                    <div class="form-group d-lg-flex mt-3 ">
-                        <label>抬頭</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
-                        <div class="w-100 mt-2 d-xl-none"></div>
-                        <label>統一編號</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
+            <div>
+                選擇發票形式
+                <select class="form-control w-auto d-inline-block ml-4" id="invoceSeletor">
+                    <option value="0">紙本發票</option>
+                    <option value="1">電子發票</option>
+                    <option value="2">載具</option>
+                    <option value="3">捐贈發票</option>
+                </select>
+                <div class="row mt-4 invoce" data-type="1">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            二聯式發票
+                        </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            三聯式發票
+                        </label>
+                        <div class="form-group d-lg-flex mt-3 ">
+                            <label>抬頭</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
+                            </div>
+                            <div class="w-100 mt-2 d-xl-none"></div>
+                            <label>統一編號</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-2 invoce" data-type="2">
-                <div class="col-lg-6">
-                    <input class="form-radio-input" type="radio" />
-                    <label class="form-check-label" for="defaultCheck1">
-                        手機條碼載具
-                    </label>
-                    <input type="text" class="form-control" placeholder="請輸入手機條碼載具(限大寫英文數字)" />
+                <div class="row mt-2 invoce" data-type="2">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            手機條碼載具
+                        </label>
+                        <input type="text" class="form-control" placeholder="請輸入手機條碼載具(限大寫英文數字)" />
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            自然人憑證載具
+                        </label>
+                        <input type="text" class="form-control" placeholder="請輸入自然人憑證載具(限英文數字)" />
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <input class="form-radio-input" type="radio" />
-                    <label class="form-check-label" for="defaultCheck1">
-                        自然人憑證載具
-                    </label>
-                    <input type="text" class="form-control" placeholder="請輸入自然人憑證載具(限英文數字)" />
-                </div>
+                <div class="row mt-2 invoce" data-type="3">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            捐贈發票
+                        </label>
+                        <select class="form-control search-select d-inline w-auto">
+                            <option>捐贈單位</option>
+                        </select>
+                     </div>
+                </div> 
             </div>
-            <div class="row mt-2 invoce" data-type="3">
-                <div class="col-lg-6">
-                    <input class="form-radio-input" type="radio" />
-                    <label class="form-check-label" for="defaultCheck1">
-                        捐贈發票
-                    </label>
-                    <select class="form-control search-select d-inline w-auto">
-                        <option>捐贈單位</option>
-                    </select>
-                 </div>
-            </div>
+         
         </section>
         <section class="btn-row">
             <button class="btn btn-back w-45">送出詢價</button>
