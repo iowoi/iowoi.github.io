@@ -12,26 +12,26 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
     <script
       type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
     ></script>
     <title>維京書城</title>
   <link href="main.css" rel="stylesheet"></head>
 
   <body>
-    <header include-html="https://iowoi.github.io/demo/tmac/header.html"></header>
+    <header include-html="./header.html"></header>
     <div class="container main-wrapper order-list">
       <h4 class="text-gray green-bottom-border">未結月度帳款查詢</h4>
       <div class="card-yellow">
@@ -85,16 +85,19 @@
 
         <div class="col-lg-12 mt-3 text-right">
           <button
-            class="btn btn-primary mr-2"
+            class="btn btn-primary mr-4"
             data-toggle="modal"
             data-target="#payModal"
           >
             結帳
           </button>
           <button
-            class="btn btn-green mr-3"
+            class="btn btn-primary d-none"
+            data-toggle="modal"
+            data-target="#successModal"
+            id="success"
           >
-            匯出
+            success
           </button>
           <span class="desc">共顯示 942 筆訂單</span>
         </div>
@@ -240,7 +243,7 @@
         </nav>
       </section>
     </div>
-    <footer include-html="https://iowoi.github.io/demo/tmac/footer.html"></footer>
+    <footer include-html="./footer.html"></footer>
     <div
       class="modal fade"
       id="successModal"

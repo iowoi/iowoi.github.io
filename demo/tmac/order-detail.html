@@ -13,7 +13,7 @@
   <link href="main.css" rel="stylesheet"></head>
 
   <body>
-    <header include-html="https://iowoi.github.io/demo/tmac/header.html"></header>
+    <header include-html="./header.html"></header>
     <div class="container main-wrapper cart order-detail">
       <h4 class="text-gray dark-blue-bottom-border">訂單明細</h4>
 
@@ -170,7 +170,7 @@
                 <img src="static/example/wini.png" alt="" />
                 <div class="info">
                   經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版經典小熊維尼珍藏版
-                  <p class="giveaway">贈品：附贈小熊維尼娃娃一隻</p>
+                  <div><p class="additional">活動:滿三件享88折</p></div>
                 </div>
               </td>
               <td class="special-price">183</td>
@@ -258,23 +258,22 @@
            
             <div class="row">
               <div class="col-lg-12">
-                <table class="mb-2">
-                    <tr colspan="2">
+                <table>
+                    <tr>
                       <td>姓名</td>
                       <td>王小花</td>
-                      <td class="font-weight-bold"> 聯絡電話</td>
+                    </tr>
+                    <tr>
+                      <td>行動電話</td>
                       <td>0922015333</td>
+                    </tr>
+                    <tr>
+                      <td>市內電話</td>
+                      <td>0222122212</td>
+                    </tr>
                     <tr>
                       <td>地址</td>
                       <td>台北市信義區101號101樓</td>
-                    </tr>
-                    <tr>
-                      <td>銀行代碼</td>
-                      <td>800 中華郵政</td>
-                    </tr>
-                    <tr>
-                      <td>匯款帳號</td>
-                      <td>1234567890123</td>
                     </tr>
                   </table>
               </div>
@@ -353,7 +352,7 @@
                   <td>退還紅利點數</td>
                   <td>-$150</td>
                 </tr>
-                <tr class="text-red gray-row">
+                <tr class="text-red">
                   <td>退還總計金額</td>
                   <td>$2230</td>
                 </tr>
@@ -370,6 +369,6 @@
         </button>
       </section>
     </div>
-    <footer include-html="https://iowoi.github.io/demo/tmac/footer.html"></footer>
+    <footer include-html="./footer.html"></footer>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
