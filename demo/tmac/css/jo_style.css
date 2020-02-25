@@ -1,0 +1,15 @@
+@media screen and (max-width: 991px) {
+    .prod-detail tbody tr td.publishing-house,
+    .prod-detail tbody tr td.counter-item {
+        display: inline;
+    }
+    .vendor-page .prod-detail tr .count,
+    .vendor-page .prod-detail tr .counter-item,
+    .vendor-page .prod-detail tr .in-stock,
+    .vendor-page .prod-detail tr .keep,
+    .vendor-page .prod-detail tr .pricing,
+    .vendor-page .prod-detail tr .purchase-price,
+    .vendor-page .prod-detail tr .special-price {
+        width: auto;
+    }
+}
