@@ -5,8 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet"
-        crossorigin="anonymous" />
+    <link href="static/css/font-awesome.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="static/js/calendar/dist/css/pignose.calendar.min.css" />
+    <script src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/calendar/js/pignose.calendar.full.min.js"></script>
     <title>联络簿</title>
 <link href="main.css" rel="stylesheet"></head>
 
@@ -19,7 +21,7 @@
                 <a href="lession.html" class="btn btn-litePurple">課程一覽</a>
                 <a href="scfamily.html" class="btn btn-litePurple">联络簿</a>
                 <a href="board.html" class="btn btn-litePurple">上课照片</a>
-                <a href="signin.html" class="btn btn-litePurple">签到纪录</a>
+                <a href="signinList.html" class="btn btn-litePurple">签到纪录</a>
                 <a href="" class="btn btn-litePurple">考试纪录</a>
                 <a href="" class="btn btn-litePurple">选课</a>
                 <a href="curriculum.html" class="btn btn-litePurple">每日课表</a>
@@ -53,5 +55,31 @@
     </div>
     <footer include-html="./footer.html"></footer>
 <script type="text/javascript" src="app.bundle.js"></script></body>
-
+<script>
+    $(function () {
+        $('.calendar').pignoseCalendar({
+            schedules: [
+                {
+                    name: 'holiday',
+                    date: '2020-02-03'
+                },
+                {
+                    name: 'meetup',
+                    date: '2020-02-26'
+                },
+                {
+                    name: 'seminar',
+                    date: '2020-02-15'
+                }
+            ],
+            scheduleOptions: {
+                colors: {
+                    holiday: '#2fabb7',
+                    seminar: '#5c6270',
+                    meetup: '#ef8080'
+                }
+            }
+        })
+    })
+</script>
 </html>

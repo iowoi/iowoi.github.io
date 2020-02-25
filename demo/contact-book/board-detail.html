@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      href="static/css/font-awesome.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+      href="static/js/slick/slick.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+      href="static/js/slick/slick-theme.css"
     />
     <script
       type="text/javascript"
-      src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      src="static/js/jquery.min.js"
     ></script>
     <script
       type="text/javascript"
-      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+      src="static/js/slick/slick.min.js"
     ></script>
     <title>聯絡簿</title>
     <style>
@@ -47,18 +47,19 @@
       <div class="content">
         <div class="search-section">
           <div class="datepicker">
-            <input class="btn-litePurple" type="date" /> -
-            <input class="btn-litePurple" type="date" />
+            <input class="btn-litePurple" type="date" style="width: 120px"/> -
+            <input class="btn-litePurple" type="date" style="width: 120px"/>
             <div class="selects">
-              <select class="select-control">
+              <select class="select-control btn-litePurple" style="width: 120px; margin:5px">
                 <option>大分類</option>
               </select>
-              <select class="select-control">
+              -
+              <select class="select-control btn-litePurple" style="width: 120px;margin: 5px">
                 <option>
                   小分類
                 </option>
               </select>
-              <button class="btn btn-litePurple btn-query">
+              <button class="btn btn-litePurple btn-query" style="padding: 5px 30px;">
                 查詢
               </button>
             </div>
