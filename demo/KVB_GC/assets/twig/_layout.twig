@@ -1,0 +1,20 @@
+{# _layout.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KVB</title>
+	<link media="all" rel="stylesheet" href="assets/compiled/css/style.css">
+	<script src="assets/compiled/js/main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		{% include 'partials/_header.twig'%}
+		<main id="main" role="main">
+			{% block page %}{% endblock %}
+		</main>
+		{% include 'partials/_footer.twig'%}
+	</div>
+</body>
+</html>

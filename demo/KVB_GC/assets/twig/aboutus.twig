@@ -1,0 +1,52 @@
+{# index.twig #}
+{% set page = 'about' %}
+{% extends "_layout.twig" %}
+
+{% block page %}
+
+<section class="banner" style="background-image: url(assets/images/img21.jpg);">
+	<div class="container">
+		<h1>About Us</h1>
+	</div>
+</section>
+<section class="info-block">
+	<div class="container">
+		<div class="about-box">
+			<h2>KVB Interactive Ltd is a non-bank, non-deposit taking lending entity.</h2>
+			<ul class="about-list">
+				<li>
+					<div class="img">
+						<img src="assets/images/img21.svg" alt="image description">
+					</div>
+					<span class="title">our capability</span>
+					<div class="text">
+						<p>We provide tailored financial solutions to personal and business customers that meet their specific financial needs. </p>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="assets/images/img22.svg" alt="image description">
+					</div>
+					<span class="title">our capability</span>
+				<div class="text">
+						<p>We lend in most regions throughout the country, though we’re generally focused on the larger metropolitan areas. </p>
+				</div>
+				</li>
+			</ul>
+			<p>If you are unsure about just where your situation may stand, <br> give us a call and we’ll be happy to talk it through with you. </p>
+		</div>
+	</div>
+</section>
+<section class="text-block" style="background-image: url(assets/images/img-bg2.jpg);">
+	<div class="container">
+		<div class="img">
+			<img src="assets/images/img13.png" alt="image description">
+		</div>
+		<div class="text">
+			<h1>The most reliable partner for you</h1>
+			<p>If you are interested in our offerings, please leave your contact <br> information and we will reach out to you.</p>
+			<a href="contactus.html" class="btn btn-white">Contact Us</a>
+		</div>
+	</div>
+</section>
+{% endblock %}

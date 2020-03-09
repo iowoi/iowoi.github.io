@@ -1,0 +1,145 @@
+
+
+#footer {
+	background: #1C68A5;
+	text-align: center;
+	
+	&.footer {
+		@include media('>=tablet') {
+			background: rgba(28, 104, 165, 0.46);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.footer-nav {
+	display: none;
+	@extend %listreset;
+	font: 500 18px/28px $tung;
+
+	@include media('>=tablet') {
+		display: block;
+	}
+
+	@include media('>=desktop') {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 18px;
+
+		&.active {
+			a {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.footer-area {
+	border-bottom: 1px solid rgba(255,255,255,0.48);
+
+	@include media('>=tablet') {
+		padding: 14px 0;
+	}
+}
+
+.footer-block {
+	@include media('>=tablet') {
+		padding: 14px 0;
+	}
+}
+
+.copyright {
+	font-size: 12px;
+	line-height: 16px;
+	color: $white;
+	display: block;
+	padding: 11px 0 ;
+
+	@include media('>=tablet') {
+		float: right;
+		max-width: 40%;
+		padding: 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.footer-list {
+	@extend %listreset;
+	font-size:0;
+	line-height:0;
+	padding: 10px 30px 8px;
+	margin: 0 -30px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+
+	@include media('>=tablet') {
+		float: left;
+		padding: 0;
+		margin: 0;
+		width: 50%;
+		border: none;
+		text-align: left;
+	}
+
+	> * {
+		font-size: 12px;
+		line-height: 16px;
+
+		@include media('>=tablet') {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		padding: 0 12px;
+
+		+ li {
+			&:before {
+				content: '|';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				color: $white;
+
+			}
+		}
+	}
+	a {
+		color: $white;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+

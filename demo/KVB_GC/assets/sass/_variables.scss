@@ -1,0 +1,75 @@
+// -------------------------------------------------------
+// custom variables and override bootstrap variables
+// -------------------------------------------------------
+
+$icon-check: "\e90b";
+$icon-plus-circle: "\e90c";
+$icon-email: "\e905";
+$icon-address: "\e906";
+$icon-download: "\e907";
+$icon-postal: "\e90a";
+$icon-half-arrow: "\e900";
+$icon-arrow-up: "\e901";
+$icon-bar: "\e902";
+$icon-close: "\e903";
+$icon-angle-left: "\e908";
+$icon-angle-right: "\e909";
+$icon-phone: "\e904";
+
+
+
+
+$gray: #8B8B8B;
+$black: #000;
+$white: #fff;
+$light-blue: #268BDB;
+$blue: #1C68A5;
+
+// font name
+$tung: 'Tungsten Book', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif; 
+$roboto: 'roboto_condensed', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-sans-serif: $roboto;
+$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+
+
+$font-path: "../../fonts";
+$icomoon-font-path: "../../fonts/icons";
+$image-path: "../../images";
+
+// font name
+$freight-sans: 'FreightSans Pro', 'Helvetica Neue', 'Arial', 'Helvetica', sans-serif;
+
+// scaffolding
+$body-bg: $white;
+$body-color: $gray;
+$link-color: $blue;
+$link-hover-color: darken($blue,20%);
+$link-hover-decoration: none;
+
+// typography
+$font-family-sans-serif: $roboto;
+// $font-size-base: 16px;
+// $line-height-base: 1.5;
+$h1-font-size: 30px ;
+$h2-font-size: 27px ;
+$h3-font-size: 24px ;
+$h4-font-size: 21px ;
+$h5-font-size: 17px ;
+$h6-font-size: 15px ;
+$headings-font-weight: 300;
+$headings-font-family:   $tung;
+
+// container sizes
+$grid-gutter-width: 30px;
+$container-large-desktop: (1110px + $grid-gutter-width);
+
+$btn-border-radius: 0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+) !default;

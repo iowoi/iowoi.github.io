@@ -1,0 +1,73 @@
+{% set page = 'contact' %}
+{% extends "_layout.twig" %}
+
+{% block page %}
+<div class="banner" style="background-image: url('assets/images/img20.jpg');">
+	<div class="container">
+		<h1>Contact Us</h1>
+		<p>For all loan related queries, you can phone us, email us or  <br> fill in the query form below and we will respond to you as soon as possible. </p>
+	</div>
+</div>
+<section class="info-block">
+	<div class="container">
+		<div class="contact-box">
+			<div class="contact-address">
+				<div class="row">
+					<div class="col-md-6 col-lg-7">
+						<h2>Infomation & Directions</h2>
+						<address>
+							<dl>
+								<dt><span class="icon-address"></span> Physical Address</dt>
+								<dd>Level 10, 205 Queen Street CBD Auckland</dd>
+								<dt><span class="icon-phone"></span> Phone Number</dt>
+								<dd><a href="tel:6493598985">+64 9-359 8985</a></dd>
+								<dt><span class="icon-email"></span> Email Address</dt>
+								<dd>Level 10, 205 Queen Street CBD Auckland</dd>
+								<dt><span class="icon-postal"></span> Postal Address</dt>
+								<dd>PO BOX 0000, Auckland 1140</dd>
+							</dl>
+						</address>
+					</div>
+					<div class="col-md-6 col-lg-5">
+						<div class="map" style="background-image: url(assets/images/map.jpg)">
+						</div>
+					</div>
+				</div>
+			</div>
+			<form class="form" action="#">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Contact Number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject">
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<textarea cols="30" rows="10" placeholder="Your Query" class="form-control"></textarea>
+						</div>
+						<div class="text">
+							<p>In order to assist us in reducing spam, please type the characters you see : <input type="text" class="form-control"> <span class="capcha-text">xl3xl3</span></p>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Send <span class="icon-half-arrow"></span></button>
+			</form>
+		</div>
+	</div>
+</section>
+{% endblock %}

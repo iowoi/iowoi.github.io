@@ -1,0 +1,890 @@
+{% set page = 'personal-finance' %}
+{# index.twig #}
+{% extends "_layout.twig" %}
+
+{% block page %}
+<div class="banner" style="background-image: url('assets/images/img14.jpg');">
+	<div class="container">
+		<h1>Personal Finance</h1>
+	</div>
+</div>
+<section class="info-block">
+	<div class="container">
+		<div class="boxes white-box boxes--new">
+			<div class="tabs">
+				<ul class="links">
+					<li><a href="#tab1" class="scroll-btn">Products</a></li>
+					<li><a href="#tab2" class="scroll-btn">Download Forms</a></li>
+					<li><a href="#tab3" class="scroll-btn">Standard Terms and Cost</a></li>
+					<li><a href="#" class="finance-opener">Enquire Now</a></li>
+				</ul>
+				<div class="tab-accordion finance-block">
+					<div id="tab1" class="tab">
+						<a href="#" class="accordion-opener">Products</a>
+						<div class="slide">
+							<div class="product">
+								<h2>Products</h2>
+								<ul class="product-list">
+									<li>
+										<div class="img">
+											<img src="assets/images/img15.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Principal & Interest Loan</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img16.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Interest Only Loan</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img17.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Capitalised Interest Loan</a></span>
+									</li>
+								</ul>
+							</div>
+							<div class="product">
+								<h2>What we finance</h2>
+								<ul class="product-list big">
+									<li>
+										<div class="img">
+											<img src="assets/images/img2.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Property Purchase/ Investment</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img3.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Property Renovation</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img4.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Bridging Finance</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img5.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Debt Consolidation</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab">
+						<a href="#" class="accordion-opener">Download Forms</a>
+						<div class="slide">
+							<h2>Download</h2>
+							<ul class="download-list">
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Personal Finance Application Form</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Standard Terms and Conditions</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Schedule of Fees and Charges</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="tab3" class="tab">
+						<a href="#" class="accordion-opener">Standard Terms and Cost</a>
+						<div class="slide">
+							<div class="term">
+								<div class="row">
+									<div class="col-md-6">
+										<h2>Interest Rates</h2>
+										<ul>
+											<li>Our Personal Finance Annual Interest Rates range from 8.95% to 18.95% per annum.</li>
+											<li>The interest rate that is applicable to the particular client will be based on their risk profile such as credit history, stability in employment and residence, asset backing and financial obligations, security value offered and loan amount.</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<h2>Default Interest</h2>
+										<ul>
+											<li>If the Borrwer fails to make a payment on the due date or any outstanding moneys payable by the Borrower, we may charge the Borrower Default Interest.</li>
+											<li>The Annual Default Interest Rate is the Annual Interest Rate plus 10% per annum.</li>
+											<li>Default Interest is charged on the amount of any missed payment from the time Borrower fails to make the due payment until time of actual payment made. </li>
+										</ul>
+									</div>
+									<div class="col-md-12">
+										<h2>Fees</h2>
+										<span class="blue-txt">(insert list of all fees & charges here)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab4" class="tab tab-form">
+						<a href="#" class="accordion-opener">Enquire Now</a>
+						<div class="slide">
+							<form class="contact-form" action="#">
+								<div class="form-wrap">
+									<h2>About the loan</h2>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<select class="custom">
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group amount-holder">
+													<label for="amount">$</label>
+													<input type="text" class="form-control" placeholder="Amount of Borrowing" id="amount">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Security Being Offered">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-wrap">
+									<h2>About you</h2>
+									<div class="radio-wrap">
+										<span class="radio-title">New Zealand Resident/Citizen? </span>
+										<ul class="radio-list">
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													Yes
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													No
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Family Name">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="First Name">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Middle Name">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="border form-group">
+													<span class="txt-title">Date of Birth</span>
+													<ul class="date">
+														<li>
+															<input type="text" class="form-control" placeholder="day">
+														</li>
+														<li>
+															<input type="text" class="form-control" placeholder="Month">
+														</li>
+														<li>
+															<input type="text" class="form-control" placeholder="Year">
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Number of Dependents">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="radio-block">
+										<div class="radio-holder">
+											<span class="radio-title">Gender</span>
+											<ul class="radio-list">
+												<li>
+													<label>
+														<input type="radio" name="radio2">
+														<span class="input"></span> 
+														Male
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio2">
+														<span class="input"></span> 
+														Female
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio2">
+														<span class="input"></span> 
+														Other
+													</label>
+												</li>
+											</ul>
+										</div>
+										<div class="radio-holder">
+											<span class="radio-title">Marital Status</span>
+											<ul class="radio-list">
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<span class="input"></span> 
+														Single
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<span class="input"></span> 
+														Married
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<span class="input"></span> 
+														Separated/Divorced
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<span class="input"></span> 
+														Widowed	
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<span class="blue-title">Address</span>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Full Address">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="City">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="States">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Time at Current Address">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<select class="custom">
+														<option>Residential Status</option>
+														<option>Own Home without Mortgage</option>
+														<option>Own Home with Mortgage</option>
+														<option>Rent</option>
+														<option>Board</option>
+														<option>Live with Family</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Mobile Number">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Home Number">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="email" class="form-control" placeholder="Email Address">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Current Employer Name">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Time at Current Employment"  id="employment_time">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<select>
+														<option>Current Employment Status</option>
+														<option>Permanent Full Time</option>
+														<option>Permanent Part time</option>
+														<option>Self Employed</option>
+														<option>Contractor</option>
+														<option>Casual/Seasonal/Beneficiary</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="previous-block hidden">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Previous Employer Name">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Time at Previous Employment" >
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<select>
+															<option>Previous Employment Status</option>
+															<option>Permanent Full Time</option>
+															<option>Permanent Part time</option>
+															<option>Self Employed</option>
+															<option>Contractor</option>
+															<option>Casual/Seasonal/Beneficiary</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="radio-block">
+										<div class="radio-holder">
+											<span class="radio-title">Is there a co-borrower?</span>
+											<ul class="radio-list">
+												<li>
+													<label>
+														<input type="radio" name="borrower" value="yes">
+														<span class="input"></span>
+														Yes
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="borrower" value="no">
+														<span class="input"></span>
+														No
+													</label>
+												</li>
+											</ul>
+										</div>
+										<div class="radio-holder citizen">
+											<span class="radio-title">New Zealand Resident/Citizen?</span>
+											<ul class="radio-list">
+												<li>
+													<label>
+														<input type="radio" name="radio4">
+														<span class="input"></span>
+														Yes
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4">
+														<span class="input"></span>
+														No
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="form-wrap">
+									<h2>About your circumstances</h2>
+									<span class="blue-title blue-title--border">Income</span>
+									<div class="form-box">
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Employment Income</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income1">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income1">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income1">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt">Amount $</label>
+												<input type="text" class="form-control" id="amt">
+											</div>
+										</div>
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Benefit Income</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income2">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income2">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income2">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt1">Amount $</label>
+												<input type="text" class="form-control" id="amt1">
+											</div>
+										</div>
+									</div>
+									<div class="borrower-block">
+										<span class="blue-title blue-title--border">Income of co-borrower</span>
+										<div class="form-box">
+											<div class="income-holder">
+												<div class="income-period">
+													<div class="form-group">
+														<span class="radio-title">Employment Income</span>
+													</div>
+													<ul class="radio-list">
+														<li>
+															<label>
+																<input type="radio" name="income1">
+																<span class="input"></span>
+																Monthly
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="radio" name="income1">
+																<span class="input"></span>
+																Fortnightly
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="radio" name="income1">
+																<span class="input"></span>
+																Weekly
+															</label>
+														</li>
+													</ul>
+												</div>
+												<div class="income-amount">
+													<label for="amt2">Amount $</label>
+													<input type="text" class="form-control" id="amt2">
+												</div>
+											</div>
+											<div class="income-holder">
+												<div class="income-period">
+													<div class="form-group">
+														<span class="radio-title">Benefit Income</span>
+													</div>
+													<ul class="radio-list">
+														<li>
+															<label>
+																<input type="radio" name="income2">
+																<span class="input"></span>
+																Monthly
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="radio" name="income2">
+																<span class="input"></span>
+																Fortnightly
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="radio" name="income2">
+																<span class="input"></span>
+																Weekly
+															</label>
+														</li>
+													</ul>
+												</div>
+												<div class="income-amount">
+													<label for="amt0">Amount $</label>
+													<input type="text" class="form-control" id="amt0">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-wrap load-more-holder" id="personal_income">
+									<span class="blue-title blue-title--border">Household Expenses</span>
+									<div class="form-box">
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Mortgage/Rent/Board</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income3">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income3">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income3">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt3">Amount $</label>
+												<input type="text" class="form-control" id="amt3">
+											</div>
+										</div>
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Personal Loan Repayment</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income4">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income4">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income4">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt4">Amount $</label>
+												<input type="text" class="form-control" id="amt4">
+											</div>
+										</div>
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Vehicle Loan Repayment</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income5">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income5">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income5">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt5">Amount $</label>
+												<input type="text" class="form-control" id="amt5">
+											</div>
+										</div>
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Other Loan Repayment</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income6">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income6">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income6">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt6">Amount $</label>
+												<input type="text" class="form-control" id="amt6">
+											</div>
+										</div>
+										<div class="income-holder">
+											<div class="income-period">
+												<div class="form-group">
+													<span class="radio-title">Credit Card Repayment</span>
+												</div>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="income7">
+															<span class="input"></span>
+															Monthly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income7">
+															<span class="input"></span>
+															Fortnightly
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="income7">
+															<span class="input"></span>
+															Weekly
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="income-amount">
+												<label for="amt7">Amount $</label>
+												<input type="text" class="form-control" id="amt7">
+											</div>
+										</div>
+									</div>
+									<a href="./assets/inc/household-exp1.html" class="btn-add load-more">Add Expenses <span class="icon-plus-circle"></span></a>
+								</div>
+								<div class="form-wrap load-more-holder" id="personal_asset">
+									<span class="blue-title blue-title--border">Assets & Liabilities</span>
+									<div class="form-box">
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">House</span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value1">Value $</label>
+													<input type="text" class="form-control input-value" id="value1">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing1">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing1">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">Car </span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value2">Value $</label>
+													<input type="text" class="form-control input-value" id="value2">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing2">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing2">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">Boat/Caravan</span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value3">Value $</label>
+													<input type="text" class="form-control input-value" id="value3">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing3">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing3">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">Car </span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value4">Value $</label>
+													<input type="text" class="form-control input-value" id="value4">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing4">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing4">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">Household Effects</span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value5">Value $</label>
+													<input type="text" class="form-control input-value" id="value5">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing5">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing5">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class=" col-md-4">
+												<span class="asset-title">Investments</span>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="value6">Value $</label>
+													<input type="text" class="form-control input-value" id="value6">
+												</div>
+											</div>
+											<div class=" col-md-4">
+												<div class="form-group">
+													<label for="owing6">Amount Owing $</label>
+													<input type="text" class="form-control input-amt" id="owing6">
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="./assets/inc/asset1.html" class="btn-add load-more">Add Assets / Liabilities <span class="icon-plus-circle"></span></a>
+									<p>Please contact me/us on phone numbers and email address provided above in relation to my loan application.</p>
+									<span class="blue-title blue-title--border">	<a href="#">KVB Privacy Waiver</a></span>
+									<div class="check-group">
+										<label>
+											<input type="checkbox" name="radio7">
+											<span class="input"></span>
+											I/We confirm that the information contained in this application is true and correct in every particular as at the date of application, and there are no omissions. I/We have read, understood and given my/our consent and authorisations to the clauses contained in KVB Privacy Waiver. 
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit <span class="icon-half-arrow"></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

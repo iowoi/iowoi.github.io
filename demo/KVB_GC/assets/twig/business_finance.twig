@@ -1,0 +1,731 @@
+{% set page = 'business-finance' %}
+{# index.twig #}
+{% extends "_layout.twig" %}
+
+{% block page %}
+<div class="banner" style="background-image: url('assets/images/img24.jpg');">
+	<div class="container">
+		<h1>Business Finance</h1>
+	</div>
+</div>
+<section class="info-block">
+	<div class="container">
+		<div class="boxes white-box boxes--new">
+			<div class="tabs">
+				<ul class="links">
+					<li><a href="#tab1" class="scroll-btn">Products</a></li>
+					<li><a href="#tab2" class="scroll-btn">Download Forms</a></li>
+					<li><a href="#tab3" class="scroll-btn">Standard Terms and Cost</a></li>
+					<li><a href="#" class="finance-opener">Enquire Now</a></li>
+				</ul>
+				<div class="tab-accordion finance-block">
+					<div id="tab1" class="tab">
+						<a href="#" class="accordion-opener">Products</a>
+						<div class="slide">
+							<div class="product">
+								<h2>Products</h2>
+								<ul class="product-list">
+									<li>
+										<div class="img">
+											<img src="assets/images/img15.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Principal & Interest Loan</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img16.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Interest Only Loan</a></span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img17.svg" alt="image description">
+										</div>
+										<span class="name"><a href="#">Capitalised Interest Loan</a></span>
+									</li>
+								</ul>
+							</div>
+							<div class="product">
+								<h2>What we finance</h2>
+								<ul class="product-list">
+									<li>
+										<div class="img">
+											<img src="assets/images/img7.svg" alt="image description">
+										</div>
+										<span class="name">Property Development</span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img8.svg" alt="image description">
+										</div>
+										<span class="name">Commercial Property Purchase</span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img9.svg" alt="image description">
+										</div>
+										<span class="name">Working Capital</span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img10.svg" alt="image description">
+										</div>
+										<span class="name">Start-up Business Finance</span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img11.svg" alt="image description">
+										</div>
+										<span class="name">Bridging Finance</span>
+									</li>
+									<li>
+										<div class="img">
+											<img src="assets/images/img12.svg" alt="image description">
+										</div>
+										<span class="name">Refinance of existing facility</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab">
+						<a href="#" class="accordion-opener">Download Forms</a>
+						<div class="slide">
+							<h2>Download</h2>
+							<ul class="download-list">
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Business Finance Application Form</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Schedule of Fees and Charges</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+								<li>
+									<div class="img">
+										<img src="assets/images/img18.svg" alt="image description">
+									</div>
+									<div class="text">
+										<span class="name">Standard Terms and Conditions</span>
+										<a href="#" class="btn-download">Download <span class="icon-download"></span></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="tab3" class="tab">
+						<a href="#" class="accordion-opener">Standard Terms and Cost</a>
+						<div class="slide">
+							<div class="term">
+								<div class="row">
+									<div class="col-md-6">
+										<h2>Interest Rates</h2>
+										<ul>
+											<li>Our Business Finance Annual Interest Rates range from 8.95% to 18.95% per annum.</li>
+											<li>The interest rate that is applicable to the particular client will be based on their risk profile such as credit history, industry, business trading records, financial obligations, asset backing, security value offered and loan amount.</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<h2>Default Interest</h2>
+										<ul>
+											<li>If the Borrower fails to make a payment on the due date or any outstanding moneys payable by the Borrower, we may charge the Borrower Default Interest.</li>
+											<li>The Annual Default Interest Rate is the Annual Interest Rate plus 10% per annum.</li>
+											<li>Default Interest is charged on the amount of any missed payment from the time Borrower fails to make the due payment until time of actual payment made. </li>
+										</ul>
+									</div>
+									<div class="col-md-12">
+										<h2>Fees</h2>
+										<span class="blue-txt">(insert list of all fees & charges here)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab4" class="tab tab-form">
+						<a href="#" class="accordion-opener">Enquire Now</a>
+						<div class="slide">
+							<form class="contact-form" action="#">
+								<div class="form-wrap">
+									<h2>About the loan</h2>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<select class="custom">
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+														<option>Loan Purpose</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group amount-holder">
+													<label for="amount">$</label>
+													<input type="text" class="form-control" placeholder="Amount of Borrowing" id="amount">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Security Being Offered">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-wrap">
+									<h2>About your business</h2>
+									<div class="radio-wrap">
+										<span class="radio-title">Type of Entity</span>
+										<ul class="radio-list">
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													Company
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													Trust
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													Partnership
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="radio" name="radio">
+													<span class="input"></span>
+													Sole Trader
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="form-box">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Business Legal Name">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Industry">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Time in Business">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Full Address">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="GTS Number">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Turnover">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<input type="text" class="form-control" placeholder="Net Profit before Tax">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-box load-more-holder" id="businees_asset">
+										<div class="row-holder">
+											<div class="row">
+												<div class="col-md-3">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Existing Business Financier Name">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Balance Outstanding">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Monthly Repayment">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Months Remaining">
+													</div>
+												</div>
+											</div>
+										</div>
+										<a href="./assets/inc/financier1.html" class="btn-add load-more">Add more Existing Business Financier <span class="icon-plus-circle"></span></a>
+									</div>
+								</div>
+								<div class="form-wrap">
+									<span class="blue-title blue-title--border">Contact Person Details</span>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" placeholder="Full Name" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" placeholder="Contact Number" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Email Address">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea  cols="30" rows="10" class="form-control" placeholder="Additional Comments"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p>Please contact me on phone number and email address provided above in relation to this loan application. Please note copy of your most recent Financial Statement and/or Bank Statements may be required in order to assess this application.  </p>
+								<div class="radio-wrap">
+									<span class="radio-title">Is there a Personal Guarantor? </span>
+									<ul class="radio-list">
+										<li>
+											<label>
+												<input type="radio" name="guarantor" value="yes">
+												<span class="input"></span>
+												Yes
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="radio" name="guarantor" value="no">
+												<span class="input"></span>
+												No
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="guarantor-block">
+									<h2>Personal Guarantor</h2>
+									<div class="form-wrap">
+										<div class="radio-wrap">
+											<span class="radio-title">New Zealand Resident/Citizen? </span>
+											<ul class="radio-list">
+												<li>
+													<label>
+														<input type="radio" name="radio9">
+														<span class="input"></span>
+														Yes
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio9">
+														<span class="input"></span>
+														Yes
+													</label>
+												</li>
+											</ul>
+										</div>
+										<div class="form-box">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Family Name">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="First Name">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Middle Name">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="border form-group">
+														<span class="txt-title">Date of Birth</span>
+														<ul class="date">
+															<li>
+																<input type="text" class="form-control" placeholder="day">
+															</li>
+															<li>
+																<input type="text" class="form-control" placeholder="Month">
+															</li>
+															<li>
+																<input type="text" class="form-control" placeholder="Year">
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Number of Dependents">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="radio-block">
+											<div class="radio-holder">
+												<span class="radio-title">Gender</span>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="radio2">
+															<span class="input"></span> 
+															Male
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="radio2">
+															<span class="input"></span> 
+															Female
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="radio2">
+															<span class="input"></span> 
+															Other
+														</label>
+													</li>
+												</ul>
+											</div>
+											<div class="radio-holder">
+												<span class="radio-title">Marital Status</span>
+												<ul class="radio-list">
+													<li>
+														<label>
+															<input type="radio" name="radio1">
+															<span class="input"></span> 
+															Single
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="radio1">
+															<span class="input"></span> 
+															Married
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="radio1">
+															<span class="input"></span> 
+															Separated/Divorced
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" name="radio1">
+															<span class="input"></span> 
+															Widowed	
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<span class="blue-title">Address</span>
+										<div class="form-box">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Full Address">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="City">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="States">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-box">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Mobile Number">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<input type="text" class="form-control" placeholder="Home Number">
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<input type="email" class="form-control" placeholder="Email Address">
+													</div>
+												</div>
+											</div>
+										</div>
+										<span class="blue-title blue-title--border">Assets & Liabilities</span>
+										<div class="load-more-holder">
+											<div class="form-box asset-block">
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">House</span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value1">Value $</label>
+															<input type="text" class="form-control input-value" id="value1">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing1">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing1">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">Car </span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value2">Value $</label>
+															<input type="text" class="form-control input-value" id="value2">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing2">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing2">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">Boat/Caravan</span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value3">Value $</label>
+															<input type="text" class="form-control input-value" id="value3">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing3">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing3">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">Bank Account</span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value4">Value $</label>
+															<input type="text" class="form-control input-value" id="value4">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing4">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing4">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">Household Effects</span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value5">Value $</label>
+															<input type="text" class="form-control input-value" id="value5">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing5">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing5">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-2 col-xl-3">
+														<div class="form-group">
+															<span class="asset-title">Investments</span>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="value6">Value $</label>
+															<input type="text" class="form-control input-value" id="value6">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing6">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing6">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Monthly Repayment">
+														</div>
+													</div>
+													<div class="col-md-2 col-xl-1	">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Limit">
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="./assets/inc/business-asset1.html" class="btn-add load-more">Add Assets / Liabilities <span class="icon-plus-circle"></span></a>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="blue-title blue-title--border">Assets & Liabilities held in Trust</span>
+										<div class="load-more-holder">
+											<div class="form-box asset-block new">
+												<div class="row">
+													<div class="col-md-2">
+														<div class="form-group">
+															<input type="text" placeholder="Asset Details" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="value7">Value $</label>
+															<input type="text" class="form-control input-value" id="value7">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Liabilities Details">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="owing7">Amount Owing $</label>
+															<input type="text" class="form-control input-amt" id="owing7">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<input type="text" placeholder="Monthly Repayment" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="./assets/inc/trust1.html" class="btn-add load-more">Add Assets / Liabilities <span class="icon-plus-circle"></span></a>
+										</div>
+									</div>
+								</div>
+								<span class="blue-title blue-title--border">	<a href="#">KVB Privacy Waiver</a></span>
+								<div class="check-group">
+									<label>
+										<input type="checkbox" name="radio7">
+										<span class="input"></span>
+										I/We have read, understood and given my/our consent to the terms and conditions above.
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit <span class="icon-half-arrow"></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

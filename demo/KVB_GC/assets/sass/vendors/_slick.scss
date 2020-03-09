@@ -1,0 +1,228 @@
+/* ---------------------------------------------------------
+   Slick styles
+   ---------------------------------------------------------*/
+/* Slick slider styles */
+
+.carousel {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.carousel .slick-track,
+.carousel .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-arrow {
+    background: none;
+    box-shadow: none;
+    font-size:0;
+    line-height:0;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    color: $white;
+    outline: none;
+    cursor: pointer;
+    outline: none !important;
+    margin-top: -37px;
+
+
+    @include media('<tablet') {
+        display: none !important;  
+    }
+
+    @include media('>=desktop') {
+        margin-top: -32px;
+    }
+
+    @include media('>=widescreen') {
+        margin-top: -32px;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+
+
+    &:before {
+        font: 30px /1 icomoon;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 700;
+
+        @include media('>=desktop') {
+            font-size: 45px;
+        }
+
+
+
+    }
+
+    &.slick-prev {
+        left: 15px;
+
+        @include media('>=1180px') {
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: -590px;
+        }
+        &:before {
+            content: $icon-angle-left;
+        }
+    }
+
+    &.slick-next {
+        right: 15px;
+
+        @include media('>=1180px') {
+            left: 50%;
+            transform: translateX(-50%);
+            margin-left: 590px;
+        }
+        &:before {
+            content:$icon-angle-right;
+        }
+    }
+
+
+}
+
+.slick-dots {
+    @include media('<tablet') {
+        display: none !important;
+    }
+}
+
+.slick-dots {
+    @extend %listreset;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+
+    @include media('<tablet') {
+        display: none !important;
+    }
+
+    @include media('>=desktop') {
+        bottom: 243px;
+    }
+
+    li {
+        padding: 0 9px;
+        display: inline-block;
+        vertical-align: top;
+
+        &.active,
+        &.slick-active {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+
+    button {
+        @include size(8px);
+        font-size:0;
+        line-height:0;
+        border-radius: 50%;
+        background: $white;
+        opacity: 0.47;
+        display: block;
+        border: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
