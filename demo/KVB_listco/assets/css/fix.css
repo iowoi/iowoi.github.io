@@ -1,0 +1,224 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	min-height: 100% !important;
+	height: 100%;
+	background-color: #F9F9F9;
+	background-image: url(../images/bgbgbg.png);
+	
+}
+header>div nav>ul>li>a {
+	font-family: "NotoSansCJKsc";
+}
+header>div nav>ul>li>ul>li>a {
+	font-family: "NotoSansCJKsc";
+}
+.container {
+	margin: 80px 0px 0px 0px;
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 40px;
+}
+.container div#indexBanner>div {
+	background-image: url(../images/indexbg.jpg);
+}
+.leftMenu {
+	background-color: #f9f9f9;
+	background-image: url(../images/bg_white.png);
+}
+div.title2 i.grid {
+	margin-top: 12px;
+	vertical-align: middle;
+}
+.banners>div.slogan>div {
+	/*padding: 25px 40px;*/
+}
+.banners>div.slogan>div h1 {
+	font-size: 56px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+	/*margin-top: -10px;*/
+	padding-bottom: 10px;
+	line-height:100%;
+}
+.banners>div.slogan>div h1::after {
+	bottom: -15px;
+}
+.banners>div.slogan>div h3 {
+	color: #F29838;
+	font-family: "NotoSansCJKsc";
+	font-weight: 500;
+	font-size: 17px;
+	margin-top: 0;
+}
+.banners>div.slogan>div p {
+	letter-spacing: 1px;
+	margin-top: 28px;
+}
+.productstxt.txt2 article.wording {
+	background-color: transparent;
+	background-image: url(../images/bg_orange.png);
+}
+
+.productstxt article .txt {
+	box-shadow: none;
+	padding: 15px 20px;
+}
+.productstxt article a:hover .txt {
+	padding: 15px 20px;
+	transition: all 0.6s ease;
+	box-shadow: 15px 20px 50px -10px rgba(0,0,0,0.2);
+}
+.productstxt article h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+.productstxt article .img {
+	height: 270px;
+}
+.productstxt article .mask {
+	width: 100%;
+	height: 270px;
+	background: url(../images/bg_purple.png) repeat;
+}
+.productstxt article a:hover .mask {
+	display: none;
+	transition: all 1s ease;
+}
+.abouttxt article .txt {
+	box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.pronote {
+	background: #fff;
+	font-family: "NotoSansCJKsc";
+}
+.pronote h3 {
+	font-size: 15px;
+	color: #000;
+	font-family: "NotoSansCJKsc";
+}
+.pronote p {
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 10px;
+}
+footer {
+	background-color: #FAFAFA;
+	border-top: 1px solid #fff;
+}
+.border0 {
+	border-bottom: 0px !important
+}
+.mt0 {
+	margin-top: 0 !important
+}
+.p60 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+.pb0 {
+	padding-bottom: 0 !important
+}
+.relationList2>li>a>ul>li:nth-child(3) img {
+	vertical-align: middle;
+}
+.relationList3>li>a:hover>ul {
+	background: url(../images/bg_orange.png);
+	transition: all 0.7s ease;
+}
+.banners>div.slogan>div h1.lostcerttitle {
+	font-size: 52px;
+	line-height: 100%;
+}
+.leftMenu ul>li.current>a {
+	line-height: 100%;
+	padding: 15px 0;
+}
+.relationYear ul li a:hover {
+	color: #ffffff;
+	background-color: #3D7BB1;
+	border-radius: 15px;
+}
+.contact>ul>li>p {
+	font-size: 15px;
+}
+.contact>ul>li>p>span {
+	color: #bbb;
+	font-weight: 400;
+	padding-bottom: 4px;
+}
+div.title3 {
+	font-family: "Roboto", "NotoSansCJKsc", sans-serif;
+	font-size: 36px;
+	padding-left: 8px;
+}
+.sliderAbout .nav article {
+	min-height: 395px;
+}
+.relationList3>li>a>ul{
+	box-shadow: 0px 0px 4px 0 rgba(0,0,0,0.2);
+	padding-left: 9px;
+    padding-right: 9px;
+}
+.relationList3>li>a>ul>li{
+	font-size:18px;
+	line-height: 140%;
+}
+.relationList3>li>a>ul>li:first-child::after{
+	    width: 85% !important;
+}
+.relationList3>li>a>ul>li:first-child{
+	    font-weight: 600;
+}
+/*.photoBox2 article {
+	box-shadow: 0px 0px 4px 0 rgba(0,0,0,0.2);
+	padding: 20px 14px;
+}*/
+.photoBox2 article p.dt, .photoBox2 article p, .contact>ul>li>p{
+	font-family: "Roboto", "NotoSansCJKsc", sans-serif;
+}
+
+/***************1023*************/
+@media (max-width: 1023px) {
+.container {
+	margin: 20px 0 0 0;
+	padding-bottom: 20px;
+}
+.banners>div.slogan>div h1 {
+	font-size: 43px;
+}
+.banners>div.slogan>div h1.lostcerttitle {
+	font-size: 43px;
+}
+div.title2 {
+	font-size: 25px;
+}
+.productstxt.txt2 article.wording {
+	padding: 80px
+}
+.productstxt.txt2 article.wording h1 {
+	line-height: 110%;
+}
+.contact>ul>li:nth-child(2){
+	padding-top: 20px
+}
+.mbgnew {
+	background:#fff;
+margin:0;
+padding:15px;
+}
+/***************640*************/
+@media (max-width: 640px){
+	.milestone>div div#aboutSlider article div{
+		margin-top: 10px !important;
+	}
+	.milestone>div div#aboutSlider article div h1{
+		font-size: 30px;
+    font-weight: 300;
+	}
+.milestone>div div#aboutSlider article div i.grid {
+    width: 12px;
+    height: 12px;
+
+}
+}
