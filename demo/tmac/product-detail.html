@@ -154,16 +154,16 @@
         <div class="tab-labels-blue mt-4 theme-book-tabs tabs">
             <ul class="nav mb-3 d-table d-lg-flex" id="labels-tab">
                 <li class="nav-item">
-                    <a class="nav-link active" id="labels-home-tab" href="#panel1">內容簡介</a>
+                    <a class="nav-link active" data="1" href="#panel1">內容簡介</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-profile-tab" href="#panel2">作家介紹</a>
+                    <a class="nav-link" data="2" href="#panel2">作家介紹</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-contact-tab" href="#panel3">推薦專區</a>
+                    <a class="nav-link" data="3" href="#panel3">推薦專區</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="labels-contact-tab" href="#panel4">訂購須知</a>
+                    <a class="nav-link" data="4" href="#panel4">訂購須知</a>
                 </li>
             </ul>
             <div class="tab-content" id="labels-tabContent">
@@ -172,10 +172,10 @@
                         <div class="header">
                             <b>
                                 <span class="title">內容簡介</span>
-                                <span class="switch" data="1">收起 <span id="s1">▲</span></span>
+                                <span class="switch" data="1">收起 <span id="s1">▼</span></span>
                             </b>
                         </div>
-                        <div class="content" id="c1">
+                        <div class="content d-none" id="c1">
                             歡迎光臨奇妙的海底世界<br />
                             翻開這本海洋大書，神秘的大海就會在眼前展開哦！<br /><br />
 
@@ -214,10 +214,10 @@
                         <div class="header">
                             <b>
                                 <span class="title">作家介紹</span>
-                                <span class="switch"  data="2">收起 <span id="s2">▲</span></span>
+                                <span class="switch"  data="2">收起 <span id="s2">▼</span></span>
                             </b>
                         </div>
-                        <div class="content" id="c2">
+                        <div class="content d-none" id="c2">
                             <b>作者簡介：</b><br /><br />
 
                             作者／烏瓦爾．佐梅爾（Yuval Zommer）<br /><br />
@@ -245,10 +245,10 @@
                         <div class="header">
                             <b>
                                 <span class="title">推薦專區</span>
-                                <span class="switch"  data="3">收起 <span id="s3">▲</span></span>
+                                <span class="switch"  data="3">收起 <span id="s3">▼</span></span>
                             </b>
                         </div>
-                        <div class="content" id="c3">
+                        <div class="content d-none" id="c3">
                             <b>陪著孩子一同翻開書、閱入大海，享受沁涼湛藍的懷抱</b><br /><br />
 
                             文／曾文宣<br /><br />
@@ -276,10 +276,10 @@
                         <div class="header">
                             <b>
                                 <span class="title">訂購須知</span>
-                                <span class="switch"  data="4">收起 <span id="s4">▲</span></span>
+                                <span class="switch"  data="4">收起 <span id="s4">▼</span></span>
                             </b>
                         </div>
-                        <div class="content" id="c4">
+                        <div class="content d-none" id="c4">
                             <b>退換貨說明：</b><br /><br />
 
                             會員均享有10天的商品猶豫期（含例假日）。若您欲辦理退換貨，請於取得該商品10日內寄回。<br /><br />
@@ -396,7 +396,7 @@
             $(this).addClass('active')
         })
 
-        $('.switch').click(function () {
+        $('.switch, .nav-link').click(function () {
             var id = $(this).attr('data');
             if ($("#c" + id).hasClass("d-none")) {
                 $("#s"+id).html('▲')
