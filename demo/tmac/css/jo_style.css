@@ -1,8 +1,301 @@
+.pdt20 {
+    padding-top:20px;
+}
+.txtRed {
+    color: #fb473c;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.prod-detail tfoot tr td {
+    padding: 5px 10px;
+}
+
+/*lightbox*/
+@media all {
+    .lightbox {
+        display: none;
+    }
+
+    .fl-page h1,
+    .fl-page h3,
+    .fl-page h4 {
+        font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+
+    .fl-page h1 {
+        font-size: 110px;
+        margin-bottom: 0.5em;
+    }
+
+    .fl-page h1 i {
+        font-style: normal;
+        color: #ddd;
+    }
+
+    .fl-page h1 span {
+        font-size: 30px;
+        color: #333;
+    }
+
+    .fl-page h3 {
+        text-align: right;
+    }
+
+    .fl-page h3 {
+        font-size: 15px;
+    }
+
+    .fl-page h4 {
+        font-size: 2em;
+    }
+
+    .fl-page .jumbotron {
+        margin-top: 2em;
+    }
+
+    .fl-page .doc {
+        margin: 2em 0;
+    }
+
+    .fl-page .btn-download {
+        float: right;
+    }
+
+    .fl-page .btn-default {
+        vertical-align: bottom;
+    }
+
+    .fl-page .btn-lg span {
+        font-size: 0.7em;
+    }
+
+    .fl-page .footer {
+        margin-top: 3em;
+        color: #aaa;
+        font-size: 0.9em;
+    }
+
+    .fl-page .footer a {
+        color: #999;
+        text-decoration: none;
+        margin-right: 0.75em;
+    }
+
+    .fl-page .github {
+        margin: 2em 0;
+    }
+
+    .fl-page .github a {
+        vertical-align: top;
+    }
+
+    .fl-page .marketing a {
+        color: #999;
+    }
+
+    /* override default feather style... */
+    .fixwidth {
+        background: rgba(256, 256, 256, 0.8);
+    }
+
+    .fixwidth .featherlight-content {
+        width: 500px;
+        padding: 25px;
+        color: #fff;
+        background: #111;
+    }
+
+    .fixwidth .featherlight-close {
+        color: #fff;
+        background: #333;
+    }
+
+}
+
+/*add to shopping cart*/
+.to-shopping-cart a {
+    border: none;
+    width: 138px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #eee;
+    padding: 0;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
+.to-shopping-cart i {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #eee;
+    color: #bbb;
+    line-height: 30px;
+}
+
+/*lightbox*/
+.lightbox-title {
+    font-size: 1rem;
+    color: #0074c2;
+    font-weight: 700;
+    margin: 6px auto 20px;
+    width: 100%;
+}
+
+.featherlight .featherlight-inner {
+    text-align: left;
+}
+
+/* The checkbox-container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 18px;
+    color: #000 !important;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #979797;
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*lightbox cart coupon label*/
+.lightbox .coupon label {
+    width: 49.7%;
+}
+@media(max-width: 768px) {
+    .fl-page h1 span {
+        display: block;
+    }
+
+    .fl-page .btn-download {
+        float: none;
+        margin-bottom: 1em;
+    }
+}
+
+.featherlight .featherlight-content {
+    width: 30%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+    .m-mb0 {
+        margin-bottom: 0;
+    }
+
+    /*slider*/
+    .slider-block span {
+        top: 60%;
+        left: 50%;
+    }
+
+    /*order record*/
+    .cart-list>thead {
+        display: none;
+    }
+
+    .cart-list>tbody>tr>td {
+        display: block;
+        width: 50%;
+        text-align: center;
+        float: left;
+    }
+
+    .cart-list>tbody>tr>.pc,
+    .cart-list>tbody>tr>.name {
+        width: 100% !important;
+    }
+
+    .cart-list>tbody>tr>.pc {
+        border-color: #75bf97;
+    }
+
+    .cart-list .pc img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cart-list>tbody>tr>.name {
+        height: auto;
+    }
+
+    .coupon label {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 991px) {
+
     .prod-detail tbody tr td.publishing-house,
     .prod-detail tbody tr td.counter-item {
         display: inline;
     }
+
     .vendor-page .prod-detail tr .count,
     .vendor-page .prod-detail tr .counter-item,
     .vendor-page .prod-detail tr .in-stock,

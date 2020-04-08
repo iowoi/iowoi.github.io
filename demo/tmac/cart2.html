@@ -1,81 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            href="css/fonticon.min.css"
-            rel="stylesheet"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
-        />
-        <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
-        ></script>
-        <title>維京書城</title>
-    <link href="css/main.css" rel="stylesheet"></head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/fonticon.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="js/tw-city-selector.min.js"></script>
+    <title>維京書城</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
 
-    <body>
-        <header include-html="https://iowoi.github.io/demo/tmac/header.html"></header>
-        <div class="container main-wrapper cart">
-            <div class="row justify-content-center">
-                <ul class="col-lg-6 stepper stepper-horizontal">
-                    <li class="completed">
-                        <a href="#!">
-                            <span class="circle">1</span>
-                            <span class="tag">購物明細</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#!">
-                            <span class="circle">2</span>
-                            <span class="tag">付款方式</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#!">
-                            <span class="circle">3</span>
-                            <span class="tag">完成訂單</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <section class="paid">
-                <h4 class="text-gray dark-blue-bottom-border">選擇付款方式</h4>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check">
-                            <input
-                                class="form-check-input"
-                                type="radio"
-                                name="paid1"
-                                id="paid1"
-                            />
-                            <label
-                                class="form-check-label font-weight-bold"
-                                for="paid1"
-                            >
-                                信用卡線上刷卡一次付清（支援VISA/MASTER/JCB/銀聯卡等發卡組織）
-                            </label>
-                        </div>
+<body>
+    <header include-html="https://iowoi.github.io/demo/tmac/header.html"></header>
+    <div class="container main-wrapper cart">
+        <div class="row justify-content-center">
+            <ul class="col-lg-6 stepper stepper-horizontal">
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">1</span>
+                        <span class="tag">購物明細</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#!">
+                        <span class="circle">2</span>
+                        <span class="tag">付款方式</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <span class="circle">3</span>
+                        <span class="tag">完成訂單</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="paid">
+            <h4 class="text-gray dark-blue-bottom-border">選擇付款方式</h4>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid1" id="paid1" />
+                        <label class="form-check-label font-weight-bold" for="paid1">
+                            信用卡線上刷卡一次付清（支援VISA/MASTER/JCB/銀聯卡等發卡組織）
+                        </label>
                     </div>
                 </div>
-                <div class="card">
+            </div>
+            <!-- <div class="card">
                     <div class="card-body">
                         <p class="font-weight-bold">
                             信用卡分期付款 (※除不盡餘數於第一期收取)
@@ -119,57 +96,41 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check">
-                            <input
-                                class="form-check-input"
-                                type="radio"
-                                name="paid3"
-                                id="paid3"
-                            />
-                            <label
-                                class="form-check-label font-weight-bold"
-                                for="paid3"
-                            >
-                                郵政劃撥（請親至最近的郵局劃撥付款）
-                            </label>
-                        </div>
-                        <div class="ml-4 mt-3">
-                            劃撥帳號：15048618 <br />
-                            戶名：維京國際股份有限公司<br /><br />
-                            ※劃撥付款完成後請到客服留言告知訂單編號已匯款。
-                        </div>
+                </div> -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid3" id="paid3" />
+                        <label class="form-check-label font-weight-bold" for="paid3">
+                            郵政劃撥（請親至最近的郵局劃撥付款）
+                        </label>
+                    </div>
+                    <div class="ml-4 mt-3">
+                        劃撥帳號：15048618 <br />
+                        戶名：維京國際股份有限公司<br /><br />
+                        ※劃撥付款完成後請到客服留言告知訂單編號已匯款。
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check">
-                            <input
-                                class="form-check-input"
-                                type="radio"
-                                name="paid4"
-                                id="paid4"
-                            />
-                            <label
-                                class="form-check-label font-weight-bold"
-                                for="paid4"
-                            >
-                                ATM轉帳付款（請至全國ATM自動提款機轉帳繳交本次交易金額）
-                            </label>
-                        </div>
-                        <div class="ml-4 mt-3">
-                            轉入銀行代號︰808〈玉山銀行〉<br />
-                            轉入銀行帳號︰1089-940-007877<br />
-                            戶名︰維京國際股份有限公司<br /><br />
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paid4" id="paid4" />
+                        <label class="form-check-label font-weight-bold" for="paid4">
+                            ATM轉帳付款（請至全國ATM自動提款機轉帳繳交本次交易金額）
+                        </label>
+                    </div>
+                    <div class="ml-4 mt-3">
+                        轉入銀行代號︰808〈玉山銀行〉<br />
+                        轉入銀行帳號︰1089-940-007877<br />
+                        戶名︰維京國際股份有限公司<br /><br />
 
-                            【使用ATM轉帳，您需自付ATM轉帳手續費】<br />
-                            ※ATM轉帳完成後請到客服留言告知訂單編號及帳號後五碼。
-                        </div>
+                        【使用ATM轉帳，您需自付ATM轉帳手續費】<br />
+                        ※ATM轉帳完成後請到客服留言告知訂單編號及帳號後五碼。
                     </div>
                 </div>
-                <div class="card">
+            </div>
+            <!-- <div class="card">
                     <div class="card-body">
                         <div class="form-check">
                             <input
@@ -186,8 +147,8 @@
                             </label>
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </div> -->
+            <!-- <div class="card">
                     <div class="card-body">
                         <div class="form-check">
                             <input
@@ -204,8 +165,8 @@
                             </label>
                         </div>
                     </div>
-                </div>
-                <div class="card">
+                </div> -->
+            <!-- <div class="card">
                     <div class="card-body">
                         <div class="form-check">
                             <input
@@ -225,226 +186,194 @@
                             網路ATM轉帳服務，以及ATM虛擬帳號繳費服務。
                         </div>
                     </div>
+                </div> -->
+        </section>
+
+        <section class="buyer">
+            <h4 class="text-gray dark-blue-bottom-border">訂購人</h4>
+            <form class="mt-3">
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">姓名</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">E-mail</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" class="email" />
+                    </div>
                 </div>
-            </section>
-
-            <section class="buyer">
-                <h4 class="text-gray dark-blue-bottom-border">訂購人</h4>
-                <form class="mt-3">
-                    <div class="form-group row">
-                        <label class="col-lg-1 col-form-label">姓名</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
-                        <label class="col-lg-1 col-form-label">E-mail</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" class="email" />
-                        </div>
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">行動電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
                     </div>
-                    <div class="form-group row">
-                        <label class="col-lg-1 col-form-label">行動電話</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
-                        <label class="col-lg-1 col-form-label">市內電話</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
+                    <label class="col-lg-1 col-form-label">市內電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
                     </div>
-                    <div class="form-group row address">
-                        <label class="col-lg-1 col-form-label">地址</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control cityzip" />
-                        </div>
-                        <div class="col-lg-auto">
-                            <select
-                                class="form-control"
-                                id="exampleFormControlSelect1"
-                            >
-                                <option>台北市</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-auto">
-                            <select
-                                class="form-control"
-                                id="exampleFormControlSelect1"
-                            >
-                                <option>中正區</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-auto">
-                            <input
-                                class="form-control address"
-                                id="inputEmail3"
-                                value="農安街144號3F"
-                            />
-                        </div>
+                </div>
+                <div class="form-group row address">
+                    <label class="col-lg-1 col-form-label">地址</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control cityzip" />
                     </div>
-                </form>
-            </section>
-            <section class="buyer">
-                <h4 class="text-gray dark-blue-bottom-border">
-                    收件人
-                    <small>
-                        <div class="form-check d-inline">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="defaultCheck1"
-                            />
-                            <label class="form-check-label" for="defaultCheck1">
-                                與訂購人資料相同
-                            </label>
-                        </div></small
-                    >
-                </h4>
-                <form class="mt-3">
-                    <div class="form-group row">
-                        <label class="col-lg-1 col-form-label">姓名</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
-                        <label class="col-lg-1 col-form-label">E-mail</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control email" />
-                        </div>
+                    <div class="col-lg-auto">
+                        <div class="tw-city-selector" role="tw-city-selector"></div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-lg-1 col-form-label">行動電話</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
-                        <label class="col-lg-1 col-form-label">市內電話</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control" />
-                        </div>
+                    <div class="col-lg-auto">
+                        <input class="form-control address" id="inputEmail3" value="農安街144號3F" />
                     </div>
-                    <div class="form-group row address">
-                        <label class="col-lg-1 col-form-label">地址</label>
-                        <div class="col-lg-auto">
-                            <input class="form-control cityzip" />
-                        </div>
-
-                        <div class="col-lg-auto">
-                            <select
-                                class="form-control"
-                                id="exampleFormControlSelect1"
-                            >
-                                <option>台北市</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-auto">
-                            <select
-                                class="form-control"
-                                id="exampleFormControlSelect1"
-                            >
-                                <option>中正區</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-auto">
-                            <input
-                                class="form-control address"
-                                id="inputEmail3"
-                                value="農安街144號3F"
-                            />
-                        </div>
+                </div>
+            </form>
+        </section>
+        <section class="buyer">
+            <h4 class="text-gray dark-blue-bottom-border">
+                收件人
+                <small>
+                    <div class="form-check d-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            與訂購人資料相同
+                        </label>
                     </div>
-                    國外地址運費需要另計，詳洽服務人員
-                </form>
-            </section>
-            <section class="invoice">
-                <h4 class="text-gray dark-blue-bottom-border">選擇發票形式</h4>
-                <div>
-                    選擇發票形式
-                    <select
-                        class="form-control w-auto d-inline-block ml-4"
-                        id="invoceSeletor"
-                    >
-                        <option value="0">紙本發票</option>
-                        <option value="1">電子發票</option>
-                        <option value="2">載具</option>
-                        <option value="3">捐贈發票</option>
-                    </select>
-                    <div class="row mt-4 invoce" data-type="1">
-                        <div class="col-lg-6">
-                            <input class="form-radio-input" type="radio" />
-                            <label class="form-check-label" for="defaultCheck1">
-                                二聯式發票
-                            </label>
-                        </div>
-                        <div class="col-lg-6">
-                            <input class="form-radio-input" type="radio" />
-                            <label class="form-check-label" for="defaultCheck1">
-                                三聯式發票
-                            </label>
-                            <div class="form-group d-lg-flex mt-3 ">
-                                <label>抬頭</label>
-                                <div class="col-lg-auto">
-                                    <input class="form-control" />
-                                </div>
-                                <div class="w-100 mt-2 d-xl-none"></div>
-                                <label>統一編號</label>
-                                <div class="col-lg-auto">
-                                    <input class="form-control" />
-                                </div>
+                </small>
+            </h4>
+            <form class="mt-3">
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">姓名</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">E-mail</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-1 col-form-label">行動電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                    <label class="col-lg-1 col-form-label">市內電話</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row address">
+                    <label class="col-lg-1 col-form-label">地址</label>
+                    <div class="col-lg-auto">
+                        <input class="form-control cityzip" />
+                    </div>
+                    <div class="col-lg-auto">
+                        <div class="tw-city-selector" role="tw-city-selector"></div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <input class="form-control address" id="inputEmail3" value="農安街144號3F" />
+                    </div>
+                </div>
+                國外地址運費需要另計，詳洽服務人員
+            </form>
+        </section>
+        <section class="invoice">
+            <h4 class="text-gray dark-blue-bottom-border">選擇發票形式</h4>
+            <div>
+                選擇發票形式
+                <select class="form-control w-auto d-inline-block ml-4" id="invoceSeletor">
+                    <option value="0">紙本發票</option>
+                    <option value="1">電子發票</option>
+                    <option value="2">載具</option>
+                    <option value="3">捐贈發票</option>
+                </select>
+                <div class="row mt-4 invoce  d-flex" data-type="0">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            二聯式發票
+                        </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            三聯式發票
+                        </label>
+                        <div class="form-group d-lg-flex mt-3 ">
+                            <label>抬頭</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
+                            </div>
+                            <div class="w-100 mt-2 d-xl-none"></div>
+                            <label>統一編號</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-2 invoce" data-type="2">
-                        <div class="col-lg-6">
-                            <input class="form-radio-input" type="radio" />
-                            <label class="form-check-label" for="defaultCheck1">
-                                手機條碼載具
-                            </label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="請輸入手機條碼載具(限大寫英文數字)"
-                            />
-                        </div>
-                        <div class="col-lg-6">
-                            <input class="form-radio-input" type="radio" />
-                            <label class="form-check-label" for="defaultCheck1">
-                                自然人憑證載具
-                            </label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="請輸入自然人憑證載具(限英文數字)"
-                            />
-                        </div>
+                </div>
+                <div class="row mt-4 invoce" data-type="1">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            二聯式發票
+                        </label>
                     </div>
-                    <div class="row mt-2 invoce" data-type="3">
-                        <div class="col-lg-6">
-                            <input class="form-radio-input" type="radio" />
-                            <label class="form-check-label" for="defaultCheck1">
-                                捐贈發票
-                            </label>
-                            <select
-                                class="form-control search-select d-inline w-auto"
-                            >
-                                <option>捐贈單位</option>
-                            </select>
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            三聯式發票
+                        </label>
+                        <div class="form-group d-lg-flex mt-3 ">
+                            <label>抬頭</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
+                            </div>
+                            <div class="w-100 mt-2 d-xl-none"></div>
+                            <label>統一編號</label>
+                            <div class="col-lg-auto">
+                                <input class="form-control" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="btn-row">
-                <button
-                    class="btn btn-gray w-25"
-                    onclick="javascript:window.location.href='cart1.html'; return false;"
-                >
-                    上一步
-                </button>
-                <button
-                    class="btn btn-primary w-25"
-                    onclick="javascript:window.location.href='cart3.html'; return false;"
-                >
-                    送出訂單
-                </button>
-            </section>
-        </div>
-        <footer include-html="https://iowoi.github.io/demo/tmac/footer.html"></footer>
-    <script type="text/javascript" src="app.bundle.js"></script></body>
+                <div class="row mt-2 invoce" data-type="2">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            手機條碼載具
+                        </label>
+                        <input type="text" class="form-control" placeholder="請輸入手機條碼載具(限大寫英文數字)" />
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            自然人憑證載具
+                        </label>
+                        <input type="text" class="form-control" placeholder="請輸入自然人憑證載具(限英文數字)" />
+                    </div>
+                </div>
+                <div class="row mt-2 invoce" data-type="3">
+                    <div class="col-lg-6">
+                        <input class="form-radio-input" type="radio" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            捐贈發票
+                        </label>
+                        <select class="form-control search-select d-inline w-auto">
+                            <option>捐贈單位</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="btn-row">
+            <button class="btn btn-gray w-25" onclick="javascript:window.location.href='cart1.html'; return false;">
+                上一步
+            </button>
+            <button class="btn btn-primary w-25" onclick="javascript:window.location.href='cart3.html'; return false;">
+                送出訂單
+            </button>
+        </section>
+    </div>
+    <footer include-html="https://iowoi.github.io/demo/tmac/footer.html"></footer>
+    <script type="text/javascript" src="app.bundle.js"></script>
+</body>
+
 </html>

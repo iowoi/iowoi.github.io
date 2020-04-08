@@ -398,6 +398,7 @@
 
         $('.switch, .nav-link').click(function () {
             var id = $(this).attr('data');
+            console.log($("#c" + id).hasClass("d-none"))
             if ($("#c" + id).hasClass("d-none")) {
                 $("#s"+id).html('▲')
             }else{
